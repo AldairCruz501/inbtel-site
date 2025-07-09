@@ -1,0 +1,256 @@
+<script setup lang="ts">
+	import FooterComponent from '../components/FooterComponent.vue';
+	import HeaderComponent from '../components/HeaderComponent.vue';
+	import InbtelAppComponent from '../components/InbtelAppComponent.vue';
+    import ExtComponent from '../components/ExtComponent.vue';
+	import LoaderComponent from '../components/LoaderComponent.vue';
+	import CountCircleMBPS from '../components/CountCircleMBPS.vue';
+    import { homeData } from '../data/home';
+</script>
+
+<template>
+	<LoaderComponent />
+	<HeaderComponent />
+    <section class="hero-residencial d-none d-lg-block position-relative overflow-hidden">
+		<div class="container-fluid width-text position-absolute top-0 start-50 translate-middle-x text-center text-white px-3 mb-5 w-100 pt-5 mt-5">
+			<div class="row pt-3">
+				<div class="col-12 text-uppercase">
+					<h1 class="display-1 fw-bold title-text lh-1">
+                        <span class="subtitle-text lh-1">Planes</span> <br>
+                        Residenciales
+                    </h1>
+				</div>
+			</div>
+  		</div>
+	</section>
+	<section class="hero-residencial-responsive d-block d-lg-none p-0">
+		<div class="container-fluid p-0">
+			<img src="/img/residencial/banner-residencial-2.png" alt="Banner Residencial" class="img-fluid w-100 h-auto d-block mx-auto">
+		</div>
+	</section>
+    <section class="jumbotron-residencial">
+		<div class="container py-2">
+			<div class="row g-5">
+				<div class="col-lg-5">
+                    <img src="/img/residencial/chicos-residencial.png" alt="img-residencial" class="img-fluid">
+				</div>
+                <div class="col-lg-7 pt-5">
+                    <div class="mb-3 text-uppercase">
+                        <h2 class="display-4 resalt-text fw-semibold">
+                            Moderniza tu <span class="title-text">Señal</span>
+                        </h2>
+                    </div>
+                    <p class="text-dark fs-4">
+                        Contrata tu servicio de internet desde <span class="title-text fw-bold">$399/Mes</span>
+                        y disfruta de la mejor conexión en tu hogar.
+                    </p>
+                    <div class="row g-4">
+                        <div class="col-lg-4">
+                            <div class="border-color rounded-4">
+                                <div class="p-4">
+                                   <div class="text-center">
+                                     <img src="/img/residencial/icono-residencial-1.png" alt="icon-signal" class="img-fluid" width="120">
+                                     <p class="text-dark lh-1 fs-5 fw-medium">
+                                        Velocidad <br>
+                                        <span class="title-text fs-4 fw-bold">100 Mbps</span>
+                                     </p>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="border-color rounded-4">
+                                <div class="p-4">
+                                   <div class="text-center">
+                                     <img src="/img/residencial/icono-residencial-2.png" alt="icon-signal" class="img-fluid" width="120">
+                                     <p class="text-dark lh-1 fs-5 fw-medium">
+                                        Gran <br>
+                                        <span class="title-text fs-4 fw-bold">Estabilidad</span>
+                                     </p>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="border-color rounded-4">
+                                <div class="p-4">
+                                   <div class="text-center">
+                                     <img src="/img/residencial/icono-residencial-3.png" alt="icon-signal" class="img-fluid" width="120">
+                                     <p class="text-dark lh-1 fs-5 fw-medium">
+                                        100% <br>
+                                        <span class="title-text fs-4 fw-bold">Fibra Óptica</span>
+                                     </p>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+  		</div>
+	</section>
+	<section class="bg-plans py-5">
+		<div class="container pt-lg-3 mt-lg-2">
+			<div class="text-center">
+                <h4 class="display-6 resalt-text fw-semibold">Planes Residenciales</h4>
+				<h2 
+					class="text-uppercase display-1 fw-bold subtitle-text"
+					v-motion-slide-visible-top
+					:delay="200"
+					:duration="1200"
+				>
+				INTERNET POR FIBRA ÓPTICA
+			</h2>
+			</div>
+			<div class="row p-4 g-5">
+				<div v-for="plan in homeData.plansInt" class="col-12 col-md-6 col-xl-4">
+					<div class="card text-center border-color-card h-100 d-flex shadow">
+						<div class="card-header fs-3 fw-bold">
+							Plan {{ plan.nombre }}
+						</div>
+						<div class="card-body">
+							<CountCircleMBPS :value="Number(plan.mbps)" />
+							<div class="d-flex gap-2 justify-content-center mb-4 mb-lg-3 mt-3">
+								<div class="border icon-circle p-3">
+									<img src="/img/inicio/icono-internet.png" alt="" class="mx-auto" width="25">
+								</div>
+								<div class="border icon-circle p-3">
+									<img src="/img/inicio/icono-telefonia.png" alt="" class="mx-auto" width="25">
+								</div>
+								<div v-if="plan.simetrico" class="border icon-circle p-3">
+									<img :src="plan.simetrico" alt="" class="mx-auto" width="25">
+								</div>
+								<div v-if="plan.repetidor" class="border icon-circle p-3">
+									<img :src="plan.repetidor" alt="" class="mx-auto" width="25">
+								</div>
+							</div>
+							<p class="fs-5">Internet + Telefonía</p>
+							<h5 class="card-title subtitle-text display-3 fw-semibold">
+								${{ plan.precio }}<small class="small fs-5">/Mensual</small>
+							</h5>
+							<div class="border-bottom border-black border-1 p-1 w-100 mb-3"></div>
+							<p v-if="plan.wifi" class="card-text fs-4 m-0">{{plan.wifi}}</p>
+							<p v-if="plan.repwifi" class="card-text fs-4 m-0">{{plan.repwifi}}</p>
+							<p class="card-text fs-4">{{ plan.sub1 }} <span class="title-text">{{ plan.sub2 }}</span></p>
+							<p class="card-text fs-4 m-0">Llamadas ilimitadas</p>
+							<p class="card-text fs-6 text-uppercase">USA|MEX|Canada</p>
+							<div class="border-bottom border-black border-1 p-1 w-100 mb-3"></div>
+							<p class="card-text fs-4 m-0">Pronto Pago</p>
+							<h6 class="card-title subtitle-text display-5 fw-semibold">
+								${{ plan.pago }}<small class="small fs-5">/Mensual</small>
+							</h6>
+							<div class="border-bottom border-black border-1 p-1 w-100 mb-3"></div>
+							<a href="#" class="btn btn-primary fw-bold pe-4 ps-4">¡Lo quiero!</a>
+						</div>
+						<div class="card-footer text-secondary bg-transparent border-0 text-uppercase">
+							Folio ift: {{ plan.folioIFT }}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    <ExtComponent />    
+	<InbtelAppComponent />
+	<!-- <CovaregeMap /> -->
+	<FooterComponent />
+</template>
+
+<style scoped>
+.hero-residencial {
+	background-image: url('/img/residencial/banner-residencial-1.png'); 
+	background-size: cover; 
+    background-position: center;
+	min-height: 100vh;
+}
+
+.width-text {
+	width: 90%;
+}
+.subtitle-text {
+	color: #396E4B !important;
+}
+.title-text {
+	color: #7AD100 !important
+}
+.resalt-text {
+    color: #00133E !important
+}
+.gamer-text {
+	color: #54e1fb !important;
+}
+.btn-gamer {
+	background-color: #7AD100 !important;
+	color: #FFFFFF !important;
+}
+.logo-ideal {
+	height: 60px;
+}
+.title-ideal {
+	font-size: 8.5rem;
+}
+
+.border-color {
+	border: 2px solid #396E4B !important;
+}
+
+.border-bottom-color {
+	border-bottom: 2px solid #396E4B !important;
+	width: 50% !important;
+}
+
+.border-color-card {
+	border: 1px solid #396E4B;
+}
+
+.btn-primary {
+	background-color: #396E4B !important;
+	border: 1px solid	#396E4B !important;
+}
+
+.btn-primary:hover {
+	background-color: #ffffff !important;
+	border: 1px solid	#396E4B !important;
+	color: #396E4B;
+}
+
+.btn-light {
+	background-color: #ffffff;
+	border: 1px solid	#396E4B !important;
+	color: #396E4B;
+}
+
+.btn-light:hover {
+	background-color: #396E4B;
+	border: 1px solid #ffffff !important;
+	color: #ffffff;
+}
+
+.card-header {
+	background-color: #396E4B;
+	color: #ffffff;
+}
+
+.plan-circle {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	margin: 0 auto 1rem auto;
+	flex-direction: column;
+}
+
+.icon-circle {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	flex-direction: column;
+}
+</style>

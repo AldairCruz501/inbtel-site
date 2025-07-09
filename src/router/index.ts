@@ -1,17 +1,31 @@
 import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import ResidencialView from '../views/ResidencialView.vue'
 
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
-    name: 'Inicio',
-    component: HomeView
+    component: HomeView,
+    meta: { title: 'INBTEL | Inicio' },
+  },
+    {
+    path: '/residencial',
+    component: ResidencialView,
+    meta: { title: 'Internet Residencial | INBTEL' },
   },
 ]
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
+  routes,
+  scrollBehavior(_to, _from, _savedPosition) {
+    return { top: 0 } // Siempre hace scroll al inicio
+  }
 })
+
+
+router.afterEach((to) => {
+  document.title = (to.meta.title as string) || 'INBTEL';
+});
 
 export default router

@@ -2,95 +2,94 @@
 </script>
 
 <template>
-  <footer class="container-fluid text-center text-lg-start bg-footer text-muted">
-    <section class="pt-4">
-      <div class="container text-center text-md-start mt-5">
-        <div class="row mt-3">
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <h6 class="text-uppercase fw-bold mb-4">
-              <img class="logo" src="/img/logo-inbtel-blanco.webp" alt="logo-footer">
-            </h6>
-            <div>
-            <a href="" class="me-4 text-reset text-decoration-none">
-              <i class="bi bi-facebook"></i>
-            </a>
-            <a href="" class="me-4 text-reset text-decoration-none">
-              <i class="bi bi-twitter"></i>
-            </a>
-            <a href="" class="me-4 text-reset text-decoration-none">
-              <i class="bi bi-google"></i>
-            </a>
-            <a href="" class="me-4 text-reset text-decoration-none">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="" class="me-4 text-reset text-decoration-none">
-              <i class="bi bi-linkedin"></i>
-            </a>
-            <a href="" class="me-4 text-reset text-decoration-none">
-              <i class="bi bi-github"></i>
-            </a>
+  <footer class="text-white footer-gradient pt-5">
+    <div class="container text-center text-md-start">
+      <div class="row">
+        <!-- Logo y redes -->
+        <div class="col-lg-3 mb-4 mt-4 text-center">
+          <img src="/img/logo-inbtel-blanco.webp" alt="Logo INBTEL" class="logo mb-3" />
+          <div class="text-center mt-2">
+            <h6 class="fw-bold fs-4">Síguenos</h6>
           </div>
-          </div>
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <h6 class="text-uppercase fw-bold mb-4">
-              Productos
-            </h6>
-            <p>
-              <a href="#!" class="text-reset text-decoration-none">Manejo de Redes Sociales</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset text-decoration-none">Desarrollo Web</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset text-decoration-none">Diseño de Marca</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset text-decoration-none">Posicionamiento SEM (Google ADS)</a>
-            </p>
-          </div>
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <h6 class="text-uppercase fw-bold mb-4">
-              Enlaces Útiles
-            </h6>
-            <p>
-              <a href="#!" class="text-reset text-decoration-none">Precio</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset text-decoration-none">Características</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset text-decoration-none">FAQs</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset text-decoration-none">Nosotros</a>
-            </p>
-          </div>
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
-            <p>
-              <i class="bi bi-envelope me-3"></i>
-              ventas@pbxhosting.com.mx
-            </p>
-            <p><i class="bi bi-phone me-3"></i> 55 4170 8990</p>
+          <div class="d-flex gap-3 justify-content-center">
+            <div class="border rounded-1 p-1 bg-white">
+              <a href="#" class="text-white m-1"><i class="bi bi-facebook fs-5 title-text"></i></a>
+            </div>
+            <div class="border rounded-1 p-1 bg-white">
+              <a href="#" class="text-white m-1"><i class="bi bi-instagram fs-5 title-text"></i></a>
+            </div>
+            <div class="border rounded-1 p-1 bg-white">
+              <a href="#" class="text-white m-1"><i class="bi bi-twitter-x fs-5 title-text"></i></a>
+            </div>
           </div>
         </div>
+
+        <!-- Enlaces -->
+        <div class="col-lg-3 mb-4 mt-4">
+          <h6 class="fw-bold mb-3 fs-3">Enlaces</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Planes Residenciales</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Planes gamer</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Cobertura</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Servicios Voz IP</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Contacto</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Recomienda y gana</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Términos y Condiciones</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Aviso de Privacidad</a></li>
+          </ul>
+        </div>
+
+        <!-- Atención a Clientes -->
+        <div class="col-lg-3 mb-4 mt-4">
+          <h6 class="fw-bold mb-3 fs-3">Atención a Clientes</h6>
+          <p class="mb-1">Quejas y aclaraciones</p>
+          <p class="mb-1">833 526 0000</p>
+          <p class="mb-3">Horario:<br>Lunes a Viernes 8:00am a 6:00pm<br>Sábado: 8:00am a 2:00pm</p>
+          <h6 class="fw-bold mb-1">Soporte Técnico</h6>
+          <p class="mb-1">833 526 0000</p>
+          <p>Lunes a Domingo: 24Hrs</p>
+        </div>
+
+        <!-- Legal -->
+        <div class="col-lg-3 mb-4 mt-4">
+          <h6 class="fw-bold mb-3 fs-3">Legal</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Código de Política de Gestión de Tráfico</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Lineamientos de información</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Colaboración con la justicia</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Contrato PROFECO DoblePlay</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Contrato PROFECO TriplePlay</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Derechos de los usuarios</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Código de Prácticas Comerciales</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Cobertura Nacional</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Tarifas</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Tarifas Registradas Doble Play ante la IFT</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Tarifas Registradas Triple Play ante la IFT</a></li>
+          </ul>
+        </div>
       </div>
-    </section>
-    <div class="text-center p-4">
-      ©  2025 Todos los derechos reservados:
-      <a class="text-reset fw-bold" href="https://woah.pbxhosting.com.mx/">Woah! Agencia Creativa</a>
+    </div>
+
+    <div class="text-center py-3 mt-4" style="border-color: rgba(255,255,255,0.1) !important;">
+      © 2025 Todos los derechos reservados por <span class="fw-bold">INBTEL</span>.
     </div>
   </footer>
 </template>
 
 <style scoped>
-.bg-footer {
-  background-color: #262937 !important;
+.footer-gradient {
+  background: linear-gradient(90deg, #00133E 0%, #376949 100%);
 }
 
 .logo {
   height: 70px;
 }
 
-</style>
+a.text-white:hover {
+  text-decoration: underline;
+}
 
+.title-text {
+	color: #7AD100 !important
+}
+</style>
