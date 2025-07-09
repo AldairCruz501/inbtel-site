@@ -3,7 +3,7 @@
 
 <template>
 	<section class="bg-porta ">
-		<div class="fondo d-none d-lg-flex align-items-center">
+		<div class="fondo d-none d-xl-flex align-items-center">
 			<div class="container-fluid contenedor-info">
 				<div class="row g-0 align-items-center">
 					<div class="col-md-6 d-flex align-items-center mb-4 mb-md-0">
@@ -27,10 +27,10 @@
 		</div>
 	</section>
 	<section class="bg-porta">
-		<div class="fondo-responsive d-block d-lg-none align-items-center">
+		<div class="fondo-responsive d-block d-xl-none align-items-center pt-lg-5">
 			<div class="container-fluid contenedor-info">
 				<div class="row g-0 align-items-center">
-					<div class="col-lg-6 d-flex flex-column align-items-center mb-4">
+					<div class="col-12 d-flex flex-column align-items-center mb-4">
 						<img src="/img/inicio/extensor-nvo.png" alt="Extensor WiFi" class="img-fluid" style="max-width: 200px;">
 						<div class="text-center">
 							<h5 class="title-text fw-bold fs-2">
@@ -42,7 +42,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-lg-6 d-flex flex-column align-items-center">
+					<div class="col-12 d-flex flex-column align-items-center">
 						<img src="/img/inicio/porta-nvo.png" alt="Teléfono" class="img-porta" style="max-width: 250px;">
 						<div class="text-center">
 							<h5 class="title-text fw-bold fs-2">

@@ -13,7 +13,7 @@
 	<HeaderComponent />
     <section class="hero-residencial d-none d-lg-block position-relative overflow-hidden">
 		<div class="container-fluid width-text position-absolute top-0 start-50 translate-middle-x text-center text-white px-3 mb-5 w-100 pt-5 mt-5">
-			<div class="row pt-3">
+			<div class="row pt-3 title-padding">
 				<div class="col-12 text-uppercase">
 					<h1 class="display-1 fw-bold title-text lh-1">
                         <span class="subtitle-text lh-1">Planes</span> <br>
@@ -31,10 +31,10 @@
     <section class="jumbotron-residencial">
 		<div class="container py-2">
 			<div class="row g-5">
-				<div class="col-lg-5">
+				<div class="col-xl-5 pt-5">
                     <img src="/img/residencial/chicos-residencial.png" alt="img-residencial" class="img-fluid">
 				</div>
-                <div class="col-lg-7 pt-5">
+                <div class="col-xl-7 pt-5">
                     <div class="mb-3 text-uppercase">
                         <h2 class="display-4 resalt-text fw-semibold">
                             Moderniza tu <span class="title-text">Señal</span>
@@ -46,7 +46,7 @@
                     </p>
                     <div class="row g-4">
                         <div class="col-lg-4">
-                            <div class="border-color rounded-4">
+                            <div class="border-color rounded-4 h-100">
                                 <div class="p-4">
                                    <div class="text-center">
                                      <img src="/img/residencial/icono-residencial-1.png" alt="icon-signal" class="img-fluid" width="120">
@@ -59,7 +59,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4">
-                            <div class="border-color rounded-4">
+                            <div class="border-color rounded-4 h-100">
                                 <div class="p-4">
                                    <div class="text-center">
                                      <img src="/img/residencial/icono-residencial-2.png" alt="icon-signal" class="img-fluid" width="120">
@@ -72,7 +72,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4">
-                            <div class="border-color rounded-4">
+                            <div class="border-color rounded-4 h-100">
                                 <div class="p-4">
                                    <div class="text-center">
                                      <img src="/img/residencial/icono-residencial-3.png" alt="icon-signal" class="img-fluid" width="120">
@@ -163,7 +163,13 @@
     background-position: center;
 	min-height: 100vh;
 }
-
+.jumbotron-residencial {
+	background-image: url('/img/residencial/fondo-residencial-1.png'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh; /* valor base para XS */
+}
 .width-text {
 	width: 90%;
 }
@@ -252,5 +258,11 @@
 	justify-content: center;
 	font-weight: bold;
 	flex-direction: column;
+}
+
+@media (min-width: 1025px) and (max-width: 1439.98px) {
+	.title-padding {
+		padding-top: 0rem !important;
+	}
 }
 </style>
