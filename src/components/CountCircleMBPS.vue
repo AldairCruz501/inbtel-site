@@ -102,10 +102,10 @@ onMounted(() => {
 }
 
 .medium-text {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .small-text {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 </style>
