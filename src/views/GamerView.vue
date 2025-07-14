@@ -1,5 +1,4 @@
 <script setup lang="ts">
-	import { ref } from 'vue';
 	import FooterComponent from '../components/FooterComponent.vue';
 	import HeaderComponent from '../components/HeaderComponent.vue';
 	import InbtelAppComponent from '../components/InbtelAppComponent.vue';
