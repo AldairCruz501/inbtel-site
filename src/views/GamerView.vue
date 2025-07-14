@@ -11,7 +11,6 @@
 	import 'swiper/swiper-bundle.css';
 	import { Navigation } from 'swiper/modules';
 	const modules = [Navigation]
-	const swiperRef = ref()
 
 
 </script>
