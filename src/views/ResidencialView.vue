@@ -5,7 +5,7 @@
     import ExtComponent from '../components/ExtComponent.vue';
 	import LoaderComponent from '../components/LoaderComponent.vue';
 	import CountCircleMBPS from '../components/CountCircleMBPS.vue';
-    import { homeData } from '../data/home';
+    import { residencialData } from '../data/residencial';
 </script>
 
 <template>
@@ -103,7 +103,7 @@
 			</h2>
 			</div>
 			<div class="row p-4 g-5">
-				<div v-for="plan in homeData.plansInt" class="col-12 col-md-6 col-xl-4">
+				<div v-for="plan in residencialData.plansInt" class="col-12 col-md-6 col-xl-4">
 					<div class="card text-center border-color-card h-100 d-flex shadow">
 						<div class="card-header fs-3 fw-bold">
 							Plan {{ plan.nombre }}
@@ -169,6 +169,11 @@
     background-size: cover;
     background-position: center;
     min-height: 50vh; /* valor base para XS */
+}
+.bg-plans {
+  background-image: url('/img/inicio/fondo-inicio-6.png');
+  background-size: cover; 
+  min-height: 100vh; /* valor base para XS */
 }
 .width-text {
 	width: 90%;

@@ -1,8 +1,67 @@
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref } from 'vue'
+import { onMounted, onUnmounted, ref, computed } from 'vue'
+import { useRoute } from 'vue-router'
 
 const isScrolled = ref(false)
 const isMenuOpen = ref(false)
+const route = useRoute()
+
+//Colores por ruta
+const routeStyles: Record<string, { colorBeforeScroll: string; colorAfterScroll: string }> = {
+  '/gamer': {
+    colorBeforeScroll: 'text-gamer',
+    colorAfterScroll: 'text-white'
+  },
+  '/television': {
+    colorBeforeScroll: 'text-primary',
+    colorAfterScroll: 'text-white'
+  },
+  '/negocios': {
+    colorBeforeScroll: 'text-success',
+    colorAfterScroll: 'text-white'
+  }
+}
+
+// Rutas con estilo oscuro
+const darkRoutes = ['/gamer', '/television', '/negocios']
+
+const isDarkView = computed(() => {
+  return darkRoutes.includes(route.path)
+})
+
+const showDarkStyle = computed(() => {
+  // Solo se muestra fondo oscuro si está en ruta dark Y hay scroll
+  return isDarkView.value && isScrolled.value
+})
+
+// Clases para el navbar
+const navClass = computed(() => ({
+  scrolled: isScrolled.value && !isDarkView.value,
+  dark: showDarkStyle.value
+}))
+
+// Clases dinámicas para enlaces de navegación
+const linkClass = computed(() => {
+  const style = routeStyles[route.path]
+
+  if (style) {
+    return isScrolled.value ? style.colorAfterScroll : style.colorBeforeScroll
+  }
+
+  // Default para rutas que no están definidas
+  return isScrolled.value ? 'text-inbtel' : 'text-inbtel'
+})
+
+// Clases para el botón "Mi Cuenta"
+const btnClass = computed(() => ({
+  'btn-nav': !isDarkView.value,
+  'btn-outline-gamer': isDarkView.value,
+}))
+
+// Logo dinámico
+const logoSrc = computed(() => {
+  return isDarkView.value ? '/img/logo-blanco.webp' : '/img/logo-color.png'
+})
 
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 50
@@ -10,26 +69,17 @@ const handleScroll = () => {
 
 onMounted(() => {
   const navbarCollapse = document.getElementById('navbarNav')
-
   if (navbarCollapse) {
     navbarCollapse.addEventListener('shown.bs.collapse', () => {
       isMenuOpen.value = true
     })
-
     navbarCollapse.addEventListener('hidden.bs.collapse', () => {
       isMenuOpen.value = false
     })
   }
 
-  window.addEventListener('scroll', () => {
-    isScrolled.value = window.scrollY > 10
-  })
-})
-
-
-onMounted(() => {
   window.addEventListener('scroll', handleScroll)
-  handleScroll() // 👉 Se evalúa el scroll actual al cargar
+  handleScroll()
 })
 
 onUnmounted(() => {
@@ -37,12 +87,14 @@ onUnmounted(() => {
 })
 </script>
 
+
 <template>
   <header class="container-fluid">
-    <nav :class="['navbar navbar-expand-lg fixed-top py-3 d-none d-lg-block', { scrolled: isScrolled }]">
+    <!-- Desktop navbar -->
+    <nav :class="['navbar navbar-expand-lg fixed-top py-3 d-none d-lg-block', navClass]">
       <div class="container-fluid container-xl">
         <router-link class="navbar-brand" to="/">
-          <img class="logo" src="/img/logo-color.png" alt="logo">
+          <img class="logo" :src="logoSrc" alt="logo" />
         </router-link>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,32 +102,34 @@ onUnmounted(() => {
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav align-items-center fw-bold">
-            <li class="nav-item mx-xl-2"><router-link class="nav-link text-white" :to="'/residencial'">Residencial</router-link></li>
-            <li class="nav-item mx-xl-2"><router-link class="nav-link text-white" :to="'/gamer'">Gamer</router-link></li>
-            <li class="nav-item mx-xl-2"><router-link class="nav-link text-white" :to="'/television'">Televisión</router-link></li>
-            <li class="nav-item mx-xl-2"><router-link class="nav-link text-white" :to="'/negocios'">Negocios</router-link></li>
-            <li class="nav-item mx-xl-2"><router-link class="nav-link text-white" :to="'/pymes'">Pymes</router-link></li>
-            <li class="nav-item mx-xl-2"><router-link class="nav-link text-white" :to="'/empresarial'">Empresarial</router-link></li>
+            <li class="nav-item mx-xl-2"><router-link class="nav-link" :class="linkClass" to="/residencial">Residencial</router-link></li>
+            <li class="nav-item mx-xl-2"><router-link class="nav-link" :class="linkClass" to="/gamer">Gamer</router-link></li>
+            <li class="nav-item mx-xl-2"><router-link class="nav-link" :class="linkClass" to="/television">Televisión</router-link></li>
+            <li class="nav-item mx-xl-2"><router-link class="nav-link" :class="linkClass" to="/negocios">Negocios</router-link></li>
+            <li class="nav-item mx-xl-2"><router-link class="nav-link" :class="linkClass" to="/pymes">Pymes</router-link></li>
+            <li class="nav-item mx-xl-2"><router-link class="nav-link" :class="linkClass" to="/empresarial">Empresarial</router-link></li>
             <li class="nav-item dropdown mx-xl-2">
-              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" :class="linkClass" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Oportunidades
               </a>
-              <ul class="dropdown-menu dropdown-menu-dark">
-                <li><router-link class="dropdown-item fw-bold" :to="'/distribuidor-autorizado'">Distribuidor Autorizado</router-link></li>
-                <li><router-link class="dropdown-item fw-bold" :to="'/vendedor-comisionista'">Vendedor Comisionista</router-link></li>
+              <ul class="dropdown-menu">
+                <li><router-link class="dropdown-item fw-bold" to="/distribuidor-autorizado">Distribuidor Autorizado</router-link></li>
+                <li><router-link class="dropdown-item fw-bold" to="/vendedor-comisionista">Vendedor Comisionista</router-link></li>
               </ul>
             </li>
             <li class="nav-item mx-xl-2">
-              <a class="btn btn-nav px-3" href="#">Mi Cuenta</a>
+              <a :class="['btn px-3', btnClass]" href="#">Mi Cuenta</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <nav :class="['navbar navbar-expand-lg py-2 fixed-top d-block d-lg-none', { scrolled: isScrolled || isMenuOpen }]">
+
+    <!-- Mobile navbar -->
+    <nav :class="['navbar navbar-expand-lg py-2 fixed-top d-block d-lg-none', { ...navClass, show: isMenuOpen }]">
       <div class="container-fluid container-xl">
         <router-link class="navbar-brand" to="/">
-          <img src="/img/logo-color.png" alt="logo" height="50">
+          <img :src="logoSrc" alt="logo" height="50" />
         </router-link>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,23 +137,23 @@ onUnmounted(() => {
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav align-items-center fw-bold">
-            <li class="nav-item mx-xl-2"><router-link class="nav-link text-white" :to="'/residencial'">Residencial</router-link></li>
-            <li class="nav-item mx-xl-2"><router-link class="nav-link text-white" :to="'/gamer'">Gamer</router-link></li>
-            <li class="nav-item mx-xl-2"><router-link class="nav-link text-white" :to="'/television'">Televisión</router-link></li>
-            <li class="nav-item mx-xl-2"><router-link class="nav-link text-white" :to="'/negocios'">Negocios</router-link></li>
-            <li class="nav-item mx-xl-2"><router-link class="nav-link text-white" :to="'/pymes'">Pymes</router-link></li>
-            <li class="nav-item mx-xl-2"><router-link class="nav-link text-white" :to="'/empresarial'">Empresarial</router-link></li>
+            <li class="nav-item mx-xl-2"><router-link class="nav-link" :class="linkClass" to="/residencial">Residencial</router-link></li>
+            <li class="nav-item mx-xl-2"><router-link class="nav-link" :class="linkClass" to="/gamer">Gamer</router-link></li>
+            <li class="nav-item mx-xl-2"><router-link class="nav-link" :class="linkClass" to="/television">Televisión</router-link></li>
+            <li class="nav-item mx-xl-2"><router-link class="nav-link" :class="linkClass" to="/negocios">Negocios</router-link></li>
+            <li class="nav-item mx-xl-2"><router-link class="nav-link" :class="linkClass" to="/pymes">Pymes</router-link></li>
+            <li class="nav-item mx-xl-2"><router-link class="nav-link" :class="linkClass" to="/empresarial">Empresarial</router-link></li>
             <li class="nav-item dropdown mx-xl-2">
-              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" :class="linkClass" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Oportunidades
               </a>
               <ul class="dropdown-menu dropdown-menu-dark">
-                <li><router-link class="dropdown-item fw-bold" :to="'/distribuidor-autorizado'">Distribuidor Autorizado</router-link></li>
-                <li><router-link class="dropdown-item fw-bold" :to="'/vendedor-comisionista'">Vendedor Comisionista</router-link></li>
+                <li><router-link class="dropdown-item fw-bold" to="/distribuidor-autorizado">Distribuidor Autorizado</router-link></li>
+                <li><router-link class="dropdown-item fw-bold" to="/vendedor-comisionista">Vendedor Comisionista</router-link></li>
               </ul>
             </li>
-            <li class="nav-item mx-xl-2">
-              <a class="btn btn-nav px-3" href="#">Mi Cuenta</a>
+            <li class="nav-item mx-xl-2 ">
+              <a :class="['btn px-3', btnClass]" href="#">Mi Cuenta</a>
             </li>
           </ul>
         </div>
@@ -124,21 +178,36 @@ nav {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-
-.scrolled{
-  background-color: #FFFFFF !important;
+.navbar.dark {
+  background-color: #00133E;
 }
 
 .logo {
   height: 65px;
 }
 
-.navbar-nav .nav-link {
-  transition: color 0.3s ease;
-  color: #396E4B !important;
+.text-white:hover {
+  border: 1px solid #FFFFFF ;
+  border-radius: 3px;
 }
 
-.navbar-nav .nav-link:hover {
+.text-inbtel{
+  transition: color 0.3s ease;
+  color: #396E4B;
+}
+
+.text-gamer {
+  transition: color 0.3s ease;
+  color: #54e1fb;
+}
+
+.text-gamer:hover {
+  color: #FFFFFF !important;
+    border: 1px solid #54e1fb ;
+  border-radius: 3px;
+}
+
+.text-inbtel:hover {
   color: #95C83C !important;
   border: 1px solid #95C83C;
   border-radius: 3px;
@@ -153,7 +222,6 @@ nav {
   color: #396E4B;
 }
 
-
 .dropdown-item:hover {
   background-color: #ffffff;
   color: #95C83C;
@@ -162,11 +230,24 @@ nav {
 .btn-nav {
   background-color: #6ACAAC;
   color: #ffffff;
+  font-weight: bold !important
 }
 
 .btn-nav:hover {
   color: #6ACAAC !important;
   border: 1px solid #6ACAAC;
+}
+
+.btn-outline-gamer {
+  background-color: #54e1fb;
+  color: #FFFFFF !important;
+  font-weight: bold !important;
+}
+
+.btn-outline-gamer:hover {
+  border: 1px solid #54e1fb;
+  background-color: transparent;
+  color: #54e1fb;
 }
 
 .navbar-toggler {
@@ -190,3 +271,5 @@ nav {
   }
 }
 </style>
+
+

@@ -7,7 +7,7 @@
       <div class="row">
         <!-- Logo y redes -->
         <div class="col-lg-3 mb-4 mt-4 text-center">
-          <img src="/img/logo-inbtel-blanco.webp" alt="Logo INBTEL" class="logo mb-3" />
+          <img src="/img/logo-blanco.webp" alt="Logo INBTEL" class="logo mb-3" />
           <div class="text-center mt-2">
             <h6 class="fw-bold fs-4">Síguenos</h6>
           </div>

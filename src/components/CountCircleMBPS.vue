@@ -1,6 +1,35 @@
 <script lang="ts" setup>
 import { ref, onMounted, computed } from 'vue'
 import { CountUp } from 'countup.js'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+
+const textColorClass = computed(() => {
+  switch (route.path) {
+    case '/gamer':
+      return 'text-gamer' // rojo
+    case '/television':
+      return 'text-primary' // azul
+    case '/negocios':
+      return 'text-success' // verde
+    default:
+      return 'text-residencial' // clase por defecto
+  }
+})
+
+const circleStrokeColor = computed(() => {
+  switch (route.path) {
+    case '/gamer':
+      return '#7AD100' // Bootstrap "danger" rojo
+    case '/television':
+      return '#0d6efd' // Bootstrap "primary" azul
+    case '/negocios':
+      return '#198754' // Bootstrap "success" verde
+    default:
+      return '#396E4B' // Color por defecto
+  }
+})
 
 const props = defineProps<{
   value: number
@@ -45,19 +74,19 @@ onMounted(() => {
 <template>
   <div class="circle-wrapper" ref="wrapperRef">
     <svg class="progress-ring" width="120" height="120">
-      <circle
-        class="progress-ring__circle"
-        stroke="#396E4B"
-        stroke-width="3"
-        fill="transparent"
-        r="51"
-        cx="60"
-        cy="60"
-        :class="{ 'animate-stroke': isVisible }"
-      />
+    <circle
+      class="progress-ring__circle"
+      :stroke="circleStrokeColor"
+      stroke-width="3"
+      fill="transparent"
+      r="51"
+      cx="60"
+      cy="60"
+      :class="{ 'animate-stroke': isVisible }"
+    />
     </svg>
     <div class="circle-content">
-      <span ref="counterRef" :class="['text-color fw-bold lh-1', numberSizeClass]">0</span>
+      <span ref="counterRef" :class="[textColorClass, 'fw-bold lh-1', numberSizeClass]">0</span>
       <small>Mbps</small>
     </div>
   </div>
@@ -93,10 +122,12 @@ onMounted(() => {
   align-items: center;
 }
 
-.text-color {
+.text-residencial {
   color: #396E4B;
 }
-
+.text-gamer{
+  color: #7AD100;
+}
 .large-text {
   font-size: 2.5rem;
 }
