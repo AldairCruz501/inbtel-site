@@ -166,11 +166,11 @@
 			>
 
 			<SwiperSlide v-for="plan in gamerData.plansInt" :key="plan.nombre">
-				<div class="card text-center border-color-card h-100 d-flex shadow col-12">
+				<div class="card text-center border-color-card d-flex shadow h-100">
 				<div class="card-header fs-3 fw-bold">
 					Plan {{ plan.nombre }}
 				</div>
-				<div class="card-body">
+				<div class="card-body h-100">
 					<CountCircleMBPS :value="Number(plan.mbps)" />
 					<div class="d-flex gap-2 justify-content-center mb-4 mb-lg-3 mt-3">
 					<div class="border icon-circle p-3">
@@ -236,7 +236,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-	margin: 0px !important;
   	min-height: 100vh; /* valor base para XS */
 }
 .width-text {
@@ -351,6 +350,7 @@
 .swiper-button-next-custom:hover {
   color: #7AD100 !important;
 }
+
 
 @media (max-width: 1070px) {
   .btn-arrow {

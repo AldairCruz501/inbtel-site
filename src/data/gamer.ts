@@ -26,6 +26,8 @@ export const gamerData: GamerData = {
             precio: "1,319",
             sub1: "500 Mbps",
             sub2: "Subida",
+            wifi: "Wifi 6",
+            repwifi: "Repetidor Wifi",
             simetrico: "/img/gamer/icono-gamer-9.png",
             folioIFT: "1136878",
             pago: "1,229"
@@ -36,6 +38,8 @@ export const gamerData: GamerData = {
             precio: "1,619",
             sub1: "600 Mbps",
             sub2: "Subida",
+            wifi: "Wifi 6",
+            repwifi: "Repetidor Wifi",
             simetrico: "/img/gamer/icono-gamer-9.png",
             folioIFT: "1137417",
             pago: "1,599"

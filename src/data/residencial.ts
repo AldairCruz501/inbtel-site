@@ -63,7 +63,7 @@ export const residencialData: ResidencialData = {
             repwifi: "Repetidor Wifi",
             repetidor: "/img/inicio/icono-repetidor.png",
             folioIFT: "1137026",
-            pago: "1460"
+            pago: "1,460"
         },
     ],
     plansTV: [

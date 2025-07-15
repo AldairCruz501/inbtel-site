@@ -324,7 +324,7 @@
 	width: 90%;
 }
 .img-inbi {
-	width: 35%;
+	width: 25%;
 }
 .subtitle-text {
 	color: #396E4B !important;
