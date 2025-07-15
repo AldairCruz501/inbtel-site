@@ -119,7 +119,7 @@
 	<section class="jumbotron-ideal d-none d-lg-flex align-items-center">
 		<div class="container-fluid width-text">
 			<div class="row flex-lg-row-reverse"
-				v-motion-slide-visible-right
+				v-motion-fade-visible
 				:delay="200"
 				:duration="1200"
 				>
