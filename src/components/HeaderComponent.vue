@@ -12,10 +12,6 @@ const routeStyles: Record<string, { colorBeforeScroll: string; colorAfterScroll:
     colorBeforeScroll: 'text-gamer',
     colorAfterScroll: 'text-white'
   },
-  '/television': {
-    colorBeforeScroll: 'text-primary',
-    colorAfterScroll: 'text-white'
-  },
   '/negocios': {
     colorBeforeScroll: 'text-success',
     colorAfterScroll: 'text-white'
@@ -23,7 +19,7 @@ const routeStyles: Record<string, { colorBeforeScroll: string; colorAfterScroll:
 }
 
 // Rutas con estilo oscuro
-const darkRoutes = ['/gamer', '/television', '/negocios']
+const darkRoutes = ['/gamer']
 
 const isDarkView = computed(() => {
   return darkRoutes.includes(route.path)
@@ -60,7 +56,7 @@ const btnClass = computed(() => ({
 
 // Logo dinámico
 const logoSrc = computed(() => {
-  return isDarkView.value ? '/img/logo-blanco.webp' : '/img/logo-color.png'
+  return isDarkView.value ? '/img/logo-blanco.png' : '/img/logo-color.png'
 })
 
 const handleScroll = () => {

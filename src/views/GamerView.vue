@@ -1,8 +1,6 @@
 <script setup lang="ts">
 	import FooterComponent from '../components/FooterComponent.vue';
 	import HeaderComponent from '../components/HeaderComponent.vue';
-	import InbtelAppComponent from '../components/InbtelAppComponent.vue';
-    import ExtComponent from '../components/ExtComponent.vue';
 	import LoaderComponent from '../components/LoaderComponent.vue';
 	import CountCircleMBPS from '../components/CountCircleMBPS.vue';
 	import { gamerData } from '../data/gamer';
@@ -28,7 +26,7 @@
 	</section>
 	<section class="hero-residencial-responsive d-block d-lg-none p-0">
 		<div class="container-fluid p-0">
-			<img src="/img/residencial/banner-residencial-2.png" alt="Banner Residencial" class="img-fluid w-100 h-auto d-block mx-auto">
+			<img src="/img/gamer/banner-gamer-2.jpeg" alt="Banner Residencial" class="img-fluid w-100 h-auto d-block mx-auto">
 		</div>
 	</section>
     <section class="jumbotron-residencial">
@@ -196,9 +194,7 @@
 			</Swiper>
 
 		</div>
-	</section>
-    <ExtComponent />    
-	<InbtelAppComponent />
+	</section>   
 	<!-- <CovaregeMap /> -->
 	<FooterComponent />
 </template>

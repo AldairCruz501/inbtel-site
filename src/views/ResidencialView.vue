@@ -13,7 +13,7 @@
 	<HeaderComponent />
     <section class="hero-residencial d-none d-lg-block position-relative overflow-hidden">
 		<div class="container-fluid width-text position-absolute top-0 start-50 translate-middle-x text-center text-white px-3 mb-5 w-100 pt-5 mt-5">
-			<div class="row pt-3 title-padding">
+			<div class="row pt-3 title-padding m-0">
 				<div class="col-12 text-uppercase">
 					<h1 class="display-1 fw-bold title-text lh-1">
                         <span class="subtitle-text lh-1">Planes</span> <br>
@@ -30,7 +30,7 @@
 	</section>
     <section class="jumbotron-residencial">
 		<div class="container py-2">
-			<div class="row g-5">
+			<div class="row g-5 m-0">
 				<div class="col-xl-5 pt-5">
                     <img src="/img/residencial/chicos-residencial.png" alt="img-residencial" class="img-fluid">
 				</div>
@@ -102,7 +102,7 @@
 				INTERNET POR FIBRA ÓPTICA
 			</h2>
 			</div>
-			<div class="row p-4 g-5">
+			<div class="row p-4 g-5 m-0">
 				<div v-for="plan in residencialData.plansInt" class="col-12 col-md-6 col-xl-4">
 					<div class="card text-center border-color-card h-100 d-flex shadow">
 						<div class="card-header fs-3 fw-bold">
@@ -267,7 +267,8 @@
 
 @media (min-width: 1025px) and (max-width: 1439.98px) {
 	.title-padding {
-		padding-top: 0rem !important;
-	}
+		padding-top: 0rem !important;	}
+	
 }
+
 </style>

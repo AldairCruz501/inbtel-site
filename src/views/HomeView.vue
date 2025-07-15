@@ -51,7 +51,7 @@
 		</video>
 		<div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to top, #396E4B, rgba(57, 110, 75, 0));"></div>
 		<div class="position-absolute bottom-0 start-50 translate-middle-x text-center text-white px-3 mb-5 w-100">
-			<img src="/img/logo-blanco.webp" alt="INBTEL Comunicaciones" class="mb-4" style="max-width: 600px;">
+			<img src="/img/logo-blanco.png" alt="INBTEL Comunicaciones" class="mb-4" style="max-width: 600px;">
 			<p class="lead fw-medium fs-4" style="max-width: 950px; margin: 0 auto;">
 			"INBTEL" es una empresa de telecomunicaciones con sede en Tampico, dedicada a proporcionar servicios de Internet por fibra óptica de alta velocidad. Nuestra empresa se enorgullece de ofrecer a nuestros clientes una experiencia de conectividad de primer nivel en la región.
 			</p>
@@ -100,7 +100,7 @@
 		<div class="container-fluid width-text">
 			<div class="row flex-lg-row-reverse">
 				<div class="col-lg-6 mt-5">
-					<img src="/img/logo-blanco.webp" alt="Logo INBTEL" class="logo-ideal mb-3" />
+					<img src="/img/logo-blanco.png" alt="Logo INBTEL" class="logo-ideal mb-3" />
 					<h3 class="display-1 text-white fw-bold text-uppercase m-0">El plan ideal</h3>
 					<h2 class="title-ideal fw-bold title-text text-uppercase m-0">Para Ti</h2>
 				</div>
@@ -111,7 +111,7 @@
 		<div class="container-fluid width-text position-absolute bottom-0 start-50 translate-middle-x text-center text-white px-3 mb-5 w-100 pt-5">
 			<div class="row mt-3 mt-lg-0">
 				<div class="col-12 mt-5">
-					<img src="/img/logo-blanco.webp" alt="Logo INBTEL" class="logo-ideal mb-3" />
+					<img src="/img/logo-blanco.png" alt="Logo INBTEL" class="logo-ideal mb-3" />
 					<h3 class="display-1 text-white fw-bold text-uppercase m-0 lh-1">El plan ideal</h3>
 					<h2 class="title-ideal fw-bold title-text text-uppercase m-0 lh-1">Para Ti</h2>
 				</div>
