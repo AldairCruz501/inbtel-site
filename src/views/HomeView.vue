@@ -1,4 +1,5 @@
 <script setup lang="ts">
+	import { ref, onMounted } from 'vue'
 	import CountCircleMBPS from '../components/CountCircleMBPS.vue';
 	import FooterComponent from '../components/FooterComponent.vue';
 	import HeaderComponent from '../components/HeaderComponent.vue';
@@ -7,15 +8,26 @@
 	import LoaderComponent from '../components/LoaderComponent.vue';
 	import { residencialData } from '../data/residencial';
 
-	
+	const loading = ref(true)
+	onMounted(() => {
+		document.body.style.overflow = 'hidden'
+		setTimeout(() => {
+			loading.value = false
+			document.body.style.overflow = ''
+		}, 3000)
+	})
 </script>
 
 <template>
 	<LoaderComponent />
 	<HeaderComponent />
-	<section class="hero-main d-none d-lg-flex align-items-center">
+	<section class="hero-main d-none d-lg-flex align-items-center"  v-if="!loading">
 		<div class="container-fluid width-text">
-			<div class="row">
+			<div class="row"
+				v-motion-slide-visible-left
+				:delay="200"
+				:duration="1200"
+			>
 				<div class="col-lg-6 text-uppercase">
 					<h3 class="display-6 subtitle-text fw-bold">La mejor Conexión por</h3>
 					<h1 class="display-1 fw-bold title-text">Fibra óptica</h1>
@@ -50,8 +62,12 @@
 			<source src="/img/inicio/yo-soy-inbtel.mp4" type="video/mp4">
 		</video>
 		<div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to top, #396E4B, rgba(57, 110, 75, 0));"></div>
-		<div class="position-absolute bottom-0 start-50 translate-middle-x text-center text-white px-3 mb-5 w-100">
-			<img src="/img/logo-blanco.png" alt="INBTEL Comunicaciones" class="mb-4" style="max-width: 600px;">
+		<div class="position-absolute bottom-0 start-50 translate-middle-x text-center text-white px-3 mb-5 w-100"
+				v-motion-fade-visible
+				:delay="200"
+				:duration="1200"
+		>
+			<img src="/img/logo-blanco.png" alt="INBTEL Comunicaciones" class="mb-4 img-inbi">
 			<p class="lead fw-medium fs-4" style="max-width: 950px; margin: 0 auto;">
 			"INBTEL" es una empresa de telecomunicaciones con sede en Tampico, dedicada a proporcionar servicios de Internet por fibra óptica de alta velocidad. Nuestra empresa se enorgullece de ofrecer a nuestros clientes una experiencia de conectividad de primer nivel en la región.
 			</p>
@@ -59,7 +75,11 @@
 	</section>
 	<section class="jumbotron-main d-none d-lg-flex align-items-center">
 		<div class="container-fluid width-text">
-			<div class="row">
+			<div class="row"
+				v-motion-slide-visible-bottom
+				:delay="200"
+				:duration="1200"
+			>
 				<div class="col-lg-6">
 					<h3 class="display-6 subtitle-text fw-bold text-uppercase">Complementa tu</h3>
 					<h2 class="display-1 fw-bold title-text text-uppercase">Diversión</h2>
@@ -98,7 +118,11 @@
 	</section>
 	<section class="jumbotron-ideal d-none d-lg-flex align-items-center">
 		<div class="container-fluid width-text">
-			<div class="row flex-lg-row-reverse">
+			<div class="row flex-lg-row-reverse"
+				v-motion-slide-visible-right
+				:delay="200"
+				:duration="1200"
+				>
 				<div class="col-lg-6 mt-5">
 					<img src="/img/logo-blanco.png" alt="Logo INBTEL" class="logo-ideal mb-3" />
 					<h3 class="display-1 text-white fw-bold text-uppercase m-0">El plan ideal</h3>
@@ -181,7 +205,11 @@
 	<ExtComponent />
 	<section class="jumbotron-gamer d-none d-lg-flex align-items-center">
 		<div class="container-fluid width-text">
-			<div class="row flex-lg-row-reverse">
+			<div class="row flex-lg-row-reverse"
+				v-motion-slide-visible-bottom
+				:delay="200"
+				:duration="1200"
+			>
 				<div class="col-lg-5">
 					<img src="/img/inicio/logo-planes-gamer.png" alt="Logo INBTEL" class="img-fluid mb-5" />
 					<h4 class="fs-2 text-white fw-bolder text-uppercase m-0">
@@ -295,6 +323,9 @@
 .width-text {
 	width: 90%;
 }
+.img-inbi {
+	width: 35%;
+}
 .subtitle-text {
 	color: #396E4B !important;
 }
@@ -393,6 +424,9 @@
 	.title-ideal {
 		font-size: 6.5rem;
 	}
+	  .img-inbi {
+	width: 50%;
+}
 }
 
 @media (max-width: 768px) {
@@ -412,6 +446,9 @@
 @media (max-width: 575.98px) {
 	.title-ideal {
 		font-size: 4.5rem;
+	}
+	.img-inbi {
+		width: 80%;
 	}
 }
 </style>

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+	import { ref, onMounted } from 'vue'
 	import FooterComponent from '../components/FooterComponent.vue';
 	import HeaderComponent from '../components/HeaderComponent.vue';
 	import LoaderComponent from '../components/LoaderComponent.vue';
@@ -9,15 +10,28 @@
 	import { Navigation } from 'swiper/modules';
 	const modules = [Navigation]
 
+	const loading = ref(true)
+	onMounted(() => {
+		document.body.style.overflow = 'hidden'
+		setTimeout(() => {
+			loading.value = false
+			document.body.style.overflow = ''
+		}, 3000)
+	})
+
 
 </script>
 
 <template>
 	<LoaderComponent />
 	<HeaderComponent />
-    <section class="hero-residencial d-none d-lg-block position-relative overflow-hidden">
+    <section class="hero-residencial d-none d-lg-block position-relative overflow-hidden" v-if="!loading">
 		<div class="container-fluid width-text position-absolute start-50 translate-middle-x text-center text-white px-3 mb-5 w-100 pt-5 mt-5">
-			<div class="row pt-3 title-padding">
+			<div class="row pt-3 title-padding"
+				v-motion-slide-visible-bottom
+				:delay="200"
+				:duration="1200"
+			>
 				<div class="col-12 text-uppercase mx-3">
 					<img src="/img/gamer/logo-gamer.png" alt="img-gamer" class="img-fluid mt-4" width="850">
 				</div>
@@ -30,7 +44,11 @@
 		</div>
 	</section>
     <section class="jumbotron-residencial">
-		<div class="container py-2">
+		<div class="container py-2" 
+			v-motion-fade-visible
+			:delay="200"
+			:duration="1200"
+		>
 			<div class="pt-5 pb-5 text-center">
 				<h1 class="display-2 text-uppercase fw-semibold text-white mt-3">Sumérgete en la aventura</h1>
 			</div>

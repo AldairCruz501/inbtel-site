@@ -1,4 +1,5 @@
 <script setup lang="ts">
+	import { ref, onMounted } from 'vue'
 	import FooterComponent from '../components/FooterComponent.vue';
 	import HeaderComponent from '../components/HeaderComponent.vue';
 	import InbtelAppComponent from '../components/InbtelAppComponent.vue';
@@ -6,14 +7,27 @@
 	import LoaderComponent from '../components/LoaderComponent.vue';
 	import CountCircleMBPS from '../components/CountCircleMBPS.vue';
     import { residencialData } from '../data/residencial';
+
+	const loading = ref(true)
+	onMounted(() => {
+		document.body.style.overflow = 'hidden'
+		setTimeout(() => {
+			loading.value = false
+			document.body.style.overflow = ''
+		}, 3000)
+	})
 </script>
 
 <template>
 	<LoaderComponent />
 	<HeaderComponent />
-    <section class="hero-residencial d-none d-lg-block position-relative overflow-hidden">
+    <section class="hero-residencial d-none d-lg-block position-relative overflow-hidden" v-if="!loading">
 		<div class="container-fluid width-text position-absolute top-0 start-50 translate-middle-x text-center text-white px-3 mb-5 w-100 pt-5 mt-5">
-			<div class="row pt-3 title-padding m-0">
+			<div class="row pt-3 title-padding m-0"
+				v-motion-fade-visible
+				:delay="200"
+				:duration="1200"
+			>
 				<div class="col-12 text-uppercase">
 					<h1 class="display-1 fw-bold title-text lh-1">
                         <span class="subtitle-text lh-1">Planes</span> <br>
@@ -31,10 +45,18 @@
     <section class="jumbotron-residencial">
 		<div class="container py-2">
 			<div class="row g-5 m-0">
-				<div class="col-xl-5 pt-5">
+				<div class="col-xl-5 pt-5"
+					v-motion-slide-visible-left
+					:delay="200"
+					:duration="1200"
+				>
                     <img src="/img/residencial/chicos-residencial.png" alt="img-residencial" class="img-fluid">
 				</div>
-                <div class="col-xl-7 pt-5">
+                <div class="col-xl-7 pt-5"
+					v-motion-slide-visible-right
+					:delay="200"
+					:duration="1200"
+				>
                     <div class="mb-3 text-uppercase">
                         <h2 class="display-4 resalt-text fw-semibold">
                             Moderniza tu <span class="title-text">Señal</span>

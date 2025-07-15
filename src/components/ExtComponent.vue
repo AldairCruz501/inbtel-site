@@ -5,7 +5,11 @@
 	<section class="bg-porta ">
 		<div class="fondo d-none d-xl-flex align-items-center">
 			<div class="container-fluid contenedor-info">
-				<div class="row g-0 align-items-center">
+				<div class="row g-0 align-items-center"
+					v-motion-fade-visible 
+					:delay="200"
+					:duration="1200"
+				>
 					<div class="col-md-6 d-flex align-items-center mb-4 mb-md-0">
 						<img src="/img/inicio/extensor-nvo.png" alt="Extensor WiFi" class="img-porta" style="max-width: 450px;">
 						<div>

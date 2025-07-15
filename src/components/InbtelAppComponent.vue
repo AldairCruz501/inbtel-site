@@ -4,7 +4,11 @@
 <template>
   <section class="jumbotron-app d-flex align-items-center">
     <div class="container width-text py-5 px-3">
-      <div class="row">
+      <div class="row"
+      	v-motion-slide-visible-left
+				:delay="200"
+				:duration="1200"
+      >
         <div class="col-lg-6">
           <h4 class="display-6 display-md-4 fw-bolder text-uppercase m-0 subtitle-text">
             Descarga
