@@ -2,6 +2,7 @@ import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import ResidencialView from '../views/ResidencialView.vue'
 import GamerView from '../views/GamerView.vue'
+import TelevisionView from '../views/TelevisionView.vue'
 
 const routes: RouteRecordRaw[] = [
   {
@@ -19,6 +20,11 @@ const routes: RouteRecordRaw[] = [
     component: GamerView,
     meta: { title: 'Internet para Gamers | INBTEL' },
   },  
+  {
+    path: '/television',
+    component: TelevisionView,
+    meta: { title: 'Televisión | INBTEL' },
+  },   
 ]
 
 const router = createRouter({
