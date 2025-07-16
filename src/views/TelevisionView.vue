@@ -1,19 +1,31 @@
 <script setup lang="ts">
+	import { ref, onMounted } from 'vue'
 	import FooterComponent from '../components/FooterComponent.vue';
 	import HeaderComponent from '../components/HeaderComponent.vue';
 	import InbtelAppComponent from '../components/InbtelAppComponent.vue';
 	import LoaderComponent from '../components/LoaderComponent.vue';
 	import TVProgramming from '../components/TVProgramming.vue';
-
 	
+	const loading = ref(true)
+	onMounted(() => {
+		document.body.style.overflow = 'hidden'
+		setTimeout(() => {
+			loading.value = false
+			document.body.style.overflow = ''
+		}, 3000)
+	})
 </script>
 
 <template>
 	<LoaderComponent />
 	<HeaderComponent />
-	<section class="hero-main d-none d-lg-flex align-items-center pt-5">
+	<section class="hero-main d-none d-lg-flex align-items-center pt-5"  v-if="!loading">
 		<div class="container-fluid width-text">
-			<div class="row pt-5">
+			<div class="row pt-5"
+				v-motion-slide-visible-left
+				:delay="200"
+				:duration="1200"
+			>
 				<div class="col-lg-6 text-uppercase">
 					<span class="display-6 fw-bold lh-1 m-0 television-text">Television hd</span>
 					<h2 class="display-4 subtitle-text fw-bold lh-1 m-0 p-0">Disfruta tus</h2>
@@ -30,7 +42,11 @@
 	</section>
     <section class="jumbotron-main">
 		<div class="container py-5">
-			<div class="row pt-5 mt-5">
+			<div class="row pt-5 mt-5"
+				v-motion-slide-visible-bottom
+				:delay="200"
+				:duration="1200"
+			>
 				<div class="col-12 pt-5 mt-4 text-white text-center text-uppercase">
                     <h4 class="fw-bold fs-2 m-0 lh-1">Televisión exclusiva para clientes Inbtel</h4>
 					<h2 class="fw-bold display-1 m-0 lh-1">Vive el cine en tu hogar</h2>

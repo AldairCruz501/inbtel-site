@@ -13,13 +13,13 @@
           </div>
           <div class="d-flex gap-3 justify-content-center">
             <div class="border rounded-1 p-1 bg-white">
-              <a href="#" class="text-white m-1"><i class="bi bi-facebook fs-5 title-text"></i></a>
+              <a href="https://www.facebook.com/INBTEL" class="text-white m-1" target="_blank"><i class="bi bi-facebook fs-5 title-text"></i></a>
             </div>
             <div class="border rounded-1 p-1 bg-white">
-              <a href="#" class="text-white m-1"><i class="bi bi-instagram fs-5 title-text"></i></a>
+              <a href="https://www.instagram.com/inbtel/" class="text-white m-1" target="_blank"><i class="bi bi-instagram fs-5 title-text"></i></a>
             </div>
             <div class="border rounded-1 p-1 bg-white">
-              <a href="#" class="text-white m-1"><i class="bi bi-twitter-x fs-5 title-text"></i></a>
+              <a href="https://x.com/INBTELMX" class="text-white m-1" target="_blank"><i class="bi bi-twitter-x fs-5 title-text"></i></a>
             </div>
           </div>
         </div>
@@ -28,14 +28,14 @@
         <div class="col-lg-3 mb-4 mt-4">
           <h6 class="fw-bold mb-3 fs-3">Enlaces</h6>
           <ul class="list-unstyled">
-            <li><a href="#" class="text-white text-decoration-none">Planes Residenciales</a></li>
-            <li><a href="#" class="text-white text-decoration-none">Planes gamer</a></li>
-            <li><a href="#" class="text-white text-decoration-none">Cobertura</a></li>
-            <li><a href="#" class="text-white text-decoration-none">Servicios Voz IP</a></li>
-            <li><a href="#" class="text-white text-decoration-none">Contacto</a></li>
-            <li><a href="#" class="text-white text-decoration-none">Recomienda y gana</a></li>
-            <li><a href="#" class="text-white text-decoration-none">Términos y Condiciones</a></li>
-            <li><a href="#" class="text-white text-decoration-none">Aviso de Privacidad</a></li>
+            <li><router-link to="/residencial" class="text-white text-decoration-none">Planes Residenciales</router-link></li>
+            <li><router-link to="/gamer" class="text-white text-decoration-none">Planes gamer</router-link></li>
+            <li><router-link to="/" class="text-white text-decoration-none">Cobertura</router-link></li>
+            <li><router-link to="/" class="text-white text-decoration-none">Servicios Voz IP</router-link></li>
+            <li><router-link to="/" class="text-white text-decoration-none">Contacto</router-link></li>
+            <li><router-link to="/" class="text-white text-decoration-none">Recomienda y gana</router-link></li>
+            <li><router-link to="/" class="text-white text-decoration-none">Términos y Condiciones</router-link></li>
+            <li><router-link to="/" class="text-white text-decoration-none">Aviso de Privacidad</router-link></li>
           </ul>
         </div>
 

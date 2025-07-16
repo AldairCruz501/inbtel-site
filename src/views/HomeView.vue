@@ -273,6 +273,8 @@
 .jumbotron-main {
 	background-image: url('/img/inicio/fondo-canalestv-1.png'); 
 	background-size: cover; 
+	background-position: center;
+	background-repeat: no-repeat;
 	min-height: 100vh;
 }
 .jumbotron-main-responsive {

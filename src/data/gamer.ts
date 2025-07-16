@@ -18,7 +18,7 @@ export const gamerData: GamerData = {
             sub1: "400 Mbps",
             sub2: "Subida",
             folioIFT: "1136776",
-            pago: "1,1199"
+            pago: "1,199"
         },
         {
             nombre: "Gamer",
