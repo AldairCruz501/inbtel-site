@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import ResidencialView from '../views/ResidencialView.vue'
 import GamerView from '../views/GamerView.vue'
 import TelevisionView from '../views/TelevisionView.vue'
+import NegociosView from '../views/NegociosView.vue'
 
 const routes: RouteRecordRaw[] = [
   {
@@ -24,7 +25,12 @@ const routes: RouteRecordRaw[] = [
     path: '/television',
     component: TelevisionView,
     meta: { title: 'Televisión | INBTEL' },
-  },   
+  },
+  {
+    path: '/negocios',
+    component: NegociosView,
+    meta: {title: 'Internet para Negocios'}
+  }   
 ]
 
 const router = createRouter({
