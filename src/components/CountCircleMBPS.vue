@@ -12,7 +12,7 @@ const textColorClass = computed(() => {
     case '/television':
       return 'text-primary' // azul
     case '/negocios':
-      return 'text-success' // verde
+      return 'text-negocios' // verde
     default:
       return 'text-residencial' // clase por defecto
   }
@@ -25,7 +25,7 @@ const circleStrokeColor = computed(() => {
     case '/television':
       return '#0d6efd' // Bootstrap "primary" azul
     case '/negocios':
-      return '#198754' // Bootstrap "success" verde
+      return '#F27900' // Bootstrap "success" verde
     default:
       return '#396E4B' // Color por defecto
   }
@@ -127,6 +127,9 @@ onMounted(() => {
 }
 .text-gamer{
   color: #7AD100;
+}
+.text-negocios {
+  color: #F27900;
 }
 .large-text {
   font-size: 2.5rem;

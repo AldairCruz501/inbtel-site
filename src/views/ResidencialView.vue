@@ -113,16 +113,16 @@
 	</section>
 	<section class="bg-plans py-5">
 		<div class="container pt-lg-3 mt-lg-2">
-			<div class="text-center">
+			<div 
+				class="text-center"
+				v-motion-slide-visible-top
+				:delay="200"
+				:duration="1200"
+			>
                 <h4 class="display-6 resalt-text fw-semibold">Planes Residenciales</h4>
-				<h2 
-					class="text-uppercase display-1 fw-bold subtitle-text"
-					v-motion-slide-visible-top
-					:delay="200"
-					:duration="1200"
-				>
-				INTERNET POR FIBRA ÓPTICA
-			</h2>
+				<h2 class="text-uppercase display-1 fw-bold subtitle-text">
+					INTERNET POR FIBRA ÓPTICA
+				</h2>
 			</div>
 			<div class="row p-4 g-5 m-0">
 				<div v-for="plan in residencialData.plansInt" class="col-12 col-md-6 col-xl-4">
@@ -179,6 +179,10 @@
 </template>
 
 <style scoped>
+html, body {
+	overflow-x: hidden;
+}
+
 .hero-residencial {
 	background-image: url('/img/residencial/banner-residencial-1.png'); 
 	background-size: cover; 

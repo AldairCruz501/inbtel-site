@@ -130,16 +130,16 @@
 	</section>
 	<section class="bg-plans-gamer py-5 position-relative">
 		<div class="container pt-lg-3 mt-lg-2 position-relative">
-			<div class="text-center text-white">
+			<div 
+				class="text-center text-white"
+				v-motion-slide-visible-top
+				:delay="200"
+				:duration="1200"				
+			>
                 <h4 class="display-6 fw-semibold">Planes Gamer</h4>
-				<h2 
-					class="text-uppercase display-1 fw-bold text-uppercase"
-					v-motion-slide-visible-top
-					:delay="200"
-					:duration="1200"
-				>
-				Internet por fibra óptica
-			</h2>
+				<h2 class="text-uppercase display-1 fw-bold text-uppercase">
+					Internet por fibra óptica
+				</h2>
 			</div>
 			<!-- Flechas de navegación -->
 			<div class="d-flex justify-content-center gap-5 mb-3">

@@ -38,11 +38,16 @@ const currentPrice = computed(() => planPrices[activeTab.value])
 
 <template>
   <div class="container my-3">
-    <h3 class="text-center text-tv fw-bold display-5">Programación</h3>
-    <h1 class="text-center fw-bold display-1">
-      <span class="text-plan text-uppercase">{{ activeTab }} ${{ currentPrice }}/MES</span>
-    </h1>
-
+    <div
+      v-motion-slide-visible-top
+      :delay="200"
+      :duration="1200"
+    >
+      <h3 class="text-center text-tv fw-bold display-5">Programación</h3>
+      <h1 class="text-center fw-bold display-1">
+        <span class="text-plan text-uppercase">{{ activeTab }} ${{ currentPrice }}/MES</span>
+      </h1>
+    </div>
     <ul class="nav nav-tabs justify-content-center mt-4 mb-5 border-0">
       <li class="nav-item" role="presentation">
         <button

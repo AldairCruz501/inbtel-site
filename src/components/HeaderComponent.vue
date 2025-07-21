@@ -7,57 +7,74 @@ const isMenuOpen = ref(false)
 const route = useRoute()
 
 //Colores por ruta
-const routeStyles: Record<string, { colorBeforeScroll: string; colorAfterScroll: string }> = {
+const routeStyles: Record<string, {
+  colorBeforeScroll: string
+  colorAfterScroll: string
+  btnClass: string
+  logoBeforeScroll?: string
+  logoAfterScroll?: string
+  scrollBackgroundClass: string // <--- nueva propiedad
+}> = {
   '/gamer': {
     colorBeforeScroll: 'text-gamer',
-    colorAfterScroll: 'text-white'
+    colorAfterScroll: 'text-white',
+    btnClass: 'btn-outline-gamer',
+    logoBeforeScroll: '/img/logo-blanco.png',
+    logoAfterScroll: '/img/logo-blanco.png',
+    scrollBackgroundClass: 'bg-gamer'
   },
   '/negocios': {
-    colorBeforeScroll: 'text-success',
-    colorAfterScroll: 'text-white'
-  }
+    colorBeforeScroll: 'text-negocios',
+    colorAfterScroll: 'text-white',
+    btnClass: 'btn-outline-negocios',
+    logoBeforeScroll: '/img/logo-color.png',
+    logoAfterScroll: '/img/logo-blanco.png',
+    scrollBackgroundClass: 'bg-negocios'
+  },
+  // otras rutas...
 }
 
 // Rutas con estilo oscuro
-const darkRoutes = ['/gamer']
 
-const isDarkView = computed(() => {
-  return darkRoutes.includes(route.path)
+const scrollBackgroundClass = computed(() => {
+  const style = routeStyles[route.path]
+  return isScrolled.value && style ? style.scrollBackgroundClass : ''
 })
+
 
 const showDarkStyle = computed(() => {
   // Solo se muestra fondo oscuro si está en ruta dark Y hay scroll
-  return isDarkView.value && isScrolled.value
+  return scrollBackgroundClass.value && isScrolled.value
 })
 
 // Clases para el navbar
 const navClass = computed(() => ({
-  scrolled: isScrolled.value && !isDarkView.value,
+  scrolled: isScrolled.value && !scrollBackgroundClass.value,
   dark: showDarkStyle.value
 }))
 
 // Clases dinámicas para enlaces de navegación
 const linkClass = computed(() => {
   const style = routeStyles[route.path]
-
-  if (style) {
-    return isScrolled.value ? style.colorAfterScroll : style.colorBeforeScroll
-  }
-
-  // Default para rutas que no están definidas
-  return isScrolled.value ? 'text-inbtel' : 'text-inbtel'
+  return style ? (isScrolled.value ? style.colorAfterScroll : style.colorBeforeScroll) : 'text-inbtel'
 })
 
+
 // Clases para el botón "Mi Cuenta"
-const btnClass = computed(() => ({
-  'btn-nav': !isDarkView.value,
-  'btn-outline-gamer': isDarkView.value,
-}))
+const btnClass = computed(() => {
+  const style = routeStyles[route.path]
+  return style ? style.btnClass : 'btn-nav'
+})
 
 // Logo dinámico
 const logoSrc = computed(() => {
-  return isDarkView.value ? '/img/logo-blanco.png' : '/img/logo-color.png'
+  const style = routeStyles[route.path]
+  if (style) {
+    return isScrolled.value ? style.logoAfterScroll : style.logoBeforeScroll
+  }
+  return '/img/logo-color.png' // logo por defecto
 })
+
 
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 50
@@ -87,7 +104,7 @@ onUnmounted(() => {
 <template>
   <header class="container-fluid">
     <!-- Desktop navbar -->
-    <nav :class="['navbar navbar-expand-lg fixed-top py-3 d-none d-lg-block', navClass]">
+    <nav :class="['navbar navbar-expand-lg fixed-top py-3 d-none d-lg-block', navClass, scrollBackgroundClass]">
       <div class="container-fluid container-xl">
         <router-link class="navbar-brand" to="/">
           <img class="logo" :src="logoSrc" alt="logo" />
@@ -122,7 +139,7 @@ onUnmounted(() => {
     </nav>
 
     <!-- Mobile navbar -->
-    <nav :class="['navbar navbar-expand-lg py-2 fixed-top d-block d-lg-none', { ...navClass, show: isMenuOpen }]">
+    <nav :class="['navbar navbar-expand-lg py-2 fixed-top d-block d-lg-none', navClass, scrollBackgroundClass, { show: isMenuOpen }]">
       <div class="container-fluid container-xl">
         <router-link class="navbar-brand" to="/">
           <img :src="logoSrc" alt="logo" height="50" />
@@ -174,8 +191,12 @@ nav {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.navbar.dark {
+.bg-gamer{
   background-color: #00133E;
+}
+
+.bg-negocios {
+  background-color: #F27900;
 }
 
 .logo {
@@ -197,6 +218,11 @@ nav {
   color: #54e1fb;
 }
 
+.text-negocios {
+  transition: color 0.3s ease;
+  color: #F27900;
+}
+
 .text-gamer:hover {
   color: #FFFFFF !important;
     border: 1px solid #54e1fb ;
@@ -208,6 +234,13 @@ nav {
   border: 1px solid #95C83C;
   border-radius: 3px;
 }
+
+.text-negocios:hover {
+  color: #D73D5D!important;
+  border: 1px solid #D73D5D;
+  border-radius: 3px;
+}
+
 
 .dropdown-menu {
   background-color: #ffffff !important;
@@ -236,7 +269,7 @@ nav {
 
 .btn-outline-gamer {
   background-color: #54e1fb;
-  color: #FFFFFF !important;
+  color: #FFFFFF;
   font-weight: bold !important;
 }
 
@@ -244,6 +277,18 @@ nav {
   border: 1px solid #54e1fb;
   background-color: transparent;
   color: #54e1fb;
+}
+
+.btn-outline-negocios {
+  background-color: #D73D5D; 
+  color: #FFFFFF;
+  font-weight: bold !important;
+}
+
+.btn-outline-negocios:hover {
+  border: 1px solid #D73D5D;
+  background-color: #ffffff;
+  color: #D73D5D;
 }
 
 .navbar-toggler {
