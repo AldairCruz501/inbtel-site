@@ -132,20 +132,24 @@ const modules = [Navigation]
 <style scoped>
 
 .subtitle-text {
+	color: #FFD401 !important;
+}
+.subtitle-text-2 {
 	color: #F27900 !important;
 }
 .btn-primary {
-	background-color: #F27900 !important;
-	border: 1px solid	#F27900 !important;
+	background-color: #FFD401 !important;
+	border: 1px solid	#FFD401 !important;
 }
 
 .btn-primary:hover {
 	background-color: #ffffff !important;
-	border: 1px solid	#F27900 !important;
+	border: 1px solid	#FFD401 !important;
 	color: #F27900;
 }
 .card-header {
-	background-color: #F27900;
+	background-color: #FFD401;
+  border: 1px solid	#FFD401 !important;
 	color: #ffffff;
 }
 
@@ -175,13 +179,13 @@ const modules = [Navigation]
 .swiper-button-prev-custom {
   left: -2.5rem !important; /* desplaza hacia la izquierda */
   border: none !important;
-  color: #F27900 !important;
+  color: #FFD401 !important;
 }
 
 .swiper-button-next-custom {
   right: -2.5rem !important; /* desplaza hacia la derecha */
   border: none !important;
-  color: #F27900 !important;
+  color: #FFD401 !important;
 }
 
 /* Aumenta la zona de clic en pantallas grandes */

@@ -125,6 +125,18 @@ const modules = [Navigation]
           class="img-fluid w-100 pt-3 mt-3 pt-md-5 mt-md-5"
         />
       </div>
+      <div class="pt-2 px-5 subtitle-text-2">
+        <h4 class="fs-5 me-3 pe-3 me-xl-5 pe-xl-5 text-start">
+            Consulta Nuestra  <br>
+            <span class="fs-4 fw-bold text-uppercase">
+                Gran Variedad
+                De canales de TV
+            </span>
+        </h4>
+      </div>
+      <div class="text-start px-4">
+        <img src="/img/negocios/qr-tv.png" alt="qr-tv" class="img-fluid">
+      </div>
     </div>    
   </div>
 </template>
@@ -132,20 +144,24 @@ const modules = [Navigation]
 <style scoped>
 
 .subtitle-text {
+	color: #FFD401 !important;
+}
+.subtitle-text-2 {
 	color: #F27900 !important;
 }
 .btn-primary {
-	background-color: #F27900 !important;
-	border: 1px solid	#F27900 !important;
+	background-color: #FFD401 !important;
+	border: 1px solid	#FFD401 !important;
 }
 
 .btn-primary:hover {
 	background-color: #ffffff !important;
-	border: 1px solid	#F27900 !important;
+	border: 1px solid	#FFD401 !important;
 	color: #F27900;
 }
 .card-header {
-	background-color: #F27900;
+	background-color: #FFD401;
+  border: 1px solid	#FFD401 !important;
 	color: #ffffff;
 }
 
@@ -175,13 +191,13 @@ const modules = [Navigation]
 .swiper-button-prev-custom {
   left: -2.5rem !important; /* desplaza hacia la izquierda */
   border: none !important;
-  color: #F27900 !important;
+  color: #FFD401 !important;
 }
 
 .swiper-button-next-custom {
   right: -2.5rem !important; /* desplaza hacia la derecha */
   border: none !important;
-  color: #F27900 !important;
+  color: #FFD401 !important;
 }
 
 /* Aumenta la zona de clic en pantallas grandes */

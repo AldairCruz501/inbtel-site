@@ -25,7 +25,7 @@ const circleStrokeColor = computed(() => {
     case '/television':
       return '#0d6efd' // Bootstrap "primary" azul
     case '/negocios':
-      return '#F27900' // Bootstrap "success" verde
+      return '#FFD401' // Bootstrap "success" verde
     default:
       return '#396E4B' // Color por defecto
   }
@@ -129,7 +129,7 @@ onMounted(() => {
   color: #7AD100;
 }
 .text-negocios {
-  color: #F27900;
+  color: #FFD401;
 }
 .large-text {
   font-size: 2.5rem;
