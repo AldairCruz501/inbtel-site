@@ -5,7 +5,7 @@ import GamerView from '../views/GamerView.vue'
 import TelevisionView from '../views/TelevisionView.vue'
 import NegociosView from '../views/NegociosView.vue'
 import PymesView from '../views/PymesView.vue'
-import EmpresarialView from '../views/EmpresarialView.vue'
+// import EmpresarialView from '../views/EmpresarialView.vue'
 
 const routes: RouteRecordRaw[] = [
   {
@@ -38,11 +38,11 @@ const routes: RouteRecordRaw[] = [
     component: PymesView,
     meta: {title: 'Internet para Pymes | INBTEL'}
   },  
-  {
-    path: '/empresarial',
-    component: EmpresarialView,
-    meta: {title: 'Internet para Pymes | INBTEL'}
-  },   
+  // {
+  //   path: '/empresarial',
+  //   component: EmpresarialView,
+  //   meta: {title: 'Internet para Pymes | INBTEL'}
+  // },   
 ]
 
 const router = createRouter({
