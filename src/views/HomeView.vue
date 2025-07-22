@@ -154,7 +154,7 @@
 				INTERNET POR FIBRA ÓPTICA
 			</h2>
 			</div>
-			<div class="row p-4 g-3 g-lg-5">
+			<div class="row p-0 p-md-5 p-lg-4 g-5">
 				<div v-for="plan in residencialData.plansInt" class="col-12 col-md-6 col-xl-4">
 					<div class="card text-center border-color-card h-100 d-flex shadow">
 						<div class="card-header fs-3 fw-bold">
@@ -163,16 +163,16 @@
 						<div class="card-body">
 							<CountCircleMBPS :value="Number(plan.mbps)" />
 							<div class="d-flex gap-2 justify-content-center mb-4 mb-lg-3 mt-3">
-								<div class="border icon-circle p-3">
+								<div class="border icon-circle p-3 shadow">
 									<img src="/img/inicio/icono-internet.png" alt="" class="mx-auto" width="25">
 								</div>
-								<div class="border icon-circle p-3">
+								<div class="border icon-circle p-3 shadow">
 									<img src="/img/inicio/icono-telefonia.png" alt="" class="mx-auto" width="25">
 								</div>
-								<div v-if="plan.simetrico" class="border icon-circle p-3">
+								<div v-if="plan.simetrico" class="border icon-circle p-3 shadow">
 									<img :src="plan.simetrico" alt="" class="mx-auto" width="25">
 								</div>
-								<div v-if="plan.repetidor" class="border icon-circle p-3">
+								<div v-if="plan.repetidor" class="border icon-circle p-3 shadow">
 									<img :src="plan.repetidor" alt="" class="mx-auto" width="25">
 								</div>
 							</div>
@@ -183,7 +183,7 @@
 							<div class="border-bottom border-black border-1 p-1 w-100 mb-3"></div>
 							<p v-if="plan.wifi" class="card-text fs-4 m-0">{{plan.wifi}}</p>
 							<p v-if="plan.repwifi" class="card-text fs-4 m-0">{{plan.repwifi}}</p>
-							<p class="card-text fs-4">{{ plan.sub1 }} <span class="title-text">{{ plan.sub2 }}</span></p>
+							<p class="card-text fs-4">{{ plan.sub1 }} <span class="title-text fw-semibold">{{ plan.sub2 }}</span></p>
 							<p class="card-text fs-4 m-0">Llamadas ilimitadas</p>
 							<p class="card-text fs-6 text-uppercase">USA|MEX|Canada</p>
 							<div class="border-bottom border-black border-1 p-1 w-100 mb-3"></div>

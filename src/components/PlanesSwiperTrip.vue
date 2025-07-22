@@ -22,7 +22,7 @@ defineProps<{
   imgAlt: string
 }>()
 
-const modules = [Navigation]
+const modules1 = [Navigation]
 </script>
 
 <template>
@@ -32,25 +32,25 @@ const modules = [Navigation]
       <div class="swiper-wrapper-container position-relative">
         <!-- Flechas laterales -->
         <button
-          class="btn swiper-button-prev-custom btn-arrow position-absolute start-0 top-50 translate-middle-y z-3"
+          class="btn swiper-button-prev-custom-1 btn-arrow position-absolute start-0 top-50 translate-middle-y z-3"
         >
           <i class="bi bi-caret-left-fill fs-3"></i>
         </button>
         <button
-          class="btn swiper-button-next-custom btn-arrow position-absolute end-0 top-50 translate-middle-y z-3"
+          class="btn swiper-button-next-custom-1 btn-arrow position-absolute end-0 top-50 translate-middle-y z-3"
         >
           <i class="bi bi-caret-right-fill fs-3"></i>
         </button>
 
         <!-- Swiper -->
         <Swiper
-          :modules="modules"
+          :modules="modules1"
           :slides-per-view="1"
           :space-between="20"
           :loop="true"
           :navigation="{
-            nextEl: '.swiper-button-next-custom',
-            prevEl: '.swiper-button-prev-custom'
+            nextEl: '.swiper-button-next-custom-1',
+            prevEl: '.swiper-button-prev-custom-1'
           }"
           :breakpoints="{
             768: { slidesPerView: 1 },
@@ -188,13 +188,13 @@ const modules = [Navigation]
 	flex-direction: column;
 }
 
-.swiper-button-prev-custom {
+.swiper-button-prev-custom-1 {
   left: -2.5rem !important; /* desplaza hacia la izquierda */
   border: none !important;
   color: #FFD401 !important;
 }
 
-.swiper-button-next-custom {
+.swiper-button-next-custom-1 {
   right: -2.5rem !important; /* desplaza hacia la derecha */
   border: none !important;
   color: #FFD401 !important;
@@ -202,8 +202,8 @@ const modules = [Navigation]
 
 /* Aumenta la zona de clic en pantallas grandes */
 @media (max-width: 768px) {
-  .swiper-button-prev-custom,
-  .swiper-button-next-custom {
+  .swiper-button-prev-custom-1,
+  .swiper-button-next-custom-1 {
     display: none !important;
   }
 }

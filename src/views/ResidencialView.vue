@@ -22,7 +22,7 @@
 	<LoaderComponent />
 	<HeaderComponent />
     <section class="hero-residencial d-none d-lg-block position-relative overflow-hidden" v-if="!loading">
-		<div class="container-fluid width-text position-absolute top-0 start-50 translate-middle-x text-center text-white px-3 mb-5 w-100 pt-5 mt-5">
+		<div class="container-fluid text-center text-white px-3 mb-5 w-100 pt-5 mt-5 mx-auto">
 			<div class="row pt-3 title-padding m-0"
 				v-motion-fade-visible
 				:delay="200"
@@ -37,14 +37,14 @@
 			</div>
   		</div>
 	</section>
-	<section class="hero-residencial-responsive d-block d-lg-none p-0">
+	<section class="hero-residencial-responsive d-block d-lg-none">
 		<div class="container-fluid p-0">
 			<img src="/img/residencial/banner-residencial-2.png" alt="Banner Residencial" class="img-fluid w-100 h-auto d-block mx-auto">
 		</div>
 	</section>
     <section class="jumbotron-residencial">
 		<div class="container py-2">
-			<div class="row g-5 m-0">
+			<div class="row g-5 m-0 overflow-hidden">
 				<div class="col-xl-5 pt-5"
 					v-motion-slide-visible-left
 					:delay="200"
@@ -124,7 +124,7 @@
 					INTERNET POR FIBRA ÓPTICA
 				</h2>
 			</div>
-			<div class="row p-4 g-5 m-0">
+			<div class="row p-0 p-md-5 p-lg-4 g-5 m-0">
 				<div v-for="plan in residencialData.plansInt" class="col-12 col-md-6 col-xl-4">
 					<div class="card text-center border-color-card h-100 d-flex shadow">
 						<div class="card-header fs-3 fw-bold">
@@ -133,16 +133,16 @@
 						<div class="card-body">
 							<CountCircleMBPS :value="Number(plan.mbps)" />
 							<div class="d-flex gap-2 justify-content-center mb-4 mb-lg-3 mt-3">
-								<div class="border icon-circle p-3">
+								<div class="border icon-circle p-3 shadow">
 									<img src="/img/inicio/icono-internet.png" alt="" class="mx-auto" width="25">
 								</div>
-								<div class="border icon-circle p-3">
+								<div class="border icon-circle p-3 shadow">
 									<img src="/img/inicio/icono-telefonia.png" alt="" class="mx-auto" width="25">
 								</div>
-								<div v-if="plan.simetrico" class="border icon-circle p-3">
+								<div v-if="plan.simetrico" class="border icon-circle p-3 shadow">
 									<img :src="plan.simetrico" alt="" class="mx-auto" width="25">
 								</div>
-								<div v-if="plan.repetidor" class="border icon-circle p-3">
+								<div v-if="plan.repetidor" class="border icon-circle p-3 shadow">
 									<img :src="plan.repetidor" alt="" class="mx-auto" width="25">
 								</div>
 							</div>
@@ -153,7 +153,7 @@
 							<div class="border-bottom border-black border-1 p-1 w-100 mb-3"></div>
 							<p v-if="plan.wifi" class="card-text fs-4 m-0">{{plan.wifi}}</p>
 							<p v-if="plan.repwifi" class="card-text fs-4 m-0">{{plan.repwifi}}</p>
-							<p class="card-text fs-4">{{ plan.sub1 }} <span class="title-text">{{ plan.sub2 }}</span></p>
+							<p class="card-text fs-4">{{ plan.sub1 }} <span class="title-text fw-semibold">{{ plan.sub2 }}</span></p>
 							<p class="card-text fs-4 m-0">Llamadas ilimitadas</p>
 							<p class="card-text fs-6 text-uppercase">USA|MEX|Canada</p>
 							<div class="border-bottom border-black border-1 p-1 w-100 mb-3"></div>
@@ -179,9 +179,28 @@
 </template>
 
 <style scoped>
-html, body {
-	overflow-x: hidden;
+* {
+  box-sizing: border-box;
 }
+
+body {
+  overflow-x: hidden !important;
+}
+
+html {
+  overflow-x: hidden !important;
+}
+
+.container,
+.container-fluid,
+.row,
+.col-12,
+.col-md-6,
+.col-xl-4 {
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+}
+
 
 .hero-residencial {
 	background-image: url('/img/residencial/banner-residencial-1.png'); 
@@ -202,7 +221,8 @@ html, body {
   min-height: 100vh; /* valor base para XS */
 }
 .width-text {
-	width: 90%;
+	max-width: 100%;
+	margin: 0 auto;
 }
 .subtitle-text {
 	color: #396E4B !important;

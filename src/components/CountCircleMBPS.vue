@@ -13,6 +13,8 @@ const textColorClass = computed(() => {
       return 'text-primary' // azul
     case '/negocios':
       return 'text-negocios' // verde
+    case '/pymes' :
+      return 'text-pymes'    
     default:
       return 'text-residencial' // clase por defecto
   }
@@ -26,6 +28,8 @@ const circleStrokeColor = computed(() => {
       return '#0d6efd' // Bootstrap "primary" azul
     case '/negocios':
       return '#FFD401' // Bootstrap "success" verde
+    case '/pymes' :
+      return '#64B7D9'  
     default:
       return '#396E4B' // Color por defecto
   }
@@ -130,6 +134,9 @@ onMounted(() => {
 }
 .text-negocios {
   color: #FFD401;
+}
+.text-pymes {
+  color: #64B7D9;
 }
 .large-text {
   font-size: 2.5rem;

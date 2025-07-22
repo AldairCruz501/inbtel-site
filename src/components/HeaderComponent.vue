@@ -31,6 +31,14 @@ const routeStyles: Record<string, {
     logoAfterScroll: '/img/logo-blanco.png',
     scrollBackgroundClass: 'bg-negocios'
   },
+  '/pymes': {
+    colorBeforeScroll: 'text-pymes',
+    colorAfterScroll: 'text-white',
+    btnClass: 'btn-outline-pymes',
+    logoBeforeScroll: '/img/logo-color.png',
+    logoAfterScroll: '/img/logo-blanco.png',
+    scrollBackgroundClass: 'bg-pymes'
+  },
   // otras rutas...
 }
 
@@ -113,7 +121,7 @@ onUnmounted(() => {
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span><i class="bi bi-list fs-1 color-burger"></i></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-start ms-2" id="navbarNav">
           <ul class="navbar-nav align-items-center fw-bold">
             <li class="nav-item mx-xl-2"><router-link class="nav-link" :class="linkClass" to="/residencial">Residencial</router-link></li>
             <li class="nav-item mx-xl-2"><router-link class="nav-link" :class="linkClass" to="/gamer">Gamer</router-link></li>
@@ -192,11 +200,15 @@ nav {
 }
 
 .bg-gamer{
-  background-color: #00133E;
+  background-color: #00133E#00133E;
 }
 
 .bg-negocios {
   background-color: #F27900;
+}
+
+.bg-pymes {
+  background-color: #1978A4;
 }
 
 .logo {
@@ -223,6 +235,11 @@ nav {
   color: #F27900;
 }
 
+.text-pymes {
+  transition: color 0.3s ease;
+  color: #0061aa;
+}
+
 .text-gamer:hover {
   color: #FFFFFF !important;
     border: 1px solid #54e1fb ;
@@ -240,6 +257,13 @@ nav {
   border: 1px solid #D73D5D;
   border-radius: 3px;
 }
+
+.text-pymes:hover {
+  color: #64B7D9!important;
+  border: 1px solid #64B7D9;
+  border-radius: 3px;
+}
+
 
 
 .dropdown-menu {
@@ -289,6 +313,18 @@ nav {
   border: 1px solid #D73D5D;
   background-color: #ffffff;
   color: #D73D5D;
+}
+
+.btn-outline-pymes {
+  background-color: #64B7D9; 
+  color: #FFFFFF;
+  font-weight: bold !important;
+}
+
+.btn-outline-pymes:hover {
+  border: 1px solid #00A0B0;
+  background-color: #ffffff;
+  color: #00A0B0;
 }
 
 .navbar-toggler {
