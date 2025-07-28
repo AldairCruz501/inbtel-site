@@ -2,6 +2,8 @@
 <script setup>
 import { ref } from 'vue'
 import axios from 'axios'
+import Swal from 'sweetalert2'
+
 
 const form = ref({
   name: '',
@@ -22,26 +24,33 @@ const handleSubmit = async () => {
   const phoneValid = /^\d{10}$/.test(form.value.phone)
   const emailValid = /\S+@\S+\.\S+/.test(form.value.email)
 
-  if (!formValid || !phoneValid || !emailValid) {
-    console.warn('Formulario no válido')
+  if (!formValid) {
+    Swal.fire('Formulario incompleto', 'Por favor, completa todos los campos.', 'warning')
+    return
+  }
+
+  if (!emailValid) {
+    Swal.fire('Correo inválido', 'Por favor, ingresa un correo válido.', 'warning')
+    return
+  }
+
+  if (!phoneValid) {
+    Swal.fire('Teléfono inválido', 'Ingresa un número de 10 dígitos.', 'warning')
     return
   }
 
   isLoading.value = true
 
   try {
-    // Obtener token reCAPTCHA v3
     const token = await grecaptcha.execute(recaptchaSiteKey, { action: 'submit' })
 
-    // Enviar datos al servidor
-    const response = await axios.post('https://inbtel.com/contacto/contacto-prueba.php', {
+    const response = await axios.post('/form-handler.php', {
       ...form.value,
       'g-recaptcha-response': token
     })
 
     if (response.data.status === 'success') {
-      alert('Formulario enviado correctamente')
-      // limpiar formulario
+      Swal.fire('¡Enviado!', response.data.message, 'success')
       form.value = {
         name: '',
         email: '',
@@ -51,12 +60,12 @@ const handleSubmit = async () => {
       }
       wasValidated.value = false
     } else {
-      alert('Error: ' + response.data.message)
+      Swal.fire('Error', response.data.message, 'error')
     }
 
   } catch (error) {
     console.error('Error en envío:', error)
-    alert('Hubo un error al enviar el formulario.')
+    Swal.fire('Error', 'Ocurrió un error inesperado al enviar el formulario.', 'error')
   } finally {
     isLoading.value = false
   }
