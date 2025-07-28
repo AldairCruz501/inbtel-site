@@ -109,7 +109,7 @@ const handleSubmit = async () => {
           type="tel"
           class="form-control input-lg"
           placeholder="Teléfono"
-          pattern="\\d{10}"
+          pattern="\d{10}"
           required
         />
         <div class="invalid-feedback">Ingresa un teléfono válido de 10 dígitos.</div>
