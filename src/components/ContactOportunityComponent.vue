@@ -44,7 +44,7 @@ const handleSubmit = async () => {
   try {
     const token = await grecaptcha.execute(recaptchaSiteKey, { action: 'submit' })
 
-    const response = await axios.post('/form-handler.php', {
+    const response = await axios.post('https://inbtel.com/contacto/contacto-prueba.php', {
       ...form.value,
       'g-recaptcha-response': token
     })
