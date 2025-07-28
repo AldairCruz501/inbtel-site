@@ -3,6 +3,7 @@
 import { ref } from 'vue'
 import axios from 'axios'
 import Swal from 'sweetalert2'
+import qs from 'qs'
 
 
 const form = ref({
@@ -44,10 +45,18 @@ const handleSubmit = async () => {
   try {
     const token = await grecaptcha.execute(recaptchaSiteKey, { action: 'submit' })
 
-    const response = await axios.post('https://inbtel.com/contacto/contacto-prueba.php', {
-      ...form.value,
-      'g-recaptcha-response': token
-    })
+    const response = await axios.post(
+        'https://inbtel.com/contacto/contacto-prueba.php',
+        qs.stringify({
+            ...form.value,
+            'g-recaptcha-response': token
+        }),
+        {
+            headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+            }
+        }
+    )
 
     if (response.data.status === 'success') {
       Swal.fire('¡Enviado!', response.data.message, 'success')
