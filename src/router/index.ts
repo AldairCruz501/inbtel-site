@@ -7,6 +7,7 @@ import NegociosView from '../views/NegociosView.vue'
 import PymesView from '../views/PymesView.vue'
 import EmpresarialView from '../views/EmpresarialView.vue'
 import DistribuidorView from '../views/DistribuidorView.vue'
+import VendedorView from '../views/VendedorView.vue'
 
 const routes: RouteRecordRaw[] = [
   {
@@ -48,7 +49,12 @@ const routes: RouteRecordRaw[] = [
     path: '/distribuidor-autorizado',
     component: DistribuidorView,
     meta: {title: 'Distribuidor Autorizado | INBTEL'}
-  },   
+  },
+  {
+    path: '/vendedor-comisionista',
+    component: VendedorView,
+    meta: {title: 'Vendedor Comisionista | INBTEL'}
+  }   
 ]
 
 const router = createRouter({
