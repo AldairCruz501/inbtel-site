@@ -6,6 +6,7 @@ import TelevisionView from '../views/TelevisionView.vue'
 import NegociosView from '../views/NegociosView.vue'
 import PymesView from '../views/PymesView.vue'
 import EmpresarialView from '../views/EmpresarialView.vue'
+import DistribuidorView from '../views/DistribuidorView.vue'
 
 const routes: RouteRecordRaw[] = [
   {
@@ -42,6 +43,11 @@ const routes: RouteRecordRaw[] = [
     path: '/empresarial',
     component: EmpresarialView,
     meta: {title: 'Internet para Pymes | INBTEL'}
+  },
+  {
+    path: '/distribuidor-autorizado',
+    component: DistribuidorView,
+    meta: {title: 'Distribuidor Autorizado | INBTEL'}
   },   
 ]
 
