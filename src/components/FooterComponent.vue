@@ -56,15 +56,15 @@
           <ul class="list-unstyled">
             <li><a href="/codigo-gestion-trafico" target="_blank" class="text-white text-decoration-none">Código de Política de Gestión de Tráfico</a></li>
             <li><a href="/lineamientos-de-informacion" target="_blank" class="text-white text-decoration-none">Lineamientos de información</a></li>
-            <li><a href="" target="_blank" class="text-white text-decoration-none">Colaboración con la justicia</a></li>
+            <li><a href="#" target="_blank" class="text-white text-decoration-none">Colaboración con la justicia</a></li>
             <li><a href="/contrato-dobleplay" target="_blank" class="text-white text-decoration-none">Contrato PROFECO DoblePlay</a></li>
             <li><a href="/contrato-tripleplay" target="_blank" class="text-white text-decoration-none">Contrato PROFECO TriplePlay</a></li>
             <li><a href="/derechos-usuarios" target="_blank" class="text-white text-decoration-none">Derechos de los usuarios</a></li>
             <li><a href="/cod-practicas-comerciales" class="text-white text-decoration-none">Código de Prácticas Comerciales</a></li>
-            <li><a href="#" class="text-white text-decoration-none">Cobertura Nacional</a></li>
-            <li><a href="#" class="text-white text-decoration-none">Tarifas</a></li>
-            <li><a href="#" class="text-white text-decoration-none">Tarifas Registradas Doble Play ante la IFT</a></li>
-            <li><a href="#" class="text-white text-decoration-none">Tarifas Registradas Triple Play ante la IFT</a></li>
+            <li><a href="http://ucsweb.ift.org.mx/vrpc/" target="_blank" class="text-white text-decoration-none">Cobertura Nacional</a></li>
+            <li><a href="http://ucsweb.ift.org.mx/ift_visor/" target="_blank" class="text-white text-decoration-none">Tarifas</a></li>
+            <li><a href="#" target="_blank" class="text-white text-decoration-none">Tarifas Registradas Doble Play ante la IFT</a></li>
+            <li><a href="#" target="_blank" class="text-white text-decoration-none">Tarifas Registradas Triple Play ante la IFT</a></li>
           </ul>
         </div>
       </div>
