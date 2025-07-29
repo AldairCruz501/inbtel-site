@@ -50,7 +50,7 @@ const handleSubmit = async () => {
     const res = await axios.post('https://inbtel.com/contacto/prueba-contacto.php', formData)
     if (res.data.status === 'success') {
       Swal.fire('¡Éxito!', res.data.message, 'success')
-      form.value = { name: '', email: '', phone: '', address: '', subject: '', message: '', client: '' }
+      form.value = { name: '', email: '', phone: '', address: '', subject: '', message: '', isClient: '' }
     } else {
       Swal.fire('Error', res.data.message, 'error')
     }
