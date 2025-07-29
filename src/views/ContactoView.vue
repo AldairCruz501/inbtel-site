@@ -62,7 +62,7 @@ const handleSubmit = async () => {
 
 onMounted(() => {
   const script = document.createElement('script')
-  script.src = 'https://www.google.com/recaptcha/api.js?render=TU_CLAVE_RECAPTCHA_V3'
+  script.src = 'https://www.google.com/recaptcha/api.js?render=6LdWkpIrAAAAAOgHmxJxJpZUv0VwnjDKbgYOB72F'
   document.head.appendChild(script)
 })
 
