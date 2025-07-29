@@ -156,7 +156,7 @@
                 Proporcionamos a tu empresa una conexción
 				segura, initerrumpida y de alta velocidad
             </h3>
-            <h3 class="display-5 subtitle-text fw-semibold text-uppercase d-block d-md-none">
+            <h3 class="display-6 subtitle-text fw-semibold text-uppercase d-block d-md-none">
                 Proporcionamos a tu empresa una conexción
 				segura, initerrumpida y de alta velocidad
             </h3>
@@ -248,7 +248,7 @@
 	</section>
 	<section class="hero-residencial-responsive d-block d-lg-none p-0">
 		<div class="container-fluid p-0">
-			<img src="/img/empresarial/clientes-empresarial.png" alt="Banner Residencial" class="img-fluid w-100 h-auto d-block mx-auto">
+			<img src="/img/empresarial/clientes-empresarial-2.png" alt="Banner Residencial" class="img-fluid w-100 h-auto d-block mx-auto">
 		</div>
 	</section>
 	<!-- <CovaregeMap /> -->
@@ -306,32 +306,14 @@
 
 @media (max-width: 575.98px) {
   .text-subtitle {
-    font-size: 1.75rem;
+    font-size: 1.8rem;
   }
   .text-title {
-    font-size: 2.25rem;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .text-subtitle {
     font-size: 2rem;
   }
-  .text-title {
-    font-size: 2.5rem;
-  }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .text-subtitle {
-    font-size: 2.25rem;
-  }
-  .text-title {
-    font-size: 2.75rem;
-  }
-}
-
-@media (min-width: 992px) {
+@media (min-width: 576px) {
   .text-subtitle {
     font-size: 3.5rem;
   }

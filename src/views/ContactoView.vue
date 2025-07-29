@@ -71,15 +71,15 @@ onMounted(() => {
 <template>
 	<LoaderComponent />
 	<HeaderComponent />
-    <section class="hero-contacto align-items-center pt-5" v-if="!loading">
+    <section class="hero-contacto  d-lg-block align-items-center pt-5" v-if="!loading">
         <div class="container-fluid width-text">
-            <div class="row pt-5 mt-5"
+            <div class="row pt-lg-5 mt-lg-5 justify-content-center justify-content-lg-start"
                 v-motion-slide-visible-left
                 :delay="200"
                 :duration="1200"
             >
-                <div class="col-lg-6 text-capitalize mt-5">
-					<h1 class="title-size subtitle-text fw-semibold mb-3">¡Contáctanos!</h1>
+                <div class="col-lg-6 text-capitalize mt-5 pt-4">
+					          <h1 class="title-size subtitle-text fw-semibold mb-3">¡Contáctanos!</h1>
                     <img src="/img/logo-color.png" alt="img" class="img-fluid mx-auto" style="width: 60%;">
                 </div>
             </div>
@@ -232,6 +232,24 @@ onMounted(() => {
 }
 .title-ideal {
 	font-size: 8.5rem;
+}
+
+@media (max-width: 320px) {
+  .title-size {
+    font-size: 2.5rem !important;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 575.99px) {
+  .title-size {
+    font-size: 3rem !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.99px) {
+  .title-size {
+    font-size: 4rem !important;
+  }
 }
 
 </style>

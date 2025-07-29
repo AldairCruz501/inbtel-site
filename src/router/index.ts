@@ -10,6 +10,8 @@ import DistribuidorView from '../views/DistribuidorView.vue'
 import VendedorView from '../views/VendedorView.vue'
 import ContactoView from '../views/ContactoView.vue'
 import PdfViewer from '../components/PdfViewer.vue'
+import AvisoPrivacidadView from '../views/AvisoPrivacidadView.vue'
+import TerminosCondicionesView from '../views/TerminosCondicionesView.vue'
 
 const routes: RouteRecordRaw[] = [
   {
@@ -62,8 +64,16 @@ const routes: RouteRecordRaw[] = [
     component: ContactoView,
     meta: {title: 'Contacto | INBTEL'}
   },
-  
-
+  {
+    path: '/aviso-de-privacidad',
+    component: AvisoPrivacidadView,
+    meta: {title: 'Aviso de Privacidad | INBTEL'}
+  },
+  {
+    path: '/terminos-y-condiciones',
+    component: TerminosCondicionesView,
+    meta: {title: 'Términos y Condiciones | INBTEL'}
+  },
     // Rutas para PDFs (con iframe nativo)
   {
     path: '/codigo-gestion-trafico',

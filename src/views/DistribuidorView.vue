@@ -21,9 +21,9 @@
 <template>
 	<LoaderComponent />
 	<HeaderComponent />
-    <section class="hero-distribuidor d-none d-lg-flex align-items-center pt-5" v-if="!loading">
+    <section class="hero-distribuidor d-flex align-items-center pt-5" v-if="!loading">
         <div class="container-fluid width-text">
-            <div class="row pt-5"
+            <div class="row pt-5 justify-content-center justify-content-lg-start"
                 v-motion-slide-visible-left
                 :delay="200"
                 :duration="1200"
@@ -35,68 +35,65 @@
             </div>
         </div>
 	</section>
-    <section class="hero-residencial-responsive d-block d-lg-none p-0">
-		<div class="container-fluid p-0">
-			<img src="/img/pymes/banner-pyme-2.png" alt="Banner Residencial" class="img-fluid w-100 h-auto d-block mx-auto">
-		</div>
-	</section>
-    <section class="bg-white">
-		<div class="container-fluid py-2" 
-			v-motion-fade-visible
-			:delay="200"
-			:duration="1200"
-		>
-			<div class="row g-4 p-0">
-				<div class="col-md-6 col-lg-4 p-0 h-100">
-					<img src="/img/distribuidor/nosotros-distribuidor.png" alt="img-girl" class="img-fluid">
-				</div>
-				<div class="col-md-6 col-lg-8 p-0">
-					<div class="h-100">
-						<div class="mt-5">
-							<div class="text-start">
-								<h2 class="title-text fw-semibold display-1">
-									¡Conviértete en <br class="lh-1">
-									Distribuidor Autorizado!
-								</h2>
-								<p class="pt-3 fs-2 text-dark">
-									Si tienes experiencia en ventas y un equipo comprometido, esta es tu
-									oportunidad para impulsar el crecimiento en tu comunidad, ofreciendo
-									conectividad de calidad y comercializando nuestros servicios de:
-								</p>
-								<div class="d-flex align-content-start justify-content-start pt-1">
-									<div class="px-1">
-										<div class="text-center">
-											<img src="/img/distribuidor/icono1-distribuidor.png" alt="img-icono" class="img-fluid w-75" >
-											<div class="flex-column">
-												<span class="fs-3 title-text fw-semibold">Internet</span>
-											</div>
-										</div>
-									</div>
-									<div class="px-1">
-										<div class="text-center">
-											<img src="/img/distribuidor/icono2-distribuidor.png" alt="img-icono" class="img-fluid" style="width: 80%;">
-											<div class="flex-column">
-												<span class="fs-3 title-text fw-semibold">Telefonía</span>
-											</div>
-										</div>
-									</div>
-									<div class="px-1">
-										<div class="text-center">
-											<img src="/img/distribuidor/icono3-distribuidor.png" alt="img-icono" class="img-fluid" style="width: 81%;">
-											<div class="flex-column">
-												<span class="fs-3 title-text fw-semibold">Tv</span>
-											</div>
-										</div>
-									</div>
+<section class="bg-white">
+	<div class="container-fluid py-3" 
+		v-motion-fade-visible
+		:delay="200"
+		:duration="1200"
+	>
+		<div class="row g-4 p-3 p-lg-0">
+			<!-- Imagen lateral -->
+			<div class="col-md-6 col-lg-4 p-0 h-100">
+				<img src="/img/distribuidor/nosotros-distribuidor.png" alt="img-girl" class="img-fluid">
+			</div>
+
+			<!-- Contenido principal -->
+			<div class="col-md-6 col-lg-8 p-0">
+				<div class="h-100 mt-4 mt-lg-5">
+					<div class="text-start">
+						<h2 class="section-title text-color">
+							¡Conviértete en <br class="lh-1">
+							Distribuidor Autorizado!
+						</h2>
+
+						<p class="section-paragraph pt-3 text-dark">
+							Si tienes experiencia en ventas y un equipo comprometido, esta es tu
+							oportunidad para impulsar el crecimiento en tu comunidad, ofreciendo
+							conectividad de calidad y comercializando nuestros servicios de:
+						</p>
+
+						<!-- Iconos de servicios -->
+						<div class="d-flex justify-content-center justify-content-lg-start flex-wrap gap-3 pt-3">
+							<div class="text-center" style="min-width: 100px;">
+								<img src="/img/distribuidor/icono1-distribuidor.png" alt="icono-internet" class="img-fluid w-75">
+								<div class="flex-column">
+									<span class="section-icon-label title-text">Internet</span>
+								</div>
+							</div>
+
+							<div class="text-center" style="min-width: 100px;">
+								<img src="/img/distribuidor/icono2-distribuidor.png" alt="icono-telefonía" class="img-fluid w-75">
+								<div class="flex-column">
+									<span class="section-icon-label title-text">Telefonía</span>
+								</div>
+							</div>
+
+							<div class="text-center" style="min-width: 100px;">
+								<img src="/img/distribuidor/icono3-distribuidor.png" alt="icono-tv" class="img-fluid w-75">
+								<div class="flex-column">
+									<span class="section-icon-label title-text">Tv</span>
 								</div>
 							</div>
 						</div>
+						<!-- Fin iconos -->
 					</div>
 				</div>
 			</div>
-  		</div>
-	</section>  
-    <section class="jumbotron-dist-contact d-none d-lg-block">
+		</div>
+	</div>
+</section>
+
+    <section class="jumbotron-dist-contact">
 		<div class="container-fluid py-2 width-text" 
 			v-motion-fade-visible
 			:delay="200"
@@ -226,11 +223,6 @@
 			</div>
   		</div>
 	</section>
-	    <section class="hero-residencial-responsive d-block d-lg-none p-0">
-		<div class="container-fluid p-0">
-			<img src="/img/pymes/clientes-pyme-2.png" alt="Banner Residencial" class="img-fluid w-100 h-auto d-block mx-auto">
-		</div>
-	</section>
 	<FooterComponent />
 </template>
 
@@ -253,6 +245,36 @@
     background-repeat: no-repeat;
     min-height: 150vh; /* valor base para XS */
 }
+
+/* Escala de títulos */
+.section-title {
+	font-weight: 600;
+	line-height: 1.2;
+	font-size: 2rem; /* base móvil */
+}
+
+.section-paragraph {
+	font-size: 1rem;
+}
+
+.section-icon-label {
+	font-size: 1.125rem;
+	font-weight: 600;
+}
+
+/* A partir de LG (≥992px), mantenemos tamaños grandes */
+@media (min-width: 992px) {
+	.section-title {
+		font-size: 4.5rem; /* equivalente a display-1 */
+	}
+	.section-paragraph {
+		font-size: 2rem; /* equivalente a fs-2 */
+	}
+	.section-icon-label {
+		font-size: 1.75rem; /* equivalente a fs-3 */
+	}
+}
+
 .text-justify {
 	text-align: justify !important;
 }
@@ -278,76 +300,4 @@
 .title-ideal {
 	font-size: 8.5rem;
 }
-
-.border-color {
-	border: 2px solid #FFFFFF !important;
-	  background: 
-    linear-gradient(
-      rgba(151, 151, 151, 0.3), 
-      rgba(151, 151, 151, 0.3)
-    );
-  color: white;
-}
-
-.border-bottom-color {
-	border-bottom: 2px solid #64B7D9 !important;
-	width: 50% !important;
-}
-
-.border-color-card {
-	border: 1px solid #64B7D9;
-}
-
-.btn-primary {
-	background-color: #64B7D9 !important;
-	color: #FFFFFF;
-	border: 1px solid	#64B7D9 !important;
-}
-
-.btn-primary:hover {
-	background-color: #ffffff !important;
-	border: 1px solid	#64B7D9 !important;
-	color: #64B7D9
-}
-
-.btn-light {
-	background-color: #ffffff;
-	border: 1px solid	#396E4B !important;
-	color: #396E4B;
-}
-
-.btn-light:hover {
-	background-color: #396E4B;
-	border: 1px solid #ffffff !important;
-	color: #ffffff;
-}
-
-.card-header {
-	background-color: #64B7D9;
-	color: #ffffff;
-}
-
-.plan-circle {
-	width: 120px;
-	height: 120px;
-	border-radius: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-weight: bold;
-	margin: 0 auto 1rem auto;
-	flex-direction: column;
-}
-
-.icon-circle {
-	width: 60px;
-	height: 60px;
-	border-radius: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-weight: bold;
-	flex-direction: column;
-}
-
 </style>

@@ -21,9 +21,9 @@
 <template>
 	<LoaderComponent />
 	<HeaderComponent />
-    <section class="hero-distribuidor d-none d-lg-flex align-items-center pt-5" v-if="!loading">
+    <section class="hero-distribuidor d-flex align-items-center pt-5" v-if="!loading">
         <div class="container-fluid width-text">
-            <div class="row pt-5"
+            <div class="row pt-5 justify-content-center justify-content-lg-start"
                 v-motion-slide-visible-left
                 :delay="200"
                 :duration="1200"
@@ -35,21 +35,16 @@
             </div>
         </div>
 	</section>
-    <section class="hero-residencial-responsive d-block d-lg-none p-0">
-		<div class="container-fluid p-0">
-			<img src="/img/pymes/banner-pyme-2.png" alt="Banner Residencial" class="img-fluid w-100 h-auto d-block mx-auto">
-		</div>
-	</section>
     <section class="bg-white">
-		<div class="container-fluid py-2" 
+		<div class="container-fluid py-3" 
 			v-motion-fade-visible
 			:delay="200"
 			:duration="1200"
 		>
-			<div class="row g-4 p-0">
-				<div class="col-md-6 col-lg-8 ps-5">
+			<div class="row g-4 p-4 p-xl-0">
+				<div class="col-xl-8 p-0">
 					<div class="h-100">
-						<div class="mt-5">
+						<div class="mt-5 ms-xl-5">
 							<div class="text-justify">
 								<h2 class="title-text fw-semibold display-3">
 									¡Únete al equipo de <br class="lh-1">
@@ -69,22 +64,19 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-4 p-0 h-100">
+				<div class="col-xl-4 p-0 h-100">
 					<img src="/img/vendedor/nosotros-vendedor.png" alt="img-girl" class="img-fluid">
 				</div>
 			</div>
   		</div>
 	</section>  
-    <section class="jumbotron-dist-contact d-none d-lg-block">
+    <section class="jumbotron-dist-contact">
 		<div class="container-fluid py-2 width-text" 
 			v-motion-fade-visible
 			:delay="200"
 			:duration="1200"
 		>
-			<div class="row g-3 pb-5">
-				<div class="col-12 col-xl-5 d-flex">
-					<ContactOportunityComponent/>
-				</div>
+			<div class="row flex-lg-row-reverse fle g-3 pb-5">
 				<div class="col-12 col-xl-7 text-justify">
 					<div class="pt-5">
 						<h3 class="text-color fw-semibold display-6 mt-5">¿En qué consiste ser Vendedor Online INBTEL?</h3>
@@ -186,6 +178,9 @@
 							<li><i class="bi bi-check-lg fs-5 resalt-text mx-3"></i>Documentación en regla (INE, comprobante de domicilio, etc.).</li>
 						</ul>											
 					</div>						
+				</div>
+				<div class="col-12 col-xl-5 d-flex">
+					<ContactOportunityComponent/>
 				</div>
 				<div class="mt-5 text-center">
 					<h2 class="fw-bold display-5 text-color text-uppercase">

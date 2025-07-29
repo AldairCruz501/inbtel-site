@@ -256,7 +256,7 @@
 			</div>
   		</div>
 	</section>
-	    <section class="hero-residencial-responsive d-block d-lg-none p-0">
+	<section class="hero-residencial-responsive d-block d-lg-none p-0">
 		<div class="container-fluid p-0">
 			<img src="/img/pymes/clientes-pyme-2.png" alt="Banner Residencial" class="img-fluid w-100 h-auto d-block mx-auto">
 		</div>
