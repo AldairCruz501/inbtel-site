@@ -30,12 +30,12 @@
           <ul class="list-unstyled">
             <li><router-link to="/residencial" class="text-white text-decoration-none">Planes Residenciales</router-link></li>
             <li><router-link to="/gamer" class="text-white text-decoration-none">Planes gamer</router-link></li>
-            <li><router-link to="/" class="text-white text-decoration-none">Cobertura</router-link></li>
-            <li><router-link to="/" class="text-white text-decoration-none">Servicios Voz IP</router-link></li>
-            <li><router-link to="/" class="text-white text-decoration-none">Contacto</router-link></li>
-            <li><router-link to="/" class="text-white text-decoration-none">Recomienda y gana</router-link></li>
-            <li><router-link to="/" class="text-white text-decoration-none">Términos y Condiciones</router-link></li>
-            <li><router-link to="/" class="text-white text-decoration-none">Aviso de Privacidad</router-link></li>
+            <!-- <li><router-link to="/" class="text-white text-decoration-none">Cobertura</router-link></li> -->
+            <li><router-link to="/empresarial" class="text-white text-decoration-none">Servicios Voz IP</router-link></li>
+            <li><router-link to="/contacto" class="text-white text-decoration-none">Contacto</router-link></li>
+            <!-- <li><router-link to="/" class="text-white text-decoration-none">Recomienda y gana</router-link></li> -->
+            <li><router-link to="/terminos-y-condiciones" class="text-white text-decoration-none">Términos y Condiciones</router-link></li>
+            <li><router-link to="/aviso-de-privacidad" class="text-white text-decoration-none">Aviso de Privacidad</router-link></li>
           </ul>
         </div>
 
@@ -54,13 +54,13 @@
         <div class="col-lg-3 mb-4 mt-4">
           <h6 class="fw-bold mb-3 fs-3">Legal</h6>
           <ul class="list-unstyled">
-            <li><a href="#" class="text-white text-decoration-none">Código de Política de Gestión de Tráfico</a></li>
-            <li><a href="#" class="text-white text-decoration-none">Lineamientos de información</a></li>
-            <li><a href="#" class="text-white text-decoration-none">Colaboración con la justicia</a></li>
-            <li><a href="#" class="text-white text-decoration-none">Contrato PROFECO DoblePlay</a></li>
-            <li><a href="#" class="text-white text-decoration-none">Contrato PROFECO TriplePlay</a></li>
-            <li><a href="#" class="text-white text-decoration-none">Derechos de los usuarios</a></li>
-            <li><a href="#" class="text-white text-decoration-none">Código de Prácticas Comerciales</a></li>
+            <li><a href="/codigo-gestion-trafico" target="_blank" class="text-white text-decoration-none">Código de Política de Gestión de Tráfico</a></li>
+            <li><a href="/lineamientos-de-informacion" target="_blank" class="text-white text-decoration-none">Lineamientos de información</a></li>
+            <li><a href="" target="_blank" class="text-white text-decoration-none">Colaboración con la justicia</a></li>
+            <li><a href="/contrato-dobleplay" target="_blank" class="text-white text-decoration-none">Contrato PROFECO DoblePlay</a></li>
+            <li><a href="/contrato-tripleplay" target="_blank" class="text-white text-decoration-none">Contrato PROFECO TriplePlay</a></li>
+            <li><a href="/derechos-usuarios" target="_blank" class="text-white text-decoration-none">Derechos de los usuarios</a></li>
+            <li><a href="/cod-practicas-comerciales" class="text-white text-decoration-none">Código de Prácticas Comerciales</a></li>
             <li><a href="#" class="text-white text-decoration-none">Cobertura Nacional</a></li>
             <li><a href="#" class="text-white text-decoration-none">Tarifas</a></li>
             <li><a href="#" class="text-white text-decoration-none">Tarifas Registradas Doble Play ante la IFT</a></li>

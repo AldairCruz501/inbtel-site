@@ -139,7 +139,7 @@ onUnmounted(() => {
               </ul>
             </li>
             <li class="nav-item mx-xl-2">
-              <a :class="['btn px-3', btnClass]" href="#">Mi Cuenta</a>
+              <a :class="['btn px-3', btnClass]" href="https://proxy.inbtel.com/accounts/login/?next=/panel/" target="_blank">Mi Cuenta</a>
             </li>
           </ul>
         </div>
@@ -174,7 +174,7 @@ onUnmounted(() => {
               </ul>
             </li>
             <li class="nav-item mx-xl-2 ">
-              <a :class="['btn px-3', btnClass]" href="#">Mi Cuenta</a>
+              <a :class="['btn px-3', btnClass]" href="https://proxy.inbtel.com/accounts/login/?next=/panel/" target="_blank">Mi Cuenta</a>
             </li>
           </ul>
         </div>
@@ -200,7 +200,7 @@ nav {
 }
 
 .bg-gamer{
-  background-color: #00133E#00133E;
+  background-color: #00133E;
 }
 
 .bg-negocios {

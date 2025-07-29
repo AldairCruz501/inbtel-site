@@ -8,6 +8,8 @@ import PymesView from '../views/PymesView.vue'
 import EmpresarialView from '../views/EmpresarialView.vue'
 import DistribuidorView from '../views/DistribuidorView.vue'
 import VendedorView from '../views/VendedorView.vue'
+import ContactoView from '../views/ContactoView.vue'
+import PdfViewer from '../components/PdfViewer.vue'
 
 const routes: RouteRecordRaw[] = [
   {
@@ -43,7 +45,7 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/empresarial',
     component: EmpresarialView,
-    meta: {title: 'Internet para Pymes | INBTEL'}
+    meta: {title: 'Internet Empresarial | INBTEL'}
   },
   {
     path: '/distribuidor-autorizado',
@@ -54,7 +56,63 @@ const routes: RouteRecordRaw[] = [
     path: '/vendedor-comisionista',
     component: VendedorView,
     meta: {title: 'Vendedor Comisionista | INBTEL'}
-  }   
+  },  
+  {
+    path: '/contacto',
+    component: ContactoView,
+    meta: {title: 'Contacto | INBTEL'}
+  },
+  
+
+    // Rutas para PDFs (con iframe nativo)
+  {
+    path: '/codigo-gestion-trafico',
+    component: PdfViewer,
+    meta: {
+      title: 'Código de Política de Gestión de Tráfico | INBTEL',
+      pdfFile: 'Gestion_de_Trafico.pdf',
+    },
+  },
+  {
+    path: '/lineamientos-de-informacion',
+    component: PdfViewer,
+    meta: {
+      title: 'Lineamientos de información | INBTEL',
+      pdfFile: 'Lineamientos.pdf',
+    },
+  },
+  {
+    path: '/contrato-dobleplay',
+    component: PdfViewer,
+    meta: {
+      title: 'Contrato PROFECO DoblePlay | INBTEL',
+      pdfFile: '20240416-INBTEL-registro-contrato-de-adhesion-doble-play.pdf',
+    },
+  },
+  {
+    path: '/contrato-tripleplay',
+    component: PdfViewer,
+    meta: {
+      title: 'Contrato PROFECO TriplePlay | INBTEL',
+      pdfFile: '20240227-INBTEL-registro-contrato-de-adhesion-triple-play.pdf',
+    },
+  },
+  {
+    path: '/derechos-usuarios',
+    component: PdfViewer,
+    meta: {
+      title: 'Derechos de los usuarios | INBTEL',
+      pdfFile: 'derechos.pdf',
+    },
+  },
+  {
+    path: '/cod-practicas-comerciales',
+    component: PdfViewer,
+    meta: {
+      title: 'Código de Prácticas Comerciales | INBTEL',
+      pdfFile: 'practicas_2021.pdf',
+    },
+  },
 ]
 
 const router = createRouter({

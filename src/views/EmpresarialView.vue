@@ -36,7 +36,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="container-fluid bg-advantage p-4">
+	<section id="ventajas" class="container-fluid bg-advantage p-4">
         <div 
             class="text-center"
             div v-motion-fade-visible 
