@@ -38,7 +38,7 @@ const handleSubmit = async () => {
     return
   }
 
-  const token = await (window as any).grecaptcha.execute('TU_CLAVE_RECAPTCHA_V3', { action: 'submit' })
+  const token = await (window as any).grecaptcha.execute('6LdWkpIrAAAAAOgHmxJxJpZUv0VwnjDKbgYOB72F', { action: 'submit' })
 
   const formData = new FormData()
   Object.entries(form.value).forEach(([key, value]) => {
