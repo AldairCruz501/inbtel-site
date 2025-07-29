@@ -25,7 +25,7 @@ const form = ref({
   address: '',
   subject: '',
   message: '',
-  client: ''
+  isClient: ''
 })
 
 const handleSubmit = async () => {
@@ -104,11 +104,11 @@ onMounted(() => {
                 <label class="form-label fw-bold fs-5 subtitle-text">¿Eres cliente Inbtel?</label>
                 <br>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" value="Sí" v-model="form.client" id="clientYes" />
+                  <input class="form-check-input" type="radio" value="Sí" v-model="form.isClient" id="clientYes" />
                   <label class="form-check-label" for="clientYes">Sí</label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" value="No" v-model="form.client" id="clientNo" />
+                  <input class="form-check-input" type="radio" value="No" v-model="form.isClient" id="clientNo" />
                   <label class="form-check-label" for="clientNo">No</label>
                 </div>
               </div>
