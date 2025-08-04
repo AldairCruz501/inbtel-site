@@ -27,7 +27,7 @@
 				:duration="1200"
 			>
 				<div class="col-lg-6 text-uppercase">
-					<span class="display-6 fw-bold lh-1 m-0 television-text">Television hd</span>
+					<span class="display-6 fw-bold lh-1 m-0 television-text">Televisión hd</span>
 					<h2 class="display-4 subtitle-text fw-bold lh-1 m-0 p-0">Disfruta tus</h2>
 					<h1 class="fw-bold title-text text-title lh-1 m-0">Canales</h1>
 					<span class="title-text text-subtitle fw-bold mt-0 pt-0">Favoritos</span>

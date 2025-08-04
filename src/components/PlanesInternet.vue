@@ -4,9 +4,9 @@
     <div v-for="plan in planes" :key="plan.nombre" class="mb-3">
       <h4 class="text-primary mb-3">{{ plan.nombre }}</h4>
 
-      <div class="table-responsive">
-        <table class="table table-striped table-bordered align-middle">
-          <thead class="table-light">
+      <div class="col-12 col-md-9 table-responsive">
+        <table class="table table-bordered align-middle">
+          <thead class="table-success">
             <tr>
               <th scope="col">Servicio</th>
               <th scope="col">Mensualidad</th>

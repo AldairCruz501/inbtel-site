@@ -124,7 +124,7 @@
 					INTERNET POR FIBRA ÓPTICA
 				</h2>
 			</div>
-			<div class="row p-0 p-md-5 p-lg-4 g-5 m-0">
+			<div class="row p-0 p-md-3 p-lg-4 g-5 m-0">
 				<div v-for="plan in residencialData.plansInt" class="col-12 col-md-6 col-xl-4">
 					<div class="card text-center border-color-card h-100 d-flex shadow">
 						<div class="card-header fs-3 fw-bold">
@@ -190,17 +190,6 @@ body {
 html {
   overflow-x: hidden !important;
 }
-
-.container,
-.container-fluid,
-.row,
-.col-12,
-.col-md-6,
-.col-xl-4 {
-  max-width: 100vw !important;
-  overflow-x: hidden !important;
-}
-
 
 .hero-residencial {
 	background-image: url('/img/residencial/banner-residencial-1.png'); 

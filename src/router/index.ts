@@ -12,6 +12,9 @@ import ContactoView from '../views/ContactoView.vue'
 import PdfViewer from '../components/PdfViewer.vue'
 import AvisoPrivacidadView from '../views/AvisoPrivacidadView.vue'
 import TerminosCondicionesView from '../views/TerminosCondicionesView.vue'
+import ColaboracionJusticiaView from '../views/ColaboracionJusticiaView.vue'
+import TarifasDoblePlayView from '../views/TarifasDoblePlayView.vue'
+import TarifasTriplePlayView from '../views/TarifasTriplePlayView.vue'
 
 const routes: RouteRecordRaw[] = [
   {
@@ -74,6 +77,21 @@ const routes: RouteRecordRaw[] = [
     component: TerminosCondicionesView,
     meta: {title: 'Términos y Condiciones | INBTEL'}
   },
+  {
+    path: '/colaboracion-con-la-justicia',
+    component: ColaboracionJusticiaView,
+    meta: {title: 'Colaboración con la Justicia | INBTEL'}
+  },
+  {
+    path: '/tarifas-doble-play',
+    component: TarifasDoblePlayView,
+    meta: {title: 'Tarifas Doble Play | INBTEL'}
+  },
+  {
+    path: '/tarifas-triple-play',
+    component: TarifasTriplePlayView,
+    meta: {title: 'Tarifas Triple Play | INBTEL'}
+  },  
     // Rutas para PDFs (con iframe nativo)
   {
     path: '/codigo-gestion-trafico',

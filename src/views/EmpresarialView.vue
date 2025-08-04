@@ -57,7 +57,7 @@
 			<div class="col-12 col-xl-8">
 				<div class="mb-3">
 					<p class="fs-1">
-						En Inbtel, sabemos que tu negocio necesita una
+						En INBTEL, sabemos que tu negocio necesita una
 						conexión rápida y confiable. Por eso, ofrecemos
 						internet empresarial con soluciones que se adaptan
 						a tus necesidades.
