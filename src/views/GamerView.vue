@@ -154,6 +154,7 @@
 			:modules="modules"
 			:slides-per-view="1"
 			:space-between="20"
+			:loop="true"
 			:navigation="{
 				nextEl: '.swiper-button-next-custom',
 				prevEl: '.swiper-button-prev-custom'
