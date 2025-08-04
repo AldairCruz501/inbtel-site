@@ -6,3 +6,4 @@ export interface Seccion {
   listabc?: string[]
   contenido1?: string[]
 }
+

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { terminosCondiciones } from '../data/terminosCondicionesData'
+import { terminosCondiciones, terminosCondiciones1 } from '../data/terminosCondicionesData'
 import HeaderComponent from '../components/HeaderComponent.vue';
 import FooterComponent from '../components/FooterComponent.vue';
 import LoaderComponent from '../components/LoaderComponent.vue';
@@ -14,7 +14,7 @@ import InfoAcordeon from '../components/InfoAcordeon.vue';
     <h1 class="mb-4 text-center pt-5 mt-3 text-title display-2 fw-bold">Términos y Condiciones</h1>
 
     <section v-for="(seccion, index) in terminosCondiciones" :key="index" class="mb-5">
-      <h3 class="text-primary mb-3">{{ seccion.titulo }}</h3>
+      <h3 class="text-primary fs-2 fw-semibold mb-3">{{ seccion.titulo }}</h3>
       <p
         v-for="(parrafo, idx) in seccion.contenido"
         :key="`p-${idx}`"
@@ -35,7 +35,26 @@ import InfoAcordeon from '../components/InfoAcordeon.vue';
     </section>
     <PlanesInternet />
     <InfoAcordeon />
-
+    <section v-for="(seccion, index) in terminosCondiciones1" :key="index" class="mb-5 mt-5">
+      <h3 class="text-primary fs-2 fw-semibold mb-3">{{ seccion.titulo }}</h3>
+      <p
+        v-for="(parrafo, idx) in seccion.contenido"
+        :key="`p-${idx}`"
+        class="text-justify fs-5"
+      >
+        {{ parrafo }}
+      </p>
+      <ul v-if="seccion.lista" class="list-unstyled ps-3 fs-5">
+        <li v-for="(item, i) in seccion.lista" :key="`li-${i}`">· {{ item }}</li>
+      </ul>
+    <p
+        v-for="(parrafo, idx) in seccion.contenido1"
+        :key="`p-${idx}`"
+        class="text-justify fs-5"
+      >
+        {{ parrafo }}
+      </p>
+    </section>
 
     <div class="text-muted text-end">
       <small class="fs-6">Última actualización: octubre/2022</small>
