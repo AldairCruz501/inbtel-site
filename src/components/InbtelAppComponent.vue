@@ -23,10 +23,10 @@
             <li>Cambia la Contraseña</li>
           </ul>
           <div class="d-flex flex-wrap align-items-start gap-3">
-            <a href="" class="text-decoration-none">
+            <a href="https://play.google.com/store/apps/details?id=inbtel.com&hl=es_419&pli=1" target="_blank" class="text-decoration-none">
               <img src="/img/btn-play-store.png" alt="btn-play-store" class="img-fluid" style="max-width: 180px;">
             </a>
-            <a href="" class="text-decoration-none">
+            <a href="https://apps.apple.com/us/app/inbtel/id6474140660" target="_blank" class="text-decoration-none">
               <img src="/img/btn-app-store.png" alt="btn-app-store" class="img-fluid" style="max-width: 165px;">
             </a>
           </div>

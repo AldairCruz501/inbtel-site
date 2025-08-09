@@ -203,7 +203,7 @@
 					${{ plan.pago }}<small class="small fs-5">/Mensual</small>
 					</h6>
 					<div class="border-bottom border-black border-1 p-1 w-100 mb-3"></div>
-					<a href="#" class="btn btn-primary fw-bold pe-4 ps-4">¡Lo quiero!</a>
+					<a href="https://wa.link/w28bec" target="_blank" class="btn btn-primary fw-bold pe-4 ps-4">¡Lo quiero!</a>
 				</div>
 				<div class="card-footer text-secondary bg-transparent border-0 text-uppercase">
 					Folio ift: {{ plan.folioIFT }}

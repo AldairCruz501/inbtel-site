@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import WhatsappChatComponent from './WhatsappChatComponent.vue';
+
 </script>
 
 <template>
@@ -30,7 +32,7 @@
           <ul class="list-unstyled">
             <li><router-link to="/residencial" class="text-white text-decoration-none">Planes Residenciales</router-link></li>
             <li><router-link to="/gamer" class="text-white text-decoration-none">Planes gamer</router-link></li>
-            <!-- <li><router-link to="/" class="text-white text-decoration-none">Cobertura</router-link></li> -->
+            <li><router-link to="/cobertura" class="text-white text-decoration-none">Cobertura</router-link></li>
             <li><router-link to="/empresarial" class="text-white text-decoration-none">Servicios Voz IP</router-link></li>
             <li><router-link to="/contacto" class="text-white text-decoration-none">Contacto</router-link></li>
             <!-- <li><router-link to="/" class="text-white text-decoration-none">Recomienda y gana</router-link></li> -->
@@ -74,6 +76,7 @@
       © 2025 Todos los derechos reservados por <span class="fw-bold">INBTEL</span>.
     </div>
   </footer>
+  <WhatsappChatComponent />
 </template>
 
 <style scoped>

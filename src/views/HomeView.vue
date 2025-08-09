@@ -29,8 +29,8 @@
 				:duration="1200"
 			>
 				<div class="col-lg-6 text-uppercase">
-					<h3 class="display-6 subtitle-text fw-bold">La mejor Conexión por</h3>
-					<h1 class="display-1 fw-bold title-text">Fibra óptica</h1>
+					<h3 class="display-6 subtitle-text fw-bold m-0">Conectamos tu</h3>
+					<h1 class="display-text fw-bold title-text">Hogar</h1>
 					<div class="d-flex align-items-center">
 						<img src="/img/inicio/icono-nvo-4.png" alt="img-internet" class="img-fluid" width="140">
 						<img src="/img/inicio/icono-nvo-3.png" alt="img-telefono" class="img-fluid" width="130">
@@ -45,8 +45,8 @@
 		<div class="container-fluid width-text position-absolute top-0 start-50 translate-middle-x text-center text-white px-3 mb-5 w-100 pt-5 mt-5">
 			<div class="row mt-4 mt-lg-0">
 				<div class="text-uppercase">
-					<h3 class="fs-2 subtitle-text fw-bold lh-1 m-0">La mejor Conexión por</h3>
-					<h1 class="display-2 fw-bold title-text lh-1 m-0">Fibra óptica</h1>
+					<h3 class="fs-2 subtitle-text fw-bold lh-1 m-0">Conectamos tu</h3>
+					<h1 class="display-1 fw-bold title-text lh-1 m-0">Hogar</h1>
 					<div class="d-flex justify-content-center align-items-center m-0">
 						<img src="/img/inicio/icono-nvo-4.png" alt="img-internet" class="img-fluid" width="70">
 						<img src="/img/inicio/icono-nvo-3.png" alt="img-telefono" class="img-fluid" width="70">
@@ -69,7 +69,8 @@
 		>
 			<img src="/img/logo-blanco.png" alt="INBTEL Comunicaciones" class="mb-4 img-inbi">
 			<p class="lead fw-medium fs-4" style="max-width: 950px; margin: 0 auto;">
-			"INBTEL" es una empresa de telecomunicaciones con sede en Tampico, dedicada a proporcionar servicios de Internet por fibra óptica de alta velocidad. Nuestra empresa se enorgullece de ofrecer a nuestros clientes una experiencia de conectividad de primer nivel en la región.
+				<span class="fw-bold">¡Más cerca que nunca!</span> <br>
+				Disfruta de nuestros servicios en Tampico, Cd. Madero, Altamira y Reynosa, Tamaulipas. Conéctate con la mejor velocidad y entretenimiento donde tú estés.
 			</p>
 		</div>
 	</section>
@@ -192,7 +193,7 @@
 								${{ plan.pago }}<small class="small fs-5">/Mensual</small>
 							</h6>
 							<div class="border-bottom border-black border-1 p-1 w-100 mb-3"></div>
-							<a href="#" class="btn btn-primary fw-bold pe-4 ps-4">¡Lo quiero!</a>
+							<a href="https://wa.link/w28bec" target="_blank" class="btn btn-primary fw-bold pe-4 ps-4">¡Lo quiero!</a>
 						</div>
 						<div class="card-footer text-secondary bg-transparent border-0 text-uppercase">
 							Folio ift: {{ plan.folioIFT }}
@@ -221,9 +222,9 @@
 						de alta velocidad te pone al mando. Descargas instantáneas, actualizaciones sin demoras y partidas
 						imparables te esperan. No juegues, domina.
 					</p>
-					<button class="btn btn-gamer fw-bold fs-5">
-						Ver Planes
-					</button>
+					<router-link to="/gamer"class="btn btn-gamer fw-bold fs-5">
+						Ver planes
+					</router-link>
 				</div>
 			</div>
   		</div>
@@ -355,6 +356,10 @@ html {
 }
 .logo-ideal {
 	height: 60px;
+}
+
+.display-text {
+	font-size: 8.5rem;
 }
 .title-ideal {
 	font-size: 8.5rem;

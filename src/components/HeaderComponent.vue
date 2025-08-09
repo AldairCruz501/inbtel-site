@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref, computed } from 'vue'
 import { useRoute } from 'vue-router'
+// import DarkModeToggle from './DarkModeToggle.vue'
 
 const isScrolled = ref(false)
 const isMenuOpen = ref(false)
@@ -113,7 +114,7 @@ onUnmounted(() => {
   <header class="container-fluid">
     <!-- Desktop navbar -->
     <nav :class="['navbar navbar-expand-lg fixed-top py-3 d-none d-lg-block', navClass, scrollBackgroundClass]">
-      <div class="container-fluid container-xl">
+      <div class="container-fluid w-75">
         <router-link class="navbar-brand" to="/">
           <img class="logo" :src="logoSrc" alt="logo" />
         </router-link>
@@ -123,13 +124,13 @@ onUnmounted(() => {
         </button>
         <div class="collapse navbar-collapse justify-content-start ms-2" id="navbarNav">
           <ul class="navbar-nav align-items-center fw-bold">
-            <li class="nav-item mx-xl-2"><router-link class="nav-link" :class="linkClass" to="/residencial">Residencial</router-link></li>
-            <li class="nav-item mx-xl-2"><router-link class="nav-link" :class="linkClass" to="/gamer">Gamer</router-link></li>
-            <li class="nav-item mx-xl-2"><router-link class="nav-link" :class="linkClass" to="/television">Televisión</router-link></li>
-            <li class="nav-item mx-xl-2"><router-link class="nav-link" :class="linkClass" to="/negocios">Negocios</router-link></li>
-            <li class="nav-item mx-xl-2"><router-link class="nav-link" :class="linkClass" to="/pymes">Pymes</router-link></li>
-            <li class="nav-item mx-xl-2"><router-link class="nav-link" :class="linkClass" to="/empresarial">Empresarial</router-link></li>
-            <li class="nav-item dropdown mx-xl-2">
+            <li class="nav-item mx-xl-1"><router-link class="nav-link" :class="linkClass" to="/residencial">Residencial</router-link></li>
+            <li class="nav-item mx-xl-1"><router-link class="nav-link" :class="linkClass" to="/gamer">Gamer</router-link></li>
+            <li class="nav-item mx-xl-1"><router-link class="nav-link" :class="linkClass" to="/television">Televisión</router-link></li>
+            <li class="nav-item mx-xl-1"><router-link class="nav-link" :class="linkClass" to="/negocios">Negocios</router-link></li>
+            <li class="nav-item mx-xl-1"><router-link class="nav-link" :class="linkClass" to="/pymes">Pymes</router-link></li>
+            <li class="nav-item mx-xl-1"><router-link class="nav-link" :class="linkClass" to="/empresarial">Empresarial</router-link></li>
+            <li class="nav-item dropdown mx-xl-1">
               <a class="nav-link dropdown-toggle" :class="linkClass" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Oportunidades
               </a>
@@ -138,11 +139,13 @@ onUnmounted(() => {
                 <li><router-link class="dropdown-item fw-bold" to="/vendedor-comisionista">Vendedor Comisionista</router-link></li>
               </ul>
             </li>
+            <li class="nav-item mx-xl-1"><router-link class="nav-link s" :class="linkClass" to="/cobertura">Cobertura</router-link></li>
             <li class="nav-item mx-xl-2">
               <a :class="['btn px-3', btnClass]" href="https://proxy.inbtel.com/accounts/login/?next=/panel/" target="_blank">Mi Cuenta</a>
             </li>
           </ul>
         </div>
+        <!-- <DarkModeToggle /> -->
       </div>
     </nav>
 

@@ -186,7 +186,7 @@
 							<p class="card-text fs-4 m-0">Llamadas ilimitadas</p>
 							<p class="card-text fs-6 text-uppercase">USA|MEX|Canada</p>
 							<div class="border-bottom border-black border-1 p-1 w-100 mb-3"></div>
-							<a href="#" class="btn btn-primary fw-bold pe-4 ps-4">¡Lo quiero!</a>
+							<a href="https://wa.link/w28bec" target="_blank" class="btn btn-primary fw-bold pe-4 ps-4">¡Lo quiero!</a>
 						</div>
 						<div class="card-footer text-secondary bg-transparent border-0 text-uppercase">
 							Folio ift: {{ plan.folioIFT }}
@@ -227,7 +227,7 @@
 							<p class="card-text fs-4 m-0">Llamadas ilimitadas</p>
 							<p class="card-text fs-6 text-uppercase">USA|MEX|Canada</p>
 							<div class="border-bottom border-black border-1 p-1 w-100 mb-3"></div>
-							<a href="#" class="btn btn-primary fw-bold pe-4 ps-4">¡Lo quiero!</a>
+							<a href="https://wa.link/w28bec" target="_blank" class="btn btn-primary fw-bold pe-4 ps-4">¡Lo quiero!</a>
 						</div>
 						<div class="card-footer text-secondary bg-transparent border-0 text-uppercase">
 							Folio ift: {{ plan.folioIFT }}
@@ -244,9 +244,9 @@
 			:duration="1200"
 		>
 			<div class="pt-5 mt-5 text-center text-uppercase">
-				<span class="display-6 fw-semibold lh-1" style="color: #023768;">Cartera de</span>
-				<h2 class="display-2 fw-bold lh-1" style="color: #0061aa">
-					Clientes
+				<span class="display-6 fw-semibold lh-1" style="color: #023768;">Marcas que confían</span>
+				<h2 class="display-1 fw-bold lh-1" style="color: #0061aa">
+					 En Nosotros
 				</h2>
 			</div>
 			<div class="row g-4 pb-5">

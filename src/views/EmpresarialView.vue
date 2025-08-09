@@ -234,9 +234,9 @@
 			:duration="1200"
 		>
 			<div class="pt-5 mt-5 text-center text-uppercase">
-				<span class="display-6 fw-semibold lh-1 subtitle-text">Cartera de</span>
-				<h2 class="display-2 fw-bold lh-1 title-text">
-					Clientes
+				<span class="display-6 fw-semibold lh-1 subtitle-text">Marcas que confían</span>
+				<h2 class="display-1 fw-bold lh-1 title-text">
+					En Nosotros
 				</h2>
 			</div>
 			<div class="row g-4 pb-5">

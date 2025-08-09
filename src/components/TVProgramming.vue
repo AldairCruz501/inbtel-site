@@ -95,7 +95,7 @@ const currentPrice = computed(() => planPrices[activeTab.value])
     </Transition>
 
     <div class="text-center mt-5">
-      <button class="btn btn-success px-4 py-2">Contratar</button>
+      <a href="https://wa.link/w28bec" target="_blank" class="btn btn-success px-4 py-2">Contratar</a>
     </div>
   </div>
 </template>

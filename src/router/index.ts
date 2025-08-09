@@ -15,6 +15,7 @@ import TerminosCondicionesView from '../views/TerminosCondicionesView.vue'
 import ColaboracionJusticiaView from '../views/ColaboracionJusticiaView.vue'
 import TarifasDoblePlayView from '../views/TarifasDoblePlayView.vue'
 import TarifasTriplePlayView from '../views/TarifasTriplePlayView.vue'
+import CoberturaView from '../views/CoberturaView.vue'
 
 const routes: RouteRecordRaw[] = [
   {
@@ -66,6 +67,11 @@ const routes: RouteRecordRaw[] = [
     path: '/contacto',
     component: ContactoView,
     meta: {title: 'Contacto | INBTEL'}
+  },
+  {
+    path: '/cobertura',
+    component: CoberturaView,
+    meta: {title: 'Cobertura | INBTEL'}
   },
   {
     path: '/aviso-de-privacidad',
