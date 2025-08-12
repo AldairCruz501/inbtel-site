@@ -78,7 +78,7 @@ const modules = [Navigation]
                 {{ plan.nombre }}
               </div>
               <div class="card-body">
-                <CountCircleMBPS :value="plan.mbps" />
+                <CountCircleMBPS :value="plan.mbps" color="#FFD401" class="subtitle-text" />
                 <div class="d-flex gap-2 justify-content-center mb-4 mb-lg-3 mt-3">
                   <div class="border icon-circle p-3 shadow">
                     <img src="/img/negocios/negocio-internet.png" alt="" class="mx-auto" width="25">

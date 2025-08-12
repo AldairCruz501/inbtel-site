@@ -172,7 +172,7 @@
 					Plan {{ plan.nombre }}
 				</div>
 				<div class="card-body h-100">
-					<CountCircleMBPS :value="Number(plan.mbps)" />
+					<CountCircleMBPS :value="plan.mbps" color="#7AD100" class="subtitle-text" />
 					<div class="d-flex gap-2 justify-content-center mb-4 mb-lg-3 mt-3">
 					<div class="border icon-circle p-3 shadow">
 						<img src="/img/gamer/icono-gamer-7.png" alt="" class="mx-auto" width="25" />

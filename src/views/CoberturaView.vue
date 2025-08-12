@@ -10,11 +10,11 @@ const API_BASE = 'https://api-inbtel.cero208.mx/cobertura'
 // Datos para selects
 const estados = ref<string[]>([])
 const municipios = ref<string[]>([])
-const colonias = ref<string[]>([])
+const colonias = ref<{ codigo_postal: string; colonia: string }[]>([])
 
 const selectedEstado = ref('')
 const selectedMunicipio = ref('')
-const selectedColonia = ref('')
+const selectedColonia = ref<{ codigo_postal: string; colonia: string } | null>(null)
 
 // URLs del mapa
 const embedDireccion = ref('')
@@ -47,7 +47,7 @@ async function fetchMunicipios() {
     municipios.value = data.map((item: any) => item.municipio)
     colonias.value = []
     selectedMunicipio.value = ''
-    selectedColonia.value = ''
+    selectedColonia.value = null
   } catch (error) {
     console.error('Error cargando municipios', error)
   }
@@ -59,8 +59,11 @@ async function fetchColonias() {
     const { data } = await axios.get(
       `${API_BASE}/colonias?estado=${encodeURIComponent(selectedEstado.value)}&municipio=${encodeURIComponent(selectedMunicipio.value)}`
     )
-    colonias.value = data.map((item: any) => item.colonia)
-    selectedColonia.value = ''
+    colonias.value = data.map((item: any) => ({
+      codigo_postal: item.codigo_postal,
+      colonia: item.colonia
+    }))
+    selectedColonia.value = null
   } catch (error) {
     console.error('Error cargando colonias', error)
   }
@@ -76,7 +79,7 @@ watch(selectedMunicipio, () => {
 
 function buscarCobertura() {
   if (selectedEstado.value && selectedMunicipio.value && selectedColonia.value) {
-    const direccion = `${selectedColonia.value}, ${selectedMunicipio.value}, ${selectedEstado.value}`
+    const direccion = `${selectedColonia.value.colonia}, ${selectedColonia.value.codigo_postal}, ${selectedEstado.value}`
     const encodedDireccion = encodeURIComponent(direccion)
 
     embedDireccion.value = `https://www.google.com/maps?q=${encodedDireccion}&z=16&output=embed`
@@ -84,7 +87,6 @@ function buscarCobertura() {
   }
 }
 </script>
-
 
 <template>
   <LoaderComponent />
@@ -119,8 +121,10 @@ function buscarCobertura() {
         <div class="mb-3">
           <label class="form-label">Colonia</label>
           <select v-model="selectedColonia" class="form-select" :disabled="!colonias.length">
-            <option value="">Seleccione una colonia</option>
-            <option v-for="colonia in colonias" :key="colonia" :value="colonia">{{ colonia }}</option>
+            <option :value="null">Seleccione una colonia</option>
+            <option v-for="col in colonias" :key="col.colonia" :value="col">
+              {{ col.colonia }} (CP: {{ col.codigo_postal }})
+            </option>
           </select>
         </div>
 
@@ -173,11 +177,9 @@ function buscarCobertura() {
 }
 
 select:focus {
-  /* border: 1px solid	#396E4B !important; */
-  outline: none !important; /* Elimina el borde azul por defecto */
-  border: 1px solid #396E4B; /* Nuevo color de borde */
-  box-shadow: 0 0 10px #396E4B; /* Sombra alrededor */
-  transition: all 0.2s ease; /* Animación suave */
+  outline: none !important;
+  border: 1px solid #396E4B;
+  box-shadow: 0 0 10px #396E4B;
+  transition: all 0.2s ease;
 }
 </style>
-

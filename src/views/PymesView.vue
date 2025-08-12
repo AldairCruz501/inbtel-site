@@ -160,7 +160,7 @@
 							Plan {{ plan.nombre }}
 						</div>
 						<div class="card-body">
-							<CountCircleMBPS :value="Number(plan.mbps)" />
+							<CountCircleMBPS :value="plan.mbps" color="#64B7D9" class="title-text" />
 							<div class="d-flex gap-2 justify-content-center mb-4 mb-lg-3 mt-3">
 								<div class="border icon-circle p-3 shadow">
 									<img src="/img/pymes/pyme-internet.png" alt="" class="mx-auto" width="25">
@@ -201,7 +201,7 @@
 							Plan {{ plan.nombre }}
 						</div>
 						<div class="card-body">
-							<CountCircleMBPS :value="Number(plan.mbps)" />
+							<CountCircleMBPS :value="plan.mbps" color="#64B7D9" class="title-text" />
 							<div class="d-flex gap-2 justify-content-center mb-4 mb-lg-3 mt-3">
 								<div class="border icon-circle p-3 shadow">
 									<img src="/img/pymes/pyme-internet.png" alt="" class="mx-auto" width="25">

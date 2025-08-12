@@ -6,7 +6,7 @@
 	import InbtelAppComponent from '../components/InbtelAppComponent.vue';
 	import ExtComponent from '../components/ExtComponent.vue';
 	import LoaderComponent from '../components/LoaderComponent.vue';
-	import { residencialData } from '../data/residencial';
+	import { homeData } from '../data/home'; 
 
 	const loading = ref(true)
 	onMounted(() => {
@@ -156,13 +156,13 @@
 			</h2>
 			</div>
 			<div class="row  p-md-5 p-lg-4 g-5">
-				<div v-for="plan in residencialData.plansInt" class="col-12 col-md-6 col-xl-4">
+				<div v-for="plan in homeData.plansInt" class="col-12 col-md-6 col-xl-4">
 					<div class="card text-center border-color-card h-100 d-flex shadow">
 						<div class="card-header fs-3 fw-bold">
 							Plan {{ plan.nombre }}
 						</div>
 						<div class="card-body">
-							<CountCircleMBPS :value="Number(plan.mbps)" />
+							<CountCircleMBPS :value="plan.mbps" color="#396E4B" class="subtitle-text" />
 							<div class="d-flex gap-2 justify-content-center mb-4 mb-lg-3 mt-3">
 								<div class="border icon-circle p-3 shadow">
 									<img src="/img/inicio/icono-internet.png" alt="" class="mx-auto" width="25">
