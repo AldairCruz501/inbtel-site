@@ -3,24 +3,26 @@ import type { NegociosData } from "../interfaces/Negocios";
 export const planesNegocios: NegociosData = {
     plansNegNorm: [
          {
-            nombre: 'Innovador',
-            mbps: 100,
-            precio: "459",
-            pago: "439",
-            sub1: '80 Mbps',
-            sub2:'Subida',
-            folioIFT: '1136776',
-            triple: false
-        },
+             nombre: 'Innovador',
+             mbps: 100,
+             precio: "459",
+             pago: "439",
+             sub1: '80 Mbps',
+             sub2: 'Subida',
+             folioIFT: '1136776',
+             triple: false,
+             id: 301,
+         },
         {
             nombre: 'Emprendedor',
             mbps: 200,
             precio: '669',
             pago: '649',
             sub1: '200 Mbps',
-            sub2:'Subida',
+            sub2: 'Subida',
             folioIFT: '1136776',
-            triple: false
+            triple: false,
+            id: 302,
         },
         {
             nombre: 'Avanzado',
@@ -28,9 +30,10 @@ export const planesNegocios: NegociosData = {
             precio: '999',
             pago: '979',
             sub1: '300 Mbps',
-            sub2:'Subida',
+            sub2: 'Subida',
             folioIFT: '1136776',
-            triple: false
+            triple: false,
+            id: 303,
         },
         {
             nombre: 'Profesional',
@@ -38,9 +41,10 @@ export const planesNegocios: NegociosData = {
             precio: '1,530',
             pago: '1,510',
             sub1: '600 Mbps',
-            sub2:'Subida',
+            sub2: 'Subida',
             folioIFT: '1136776',
-            triple: false
+            triple: false,
+            id: 304,
         },
     ],
     plansNegEntr: [
@@ -51,10 +55,11 @@ export const planesNegocios: NegociosData = {
             precio: '609',
             pago: '589',
             sub1: '80 Mbps',
-            sub2:'Subida',
+            sub2: 'Subida',
             simetrico: '/img/negocios/negocio-tv.png',
             folioIFT: '1136776',
-            triple: true
+            triple: true,
+            id: 305,
         },
         {
             nombre: 'Emprendedor',
@@ -63,10 +68,11 @@ export const planesNegocios: NegociosData = {
             precio: '819',
             pago: '799',
             sub1: '200 Mbps',
-            sub2:'Subida',
+            sub2: 'Subida',
             simetrico: '/img/negocios/negocio-tv.png',
             folioIFT: '1136776',
-            triple: true
+            triple: true,
+            id: 306,
         },
         {
             nombre: 'Avanzado',
@@ -75,10 +81,11 @@ export const planesNegocios: NegociosData = {
             precio: '1,159',
             pago: '1,139',
             sub1: '300 Mbps',
-            sub2:'Subida',
+            sub2: 'Subida',
             simetrico: '/img/negocios/negocio-tv.png',
             folioIFT: '1136776',
-            triple: true
+            triple: true,
+            id: 307,
         },
         {
             nombre: 'Profesional',
@@ -87,10 +94,11 @@ export const planesNegocios: NegociosData = {
             precio: '1,699',
             pago: '1,679',
             sub1: '600 Mbps',
-            sub2:'Subida',
+            sub2: 'Subida',
             simetrico: '/img/negocios/negocio-tv.png',
             folioIFT: '1136776',
-            triple: true
+            triple: true,
+            id: 308,
         }
     ]
 }

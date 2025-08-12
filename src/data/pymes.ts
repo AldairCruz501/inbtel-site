@@ -4,16 +4,17 @@ export const pymeData: PymeData = {
     plansInt: [
         {
             nombre: "Pyme",
-            mbps: "200",
+            mbps: 200,
             precio: "799",
             sub1: "Mbps",
             sub2: "Simétricos",
             simetrico: "/img/pymes/pyme-simetrico.png",
             folioIFT: "1136776",
+            id: 401,
         },
         {
             nombre: "Pyme",
-            mbps: "300",
+            mbps: 300,
             precio: "879",
             sub1: "Mbps",
             sub2: "Simétricos",
@@ -22,10 +23,11 @@ export const pymeData: PymeData = {
             simetrico: "/img/pymes/pyme-simetrico.png",
             repetidor: "/img/pymes/pyme-extensor.png",
             folioIFT: "1136776",
+            id: 402,
         },
         {
             nombre: "Pyme",
-            mbps: "600",
+            mbps: 600,
             precio: "1,299",
             sub1: "200 Mbps",
             sub2: "Subida",
@@ -34,10 +36,11 @@ export const pymeData: PymeData = {
             simetrico: "/img/pymes/pyme-simetrico.png",
             repetidor: "/img/pymes/pyme-extensor.png",
             folioIFT: "1136776",
+            id: 403,
         },
         {
             nombre: "Gamer",
-            mbps: "1000",
+            mbps: 1000,
             precio: "1,879",
             sub1: "300 Mbps",
             sub2: "Subida",
@@ -46,6 +49,7 @@ export const pymeData: PymeData = {
             simetrico: "/img/pymes/pyme-simetrico.png",
             repetidor: "/img/pymes/pyme-extensor.png",
             folioIFT: "1136776",
+            id: 404,
         },
     ],
     plansTV: [

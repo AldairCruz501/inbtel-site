@@ -1,6 +1,6 @@
-import type { ResidencialData } from "../interfaces/Residencial" 
+import type { HomeData } from "../interfaces/Home"
 
-export const residencialData: ResidencialData = {
+export const homeData: HomeData = {
     plansInt: [
         {
             nombre: "Residencial",
@@ -11,7 +11,7 @@ export const residencialData: ResidencialData = {
             simetrico: "/img/inicio/icono-simetrico.png",
             folioIFT: "1136884",
             pago: "379",
-            id: 101,
+            id: 1,
         },
         {
             nombre: "Residencial",
@@ -21,7 +21,7 @@ export const residencialData: ResidencialData = {
             sub2: "Subida",
             folioIFT: "1136885",
             pago: "429",
-            id: 102,
+            id: 2,
         },
         {
             nombre: "Residencial",
@@ -32,7 +32,7 @@ export const residencialData: ResidencialData = {
             simetrico: "/img/inicio/icono-simetrico.png",
             folioIFT: "1137023",
             pago: "579",
-            id: 103,
+            id: 3,
         },
         {
             nombre: "Residencial",
@@ -43,7 +43,7 @@ export const residencialData: ResidencialData = {
             simetrico: "/img/inicio/icono-simetrico.png",
             folioIFT: "1137024",
             pago: "629",
-            id: 104,
+            id: 4,
         },
         {
             nombre: "Residencial",
@@ -56,7 +56,7 @@ export const residencialData: ResidencialData = {
             repetidor: "/img/inicio/icono-repetidor.png",
             folioIFT: "1137025",
             pago: "929",
-            id: 105,
+            id: 5,
         },
         {
             nombre: "Residencial",
@@ -69,7 +69,7 @@ export const residencialData: ResidencialData = {
             repetidor: "/img/inicio/icono-repetidor.png",
             folioIFT: "1137026",
             pago: "1,460",
-            id: 106
+            id: 6
         },
     ],
     plansTV: [

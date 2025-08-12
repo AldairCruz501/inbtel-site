@@ -1,4 +1,4 @@
-export interface GamerData {
+export interface HomeData {
     plansInt: PlanInternet[];
     plansTV: PlanTV[];
 }
@@ -10,7 +10,7 @@ export interface PlanInternet {
     precio: string,
     pago: string,
     sub1: string,
-    sub2?: string,
+    sub2: string,
     wifi?:string,
     repwifi?: string,
     folioIFT: string,

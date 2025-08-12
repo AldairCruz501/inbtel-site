@@ -4,8 +4,9 @@ export interface ResidencialData {
 }
 
 export interface PlanInternet {
+    id: number,
     nombre: string,
-    mbps: string,
+    mbps: number,
     precio: string,
     pago: string,
     sub1: string,

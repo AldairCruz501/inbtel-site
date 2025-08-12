@@ -4,6 +4,7 @@ export interface NegociosData {
 }
 
 export interface PlanNegocioNormal {
+    id: number,
     nombre: string,
     subnombre? : string,
     mbps: number,
@@ -20,6 +21,7 @@ export interface PlanNegocioNormal {
 }
 
 export interface PlanNegocioEntretenimiento {
+    id: number,
     nombre: string,
     subnombre? : string,
     mbps: number,

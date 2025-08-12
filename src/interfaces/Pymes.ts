@@ -4,8 +4,9 @@ export interface PymeData {
 }
 
 export interface PlanInternet {
+    id: number,
     nombre: string,
-    mbps: string,
+    mbps: number,
     precio: string,
     sub1: string,
     sub2?: string,
