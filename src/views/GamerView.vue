@@ -206,7 +206,7 @@
 					<a href="https://wa.link/w28bec" target="_blank" class="btn btn-primary fw-bold pe-4 ps-4">¡Lo quiero!</a>
 				</div>
 				<div class="card-footer text-secondary bg-transparent border-0 text-uppercase">
-					Folio ift: {{ plan.folioIFT }}
+					<!-- Folio ift: {{ plan.folioIFT }} -->
 				</div>
 				</div>
 			</SwiperSlide>
