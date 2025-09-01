@@ -15,7 +15,7 @@ export const gamerData: GamerData = {
         {
             nombre: "Gamer",
             mbps: 500,
-            precio: "1,019",
+            precio: "1,219",
             sub1: "400 Mbps",
             sub2: "Subida",
             folioIFT: "1136776",
