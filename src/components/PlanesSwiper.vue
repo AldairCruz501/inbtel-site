@@ -15,7 +15,7 @@ defineProps<{
     simetrico?: string,
     repetidor?: string,
     pago: number
-    folioIFT: string
+    folioIFT?: string
   }[]
   imgSrc: string
   imgAlt: string
@@ -119,7 +119,7 @@ const modules = [Navigation]
                 <a href="https://wa.link/w28bec" target="_blank" class="btn btn-primary fw-bold px-4">¡Lo quiero!</a>
               </div>
               <div class="card-footer text-secondary bg-transparent border-0 text-uppercase">
-                Folio IFT: {{ plan.folioIFT }}
+                <!-- Folio IFT: {{ plan.folioIFT }} -->
               </div>
             </div>
           </SwiperSlide>

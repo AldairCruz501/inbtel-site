@@ -4,7 +4,7 @@
     import HeaderComponent from '../components/HeaderComponent.vue';
     import LoaderComponent from '../components/LoaderComponent.vue';
     import PlanesSwiper from '../components/PlanesSwiper.vue';
-    import PlanesSwiperTrip from '../components/PlanesSwiperTrip.vue';
+    // import PlanesSwiperTrip from '../components/PlanesSwiperTrip.vue';
     import InbtelAppComponent from '../components/InbtelAppComponent.vue';
     import { planesNegocios } from '../data/negocios'; 
 	import { Swiper, SwiperSlide } from 'swiper/vue';
@@ -129,11 +129,11 @@
                 img-src="/img/negocios/logo-dobleplay.png"
                 img-alt="Paquetes Doble Play"
             />
-            <PlanesSwiperTrip
+            <!-- <PlanesSwiperTrip
                 :plans="planesNegocios.plansNegEntr"
                 img-src="/img/negocios/logo-tripleplay.png"
                 img-alt="Paquetes Triple Play"             
-            />
+            /> -->
         </div>
     </section>
     <InbtelAppComponent />
