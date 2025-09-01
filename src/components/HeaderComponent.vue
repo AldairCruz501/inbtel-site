@@ -273,7 +273,7 @@ nav {
 
 .dropdown-item {
   background-color: #ffffff;
-  color: #396E4B;
+  color: #396E4B
 }
 
 .dropdown-item:hover {
