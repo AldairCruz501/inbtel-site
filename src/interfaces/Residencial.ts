@@ -13,7 +13,7 @@ export interface PlanInternet {
     sub2: string,
     wifi?:string,
     repwifi?: string,
-    folioIFT: string,
+    folioIFT?: string,
     simetrico?: string,
     repetidor?: string,
 }
