@@ -140,7 +140,7 @@
 						a elegir la mejor opción según las necesidades de
 						tu empresa.
 					</p>
-					<button class="btn btn-contact btn-lg fw-bold">Contactar</button>
+					<a href="https://wa.link/w28bec" target="_blank" class="btn btn-contact btn-lg fw-bold px-4">Contactar</a>
 				</div>
 			</div>
   		</div>
