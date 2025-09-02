@@ -11,7 +11,7 @@
   const sendMessage = () => {
     if (message.value.trim()) {
       const encodedMsg = encodeURIComponent(message.value);
-      window.open(`https://wa.me/+528335260000?text=${encodedMsg}`, '_blank');
+      window.open(`https://wa.me/5218335260000?text=${encodedMsg}`, '_blank');
       message.value = '';
       isActive.value = false;
     }
