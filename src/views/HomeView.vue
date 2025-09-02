@@ -87,7 +87,7 @@
 					<p class="text-dark fs-5">
 						Añade nuestro paquete de televisión con alta <br> 
 						definición a tu servicio de internet por fibra <br>
-						óptica y no te pierdas de tus peliculas y <br>
+						óptica y no te pierdas de tus películas y <br>
 						series favoritas.
 					</p>
 					<h4 class="fw-bold display-3 text-uppercase title-text">
@@ -107,7 +107,7 @@
 					<p class="text-dark fs-5 mt-2">
 						Añade nuestro paquete de televisión con alta definición 
 						a tu servicio de internet por fibra óptica y no te pierdas de
-						tus peliculas y series favoritas.
+						tus películas y series favoritas.
 					</p>
 					<h4 class="fw-bold display-3 text-uppercase title-text">
 						<span class="display-6 subtitle-text fw-bold">Desde</span>
@@ -196,7 +196,7 @@
 							<a href="https://wa.link/w28bec" target="_blank" class="btn btn-primary fw-bold pe-4 ps-4">¡Lo quiero!</a>
 						</div>
 						<div class="card-footer text-secondary bg-transparent border-0 text-uppercase">
-							Folio ift: {{ plan.folioIFT }}
+							<!-- Folio ift: {{ plan.folioIFT }} -->
 						</div>
 					</div>
 				</div>
