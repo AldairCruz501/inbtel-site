@@ -153,8 +153,8 @@
             <div class="row align-items-center justify-content-center g-4">
                 <!-- Texto -->
                 <div class="col-md-6 text-center text-md-start">
-                    <h2 class="fw-bold display-5">Television HD</h2>
-                    <h3 class="fw-semibold fs-2">Disfruta tus <br> canales favoritos</h3>
+                    <h2 class="fw-bold display-2">Television HD</h2>
+                    <h3 class="fw-semibold display-6">Disfruta tus canales favoritos</h3>
                     <div class="mt-4">
                         <a href="/television" class="btn btn-tv btn-lg rounded-pill px-4">
                             Ver Canales
