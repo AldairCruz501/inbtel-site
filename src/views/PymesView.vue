@@ -3,9 +3,9 @@
 	import FooterComponent from '../components/FooterComponent.vue';
 	import HeaderComponent from '../components/HeaderComponent.vue';
 	import LoaderComponent from '../components/LoaderComponent.vue';
-	import CountCircleMBPS from '../components/CountCircleMBPS.vue';
+	// import CountCircleMBPS from '../components/CountCircleMBPS.vue';
 	import InbtelAppComponent from '../components/InbtelAppComponent.vue';
-	import { pymeData } from '../data/pymes';
+	// import { pymeData } from '../data/pymes';
 
 	const loading = ref(true)
 	onMounted(() => {
@@ -140,7 +140,38 @@
 			</div>
   		</div>
 	</section>
-	<section class="bg-plans-gamer py-5">
+	<section class="m-0">
+		<div class="row g-0 container-fluid">
+			<div class="col-12 col-xl-6 bg-info-pyme text-white pt-5">
+				<div class="p-5 mt-5"
+					v-motion-slide-visible-left
+					:delay="200"
+					:duration="1200"
+				>
+					<h3 class="fw-semibold display-4 text-white pb-2">
+						¿Quieres llevar tu Pyme al siguiente nivel?
+					</h3>
+					<div class="fs-4 text-white pb-1">
+						<p class="m-0">
+							Descubre las soluciones diseñadas especialmente para tu pyme.  
+						</p>
+						<p>
+							Haz clic en el botón de abajo y conoce todos nuestros planes pensados para impulsar tu crecimiento.
+						</p>
+					</div>
+					<div class="pt-2 pb-5">
+						<a href="https://wa.link/w28bec" target="_blank" class="btn btn-info-pyme btn-lg rounded-pill px-4 fw-semibold">
+							Saber Más
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-xl-6">
+				<img src="/img/pymes/img-pyme.jpg" alt="img-electro" class="img-fluid">
+			</div>
+		</div>
+	</section>
+	<!-- <section class="bg-plans-gamer py-5">
 		<div class="container pt-lg-3 mt-lg-2">
 			<div 
 				class="text-center"
@@ -236,7 +267,7 @@
 				</div>
 			</div>
 		</div>
-	</section>   
+	</section>    -->
     <section class="jumbotron-pyme-clients d-none d-lg-block">
 		<div class="container py-2" 
 			v-motion-fade-visible
@@ -294,7 +325,8 @@
     background-position: center;
     min-height: 80vh; /* valor base para XS */
 }
-.bg-badge-info {
+.bg-badge-info,
+.bg-info-pyme {
 	background-color: #1978A4;
 }
 .width-text {
@@ -314,6 +346,18 @@
 }
 .title-ideal {
 	font-size: 8.5rem;
+}
+
+.btn-info-pyme {
+	background-color: #64B7D9 !important;
+	border-color: 1px solid	#64B7D9  !important;
+	color: #ffffff !important;
+}
+
+.btn-info-pyme:hover {
+	background-color: #ffffff !important;
+	border-color: 1px solid	#64B7D9  !important;
+	color: #64B7D9 !important;
 }
 
 .border-color {
