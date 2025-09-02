@@ -129,6 +129,7 @@
                 img-src="/img/negocios/logo-dobleplay.png"
                 img-alt="Paquetes Doble Play"
             />
+            
             <!-- <PlanesSwiperTrip
                 :plans="planesNegocios.plansNegEntr"
                 img-src="/img/negocios/logo-tripleplay.png"
@@ -136,6 +137,41 @@
             /> -->
         </div>
     </section>
+    <section class="position-relative overflow-hidden bg-dark text-white py-5">
+        <!--Video de fondo -->
+        <video 
+            class="position-absolute top-0 start-50 translate-middle-x w-100 h-100 object-fit-cover"
+            src="/img/negocios/video-canales-tv.mp4" 
+            autoplay muted loop>
+        </video>
+
+        <!-- 🟣 Overlay para oscurecer video -->
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>
+
+        <!-- Contenido -->
+        <div class="container position-relative z-1">
+            <div class="row align-items-center justify-content-center g-4">
+                <!-- Texto -->
+                <div class="col-md-6 text-center text-md-start">
+                    <h2 class="fw-bold display-5">Television HD</h2>
+                    <h3 class="fw-semibold fs-2">Disfruta tus <br> canales favoritos</h3>
+                    <div class="mt-4">
+                        <a href="/television" class="btn btn-tv btn-lg rounded-pill px-4">
+                            Ver Canales
+                        </a>
+                    </div>
+                </div>
+                <!-- Imagen -->
+                <div class="col-md-5 text-center">
+                    <img 
+                    src="/img/negocios/familia-television.png" 
+                    alt="Familia viendo televisión" 
+                    class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <InbtelAppComponent />
     <FooterComponent />
 </template>
@@ -168,6 +204,18 @@
     color: #F27900 !important;
 }
 
+.btn-tv {
+    background-color: #F27900 !important;
+    color: #fff !important;
+    border: 1px solid #F27900;
+}
+
+.btn-tv:hover {
+    background-color: #fff !important;
+    color: #F27900 !important;
+    border: 1px solid #F27900;
+}
+
 .subtitle-color {
     color: #D73D5D !important;
 }
@@ -175,4 +223,5 @@
 .width-text {
 	width: 90%;
 }
+
 </style>
