@@ -96,7 +96,7 @@ onBeforeUnmount(() => {
         :duration="duration || 2"
         :options="{
           prefix: prefix || '',
-          suffix: suffix || '<small class=\'fw-light m-0 lh-1 text-dark\'>Mbps</small>'
+          suffix: suffix || ''
         }"
         class="m-0 lh-1 fs-3"
       />
