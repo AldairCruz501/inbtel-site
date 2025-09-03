@@ -112,7 +112,7 @@ onUnmounted(() => {
 <template>
   <header class="container-fluid">
     <!-- Desktop navbar -->
-    <nav :class="['navbar navbar-expand-lg fixed-top py-3 d-none d-lg-block', navClass, scrollBackgroundClass]">
+    <nav :class="['navbar navbar-expand-lg fixed-top py-3 d-none d-xl-block', navClass, scrollBackgroundClass]">
       <div class="container-fluid container-xxl">
         <router-link class="navbar-brand" to="/">
           <img class="logo" :src="logoSrc" alt="logo" />
@@ -148,8 +148,8 @@ onUnmounted(() => {
     </nav>
 
     <!-- Mobile navbar -->
-    <nav :class="['navbar navbar-expand-lg py-2 fixed-top d-block d-lg-none', navClass, scrollBackgroundClass, { show: isMenuOpen }]">
-      <div class="container-fluid container-xl">
+    <nav :class="['navbar navbar-expand-lg py-2 fixed-top d-block d-xl-none', navClass, scrollBackgroundClass, { show: isMenuOpen }]">
+      <div class="container-fluid container-xxl">
         <router-link class="navbar-brand" to="/">
           <img :src="logoSrc" alt="logo" height="50" />
         </router-link>
