@@ -113,7 +113,7 @@ onUnmounted(() => {
   <header class="container-fluid">
     <!-- Desktop navbar -->
     <nav :class="['navbar navbar-expand-lg fixed-top py-3 d-none d-lg-block', navClass, scrollBackgroundClass]">
-      <div class="container-fluid container-xl">
+      <div class="container-fluid container-xxl">
         <router-link class="navbar-brand" to="/">
           <img class="logo" :src="logoSrc" alt="logo" />
         </router-link>
