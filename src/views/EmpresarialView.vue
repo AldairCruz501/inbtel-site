@@ -152,80 +152,17 @@
             :delay="200"
             :duration="1200"
         >
-            <h3 class="display-4 fw-semibold d-none d-md-block">
-                Proporcionamos a tu empresa una conexción
-				segura, initerrumpida y de alta velocidad
+            <h3 class="display-4 fw-semibold d-none d-md-block pt-4">
+				Ofrecemos a tu empresa una conectividad estable, segura y de alto rendimiento,
+				diseñada para garantizar operaciones sin interrupciones y potenciar el 
+				crecimiento de tu negocio.
             </h3>
             <h3 class="display-6 subtitle-text fw-semibold text-uppercase d-block d-md-none">
-                Proporcionamos a tu empresa una conexción
-				segura, initerrumpida y de alta velocidad
+				Ofrecemos a tu empresa una conectividad estable, segura y de alto rendimiento,
+				diseñada para garantizar operaciones sin interrupciones y potenciar el 
+				crecimiento de tu negocio.
             </h3>
         </div>
-		<div class="container mt-5 mb-3 mb-lg-5">
-			<div class="row g-5 justify-content-center">
-				<!-- Tarjeta 1 -->
-				<div class="col-12 col-md-6 col-lg-2 d-flex justify-content-center">
-					<div class="shadow rounded-4 ratio ratio-4x3 w-100 h-100 bg-white border-color-green">
-						<div class="p-3 d-flex flex-column align-items-center justify-content-center text-center">
-							<h4 class="subtitle-text mt-2 mb-1 fw-bold display-5">80</h4>
-							<p class="text-dark lh-1 fs-4 fw-semibold">
-								Mbps
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-6 col-lg-2 d-flex justify-content-center">
-					<div class="shadow rounded-4 ratio ratio-4x3 w-100 h-100 bg-white border-color-green">
-						<div class="p-3 p-md-4 p-lg-5 d-flex flex-column align-items-center justify-content-center text-center">
-							<h4 class="subtitle-text mt-2 mb-1 fw-bold display-5">150</h4>
-							<p class="text-dark lh-1 fs-4 fw-semibold">
-								Mbps
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-6 col-lg-2 d-flex justify-content-center">
-					<div class="shadow rounded-4 ratio ratio-4x3 w-100 h-100 bg-white border-color-green">
-						<div class="p-3 d-flex flex-column align-items-center justify-content-center text-center">
-							<h4 class="subtitle-text mt-2 mb-1 fw-bold display-5">200</h4>
-							<p class="text-dark lh-1 fs-4 fw-semibold">
-								Mbps
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-6 col-lg-2 d-flex justify-content-center">
-					<div class="shadow rounded-4 ratio ratio-4x3 w-100 h-100 bg-white border-color-green">
-						<div class="p-3 p-md-4 d-flex flex-column align-items-center justify-content-center text-center">
-							<h4 class="subtitle-text mt-2 mb-1 fw-bold display-5">300</h4>
-							<p class="text-dark lh-1 fs-4 fw-semibold">
-								Mbps
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-6 col-lg-2 d-flex justify-content-center">
-					<div class="shadow rounded-4 ratio ratio-4x3 w-100 h-100 bg-white border-color-green">
-						<div class="p-3 p-md-4 d-flex flex-column align-items-center justify-content-center text-center">
-							<h4 class="subtitle-text mt-2 mb-1 fw-bold display-5">600</h4>
-							<p class="text-dark lh-1 fs-4 fw-semibold">
-								Mbps
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-md-6 col-lg-2 d-flex justify-content-center">
-					<div class="shadow rounded-4 ratio ratio-4x3 w-100 h-100 bg-white border-color-green">
-						<div class="p-3 p-md-4 d-flex flex-column align-items-center justify-content-center text-center">
-							<h4 class="subtitle-text mt-2 mb-1 fw-bold display-5">1000</h4>
-							<p class="text-dark lh-1 fs-4 fw-semibold">
-								Mbps
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>		
-		</div>
     </section>  
     <section class="jumbotron-pyme-clients d-none d-lg-block">
 		<div class="container py-2" 
