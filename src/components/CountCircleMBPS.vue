@@ -94,8 +94,10 @@ onBeforeUnmount(() => {
         v-if="isVisible"
         :end-val="value"
         :duration="duration || 2"
-        :prefix="prefix || ''"
-        :suffix="suffix || ''"
+        :options="{
+          prefix: prefix || '',
+          suffix: suffix || '<small class=\'fw-light m-0 lh-1 text-dark\'>Mbps</small>'
+        }"
         class="m-0 lh-1 fs-3"
       />
       <small class="fw-light m-0 lh-1 text-dark">Mbps</small>
