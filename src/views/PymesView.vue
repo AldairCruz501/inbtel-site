@@ -143,7 +143,7 @@
 	<section class="m-0">
 		<div class="row g-0 container-fluid">
 			<div class="col-12 col-xl-6 bg-info-pyme text-white pt-5">
-				<div class="p-5 mt-5"
+				<div class="p-5 mt-5 h-100"
 					v-motion-slide-visible-left
 					:delay="200"
 					:duration="1200"
@@ -167,7 +167,7 @@
 				</div>
 			</div>
 			<div class="col-12 col-xl-6">
-				<img src="/img/pymes/img-pyme.jpg" alt="img-electro" class="img-fluid">
+				<img src="/img/pymes/img-pyme.jpg" alt="img-electro" class="img-fluid h-100">
 			</div>
 		</div>
 	</section>
