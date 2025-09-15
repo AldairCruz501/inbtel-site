@@ -14,16 +14,16 @@
 						<img src="/img/inicio/extensor-nvo.png" alt="Extensor WiFi" class="img-porta" style="max-width: 450px;">
 						<div>
 							<h5 class="title-text fw-bold display-6"><span class="subtitle-text">EXTENSOR</span> WiFi</h5>
-							<p class="mb-0 fs-5">Potencia tu experiencia online al máximo con nuestro potente extensor de WiFi.
-							Olvídate de las zonas muertas y disfruta de una conexión sin interrupciones en cada rincón de tu hogar.</p>
+							<p class="mb-0 fs-5">Mejora tu experiencia en línea con nuestro extensor de WiFi. Amplía la cobertura de tu red
+							y reduce las zonas con baja señal en tu hogar, para que disfrutes de una conexión más estable en diferentes espacios.</p>	
 						</div>
 					</div>
 					<div class="col-md-6 d-flex align-items-center">
 						<img src="/img/inicio/porta-nvo.png" alt="Teléfono" class="img-porta" style="max-width: 400px;">
 						<div>
 							<h5 class="title-text fw-bold fs-1"><span class="subtitle-text">PORTA TU</span> NÚMERO</h5>
-							<p class="mb-0 fs-5">Mantén el mismo número de tu casa al contratar un plan de internet con nosotros.
-							Realiza la portabilidad marcando al <strong>833 526 0000</strong></p>
+							<p class="mb-0 fs-5">Conserva el mismo número de tu casa al contratar un plan de internet con nosotros.
+							Realiza el <a href="https://wa.link/w28bec" class="fw-bold text-decoration-none title-text" target="_blank" >trámite de portabilidad.</a></p>
 						</div>
 					</div>
 				</div>

@@ -69,8 +69,10 @@
 		>
 			<img src="/img/logo-blanco.png" alt="INBTEL Comunicaciones" class="mb-4 img-inbi">
 			<p class="lead fw-medium fs-4" style="max-width: 950px; margin: 0 auto;">
-				<span class="fw-bold">¡Más cerca que nunca!</span> <br>
-				Disfruta de nuestros servicios en Tampico, Cd. Madero, Altamira y Reynosa, Tamaulipas. Conéctate con la mejor velocidad y entretenimiento donde tú estés.
+				<span class="fw-bold">¡Más cerca de ti!</span> <br>
+				Disfruta de nuestros servicios en Tampico, Cd. Madero, Altamira, Reynosa, Tamaulipas y Ciudad Valles, S.L.P.
+				Conéctate y vive una experiencia de internet y entretenimiento con la calidad que tu hogar merece.
+
 			</p>
 		</div>
 	</section>
@@ -92,7 +94,7 @@
 					</p>
 					<h4 class="fw-bold display-3 text-uppercase title-text">
 						<span class="display-6 subtitle-text fw-bold">Desde</span>
-						$149/mes
+						$149 MXN/mes
 					</h4>
 				</div>
 			</div>
@@ -178,8 +180,8 @@
 								</div>
 							</div>
 							<p class="fs-5">Internet + Telefonía</p>
-							<h5 class="card-title subtitle-text display-3 fw-semibold">
-								${{ plan.precio }}<small class="small fs-5">/Mensual</small>
+							<h5 class="card-title subtitle-text display-4 fw-semibold">
+								${{ plan.precio }}<small class="small fs-5">MXN/Mensual</small>
 							</h5>
 							<div class="border-bottom border-black border-1 p-1 w-100 mb-3"></div>
 							<p v-if="plan.wifi" class="card-text fs-4 m-0">{{plan.wifi}}</p>
@@ -189,8 +191,8 @@
 							<p class="card-text fs-6 text-uppercase">USA|MEX|Canada</p>
 							<div class="border-bottom border-black border-1 p-1 w-100 mb-3"></div>
 							<p class="card-text fs-4 m-0">Pronto Pago</p>
-							<h6 class="card-title subtitle-text display-5 fw-semibold">
-								${{ plan.pago }}<small class="small fs-5">/Mensual</small>
+							<h6 class="card-title subtitle-text display-4 fw-semibold">
+								${{ plan.pago }}<small class="small fs-5">MXN/Mensual</small>
 							</h6>
 							<div class="border-bottom border-black border-1 p-1 w-100 mb-3"></div>
 							<a href="https://wa.link/w28bec" target="_blank" class="btn btn-primary fw-bold pe-4 ps-4">¡Lo quiero!</a>
@@ -214,13 +216,11 @@
 				<div class="col-lg-5">
 					<img src="/img/inicio/logo-planes-gamer.png" alt="Logo INBTEL" class="img-fluid mb-5" />
 					<h4 class="fs-2 text-white fw-bolder text-uppercase m-0">
-						Domina la <span class="gamer-text">partida</span> con nuestra
+						Sube de  <span class="gamer-text">nivel</span> con nuestra
 					</h4>
-					<h2 class="display-5 fw-bold title-text text-uppercase m-0">Conexión ultra rápida</h2>
+					<h2 class="display-5 fw-bold title-text text-uppercase m-0">Conexión gamer</h2>
 					<p class="mt-1 text-white fs-4">
-						<span class="fw-bold">¿Listo para llevar tu juego al siguiente nivel?</span> Nuestra conexión
-						de alta velocidad te pone al mando. Descargas instantáneas, actualizaciones sin demoras y partidas
-						imparables te esperan. No juegues, domina.
+						<!--<span class="fw-bold">¿Listo para llevar tu juego al siguiente nivel?</span>--> Disfruta de menor latencia, tiempos de descarga reducidos y partidas más fluidas para mantener el ritmo en cada jugada.
 					</p>
 					<router-link to="/gamer"class="btn btn-gamer fw-bold fs-5">
 						Ver planes

@@ -152,15 +152,11 @@
             :delay="200"
             :duration="1200"
         >
-            <h3 class="display-4 fw-semibold d-none d-md-block pt-4">
-				Ofrecemos a tu empresa una conectividad estable, segura y de alto rendimiento,
-				diseñada para garantizar operaciones sin interrupciones y potenciar el 
-				crecimiento de tu negocio.
+            <h3 class="display-5 fw-semibold d-none d-md-block pt-4">
+				Brindamos a tu empresa una conectividad confiable y de alto desempeño, ideal para optimizar procesos y respaldar el crecimiento
             </h3>
             <h3 class="display-6 subtitle-text fw-semibold text-uppercase d-block d-md-none">
-				Ofrecemos a tu empresa una conectividad estable, segura y de alto rendimiento,
-				diseñada para garantizar operaciones sin interrupciones y potenciar el 
-				crecimiento de tu negocio.
+				Brindamos a tu empresa una conectividad confiable y de alto desempeño, ideal para optimizar procesos y respaldar el crecimiento
             </h3>
         </div>
     </section>  

@@ -19,7 +19,7 @@
 		}, 3000)
 	})
 
-
+ 
 </script>
 
 <template>
@@ -189,7 +189,7 @@
 					</div>
 					<p class="fs-5">Internet + Telefonía</p>
 					<h5 class="card-title subtitle-text display-3 fw-semibold">
-					${{ plan.precio }}<small class="small fs-5">/Mensual</small>
+					${{ plan.precio }}<small class="small fs-5">MXN/Mensual</small>
 					</h5>
 					<div class="border-bottom border-black border-1 p-1 w-100 mb-3"></div>
 					<p v-if="plan.wifi" class="card-text fs-4 m-0">{{ plan.wifi }}</p>
@@ -199,8 +199,8 @@
 					<p class="card-text fs-6 text-uppercase">USA|MEX|Canada</p>
 					<div class="border-bottom border-black border-1 p-1 w-100 mb-3"></div>
 					<p class="card-text fs-4 m-0">Pronto Pago</p>
-					<h6 class="card-title subtitle-text display-5 fw-semibold">
-					${{ plan.pago }}<small class="small fs-5">/Mensual</small>
+					<h6 class="card-title subtitle-text display-4 fw-semibold">
+					${{ plan.pago }}<small class="small fs-5">MXN/Mensual</small>
 					</h6>
 					<div class="border-bottom border-black border-1 p-1 w-100 mb-3"></div>
 					<a href="https://wa.link/w28bec" target="_blank" class="btn btn-primary fw-bold pe-4 ps-4">¡Lo quiero!</a>
