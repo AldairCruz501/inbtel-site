@@ -57,15 +57,14 @@ export const terminosCondiciones2: Seccion[] = [
     {
     titulo: 'COLABORACIÓN CON LA JUSTICIA',
     contenido: [
-      'En cumplimiento a lo dispuesto en el “ACUERDO MEDIANTE EL CUAL EL PLENO DEL INSTITUTO FEDERAL DE TELECOMUNICACIONES EXPIDE LOS LINEAMIENTOS DE COLABORACIÓN EN MATERIA DE SEGURIDAD Y JUSTICIA Y MODIFICA EL PLAN TÉCNICO FUNDAMENTAL DE NUMERACIÓN, PUBLICADO EN EL DIARIO OFICIAL DE LA FEDERACIÓN EL 21 DE JUNIO DE 1996” y publicado en el Diario Oficial de la Federación el 2 de diciembre de 2015 (el “Acuerdo”), en este acto se informa los siguiente:',
-      'Área Responsable: Dirección Legal con correo electrónico contacto@inbtel.com, teléfonos 01800 9530981, Ciudad de México (55) 1328 4001, Guadalajara (33) 4162 4331 y Monterrey (81) 4162 2717.'
+      'En cumplimiento a lo dispuesto en el “ACUERDO MEDIANTE EL CUAL EL PLENO DEL INSTITUTO FEDERAL DE TELECOMUNICACIONES EXPIDE LOS LINEAMIENTOS DE COLABORACIÓN EN MATERIA DE SEGURIDAD Y JUSTICIA Y MODIFICA EL PLAN TÉCNICO FUNDAMENTAL DE NUMERACIÓN, PUBLICADO EN EL DIARIO OFICIAL DE LA FEDERACIÓN EL 21 DE JUNIO DE 1996” y publicado en el Diario Oficial de la Federación el 2 de diciembre de 2015 (el “Acuerdo”), en este acto se informa lo siguiente:',
+      'Área Responsable: Departamento Legal de Inbtel Comunicaciones, con correo electrónico asuntoslegales@inbtel.com, disponible los 365 días del año 24/7, asimismo estamos a sus órdenes en el teléfono (55) 41708990 ext. 1007, en horario de oficina de lunes a viernes de 9am a 6pm.'
     ]
   },
   {
-    titulo: 'DOMICILIOS PARA RECIBIR DOCUMENTACIÓN FISICA:',
-    lista: [
-      'Bosque de Radiatas número 32, despacho 601, Colonia Bosques de las Lomas, CP 05120, Cuajimalpa, Ciudad de México.',
-      'Hidalgo núm. 107 interior 4, Colonia Unidad Nacional, Municipio Ciudad Madero, C.P. 89410 en Tamaulipas.',
+    titulo: 'DOMICILIO PARA RECIBIR DOCUMENTACIÓN FISICA:',
+    contenido: [
+      'Calle Tamaulipas #607, Tampico Centro, CP 89000, en el municipio de Tampico Tamaulipas, con un horario de atención al cliente de lunes a viernes de 9am a 6pm.',
     ],
   },
 ]

@@ -21,12 +21,6 @@ import LoaderComponent from '../components/LoaderComponent.vue';
       >
         {{ parrafo }}
       </p>
-      <ul v-if="seccion.lista" class="ps-3 fs-5 list-none">
-        <li v-for="(item, i) in seccion.lista" :key="`li-${i}`">
-          {{ i + 1 }}) {{ item }}
-        </li>
-      </ul>
-
     <p
         v-for="(parrafo, idx) in seccion.contenido1"
         :key="`p-${idx}`"
