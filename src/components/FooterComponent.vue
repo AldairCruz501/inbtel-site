@@ -57,7 +57,7 @@ import WhatsappChatComponent from './WhatsappChatComponent.vue';
           <h6 class="fw-bold mb-3 fs-3">Legal</h6>
           <ul class="list-unstyled">
             <li><a href="/codigo-gestion-trafico" target="_blank" class="text-white text-decoration-none">Código de Política de Gestión de Tráfico</a></li>
-            <li><a href="/lineamientos-de-informacion" target="_blank" class="text-white text-decoration-none">Lineamientos de información</a></li>
+            <li><a href="/lineamientos-de-informacion" class="text-white text-decoration-none">Lineamientos de información</a></li>
             <li><a href="/colaboracion-con-la-justicia" target="_blank" class="text-white text-decoration-none">Colaboración con la justicia</a></li>
             <li><a href="/contrato-dobleplay" target="_blank" class="text-white text-decoration-none">Contrato PROFECO DoblePlay</a></li>
             <li><a href="/contrato-tripleplay" target="_blank" class="text-white text-decoration-none">Contrato PROFECO TriplePlay</a></li>
