@@ -19,7 +19,7 @@
 			document.body.style.overflow = ''
 		}, 3000)
 	})
-</script>
+</script> 
 
 <template>
     <LoaderComponent />

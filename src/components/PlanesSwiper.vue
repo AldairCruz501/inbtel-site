@@ -98,8 +98,8 @@ const modules = [Navigation]
                   Internet + Telefonía<span v-if="plan.triple"> + TV</span>
                 </p>
 
-                <h5 class="card-title subtitle-text display-3 fw-semibold">
-                  ${{ plan.precio }}<small class="small fs-5">/Mensual</small>
+                <h5 class="card-title subtitle-text display-4 fw-semibold">
+                  ${{ plan.precio }}<small class="small fs-5">MXN/Mensual</small>
                 </h5>
 
                 <div class="border-bottom border-black border-1 p-1 w-100 mb-3"></div>
@@ -111,8 +111,8 @@ const modules = [Navigation]
                 <div class="border-bottom border-black border-1 p-1 w-100 mb-3"></div>
 
                 <p class="card-text fs-4 m-0">Pronto Pago</p>
-                <h6 class="card-title subtitle-text display-5 fw-semibold">
-                  ${{ plan.pago }}<small class="small fs-5">/Mensual</small>
+                <h6 class="card-title subtitle-text display-6 fw-semibold">
+                  ${{ plan.pago }}<small class="small fs-5">MXN/Mensual</small>
                 </h6>
 
                 <div class="border-bottom border-black border-1 p-1 w-100 mb-3"></div>

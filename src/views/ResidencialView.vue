@@ -63,8 +63,8 @@
                         </h2>
                     </div>
                     <p class="text-dark fs-4">
-                        Contrata tu servicio de internet desde <span class="title-text fw-bold">$399/Mes</span>
-                        y disfruta de la mejor conexión en tu hogar.
+                        Contrata tu servicio de internet desde <span class="title-text fw-bold">$399MXN/Mes</span>
+                        y disfruta de una conexión rápida y estable en tu hogar.
                     </p>
                     <div class="row g-4">
                         <div class="col-lg-4">
@@ -73,7 +73,7 @@
                                    <div class="text-center">
                                      <img src="/img/residencial/icono-residencial-1.png" alt="icon-signal" class="img-fluid" width="120">
                                      <p class="text-dark lh-1 fs-5 fw-medium">
-                                        Velocidad <br>
+                                        Velocidad hasta <br>
                                         <span class="title-text fs-4 fw-bold">100 Mbps</span>
                                      </p>
                                    </div>
@@ -86,8 +86,8 @@
                                    <div class="text-center">
                                      <img src="/img/residencial/icono-residencial-2.png" alt="icon-signal" class="img-fluid" width="120">
                                      <p class="text-dark lh-1 fs-5 fw-medium">
-                                        Gran <br>
-                                        <span class="title-text fs-4 fw-bold">Estabilidad</span>
+                                        	Conexion estable para tus <br>
+                                        <span class="title-text fs-4 fw-bold">Actividades diarias</span>
                                      </p>
                                    </div>
                                 </div>
@@ -99,7 +99,7 @@
                                    <div class="text-center">
                                      <img src="/img/residencial/icono-residencial-3.png" alt="icon-signal" class="img-fluid" width="120">
                                      <p class="text-dark lh-1 fs-5 fw-medium">
-                                        100% <br>
+                                        Tecnología 100% <br>
                                         <span class="title-text fs-4 fw-bold">Fibra Óptica</span>
                                      </p>
                                    </div>
@@ -147,8 +147,8 @@
 								</div>
 							</div>
 							<p class="fs-5">Internet + Telefonía</p>
-							<h5 class="card-title subtitle-text display-3 fw-semibold">
-								${{ plan.precio }}<small class="small fs-5">/Mensual</small>
+							<h5 class="card-title subtitle-text display-4 fw-semibold">
+								${{ plan.precio }}<small class="small fs-5">MXN/Mensual</small>
 							</h5>
 							<div class="border-bottom border-black border-1 p-1 w-100 mb-3"></div>
 							<p v-if="plan.wifi" class="card-text fs-4 m-0">{{plan.wifi}}</p>
@@ -158,8 +158,8 @@
 							<p class="card-text fs-6 text-uppercase">USA|MEX|Canada</p>
 							<div class="border-bottom border-black border-1 p-1 w-100 mb-3"></div>
 							<p class="card-text fs-4 m-0">Pronto Pago</p>
-							<h6 class="card-title subtitle-text display-5 fw-semibold">
-								${{ plan.pago }}<small class="small fs-5">/Mensual</small>
+							<h6 class="card-title subtitle-text display-4 fw-semibold">
+								${{ plan.pago }}<small class="small fs-5">MXN/Mensual</small>
 							</h6>
 							<div class="border-bottom border-black border-1 p-1 w-100 mb-3"></div>
 							<a href="https://wa.link/w28bec" target="_blank" class="btn btn-primary fw-bold pe-4 ps-4">¡Lo quiero!</a>

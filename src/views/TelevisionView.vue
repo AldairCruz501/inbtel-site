@@ -12,7 +12,7 @@
 		setTimeout(() => {
 			loading.value = false
 			document.body.style.overflow = ''
-		}, 3000)
+		}, 3000) 
 	})
 </script>
 
@@ -50,7 +50,7 @@
 				<div class="col-12 pt-5 mt-4 text-white text-center text-uppercase">
                     <h4 class="fw-bold fs-2 m-0 lh-1">Televisión exclusiva para clientes Inbtel</h4>
 					<h2 class="fw-bold display-1 m-0 lh-1">Vive el cine en tu hogar</h2>
-					<h4 class="fw-bold display-2 m-0 lh-1">Desde $149/<span class="text-capitalize">mes</span></h4>
+					<h4 class="fw-bold display-2 m-0 lh-1">Desde $149MXN/<span class="text-capitalize">mes</span></h4>
 				</div>
 			</div>
   		</div>
