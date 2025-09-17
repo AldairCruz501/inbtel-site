@@ -157,7 +157,7 @@
 				INTERNET POR FIBRA ÓPTICA
 			</h2>
 			</div>
-			<div class="row  p-md-5 p-lg-4 g-3 g-md-5">
+			<div class="row p-lg-4 g-3 g-lg-5">
 				<div v-for="plan in homeData.plansInt" class="col-12 col-md-6 col-xl-4">
 					<div class="card text-center border-color-card h-100 d-flex shadow">
 						<div class="card-header fs-3 fw-bold">
@@ -235,13 +235,12 @@
 				<div class="col-13">
 					<img src="/img/inicio/logo-planes-gamer.png" alt="Logo INBTEL" class="img-fluid w-75 mb-3" />
 					<h4 class="fs-3 text-white fw-bolder text-uppercase m-0">
-						Domina la <span class="gamer-text">partida</span> con nuestra
+						Sube de  <span class="gamer-text">nivel</span> con nuestra
 					</h4>
-					<h2 class="display-5 fw-bold title-text text-uppercase m-0">Conexión ultra rápida</h2>
+					<h2 class="display-5 fw-bold title-text text-uppercase m-0">Conexión gamer</h2>
 					<p class="mt-1 text-white fs-5">
-						<span class="fw-bold">¿Listo para llevar tu juego al siguiente nivel?</span> Nuestra conexión
-						de alta velocidad te pone al mando. Descargas instantáneas, actualizaciones sin demoras y partidas
-						imparables te esperan. No juegues, domina.
+						<!-- <span class="fw-bold">¿Listo para llevar tu juego al siguiente nivel?</span> Nuestra conexión -->
+						Disfruta de menor latencia, tiempos de descarga reducidos y partidas más fluidas para mantener el ritmo en cada jugada.
 					</p>
 					<button class="btn btn-gamer fw-bold fs-5">
 						Ver Planes
