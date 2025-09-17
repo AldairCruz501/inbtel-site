@@ -24,6 +24,9 @@ import WhatsappChatComponent from './WhatsappChatComponent.vue';
               <a href="https://x.com/INBTELMX" class="text-white m-1" target="_blank"><i class="bi bi-twitter-x fs-5 title-text"></i></a>
             </div>
           </div>
+          <div class="mb-3 mt-4">
+            <img src="/img/911.jpg" alt="Logo INBTEL" class="logo-emer" />
+          </div>
         </div>
 
         <!-- Enlaces -->
@@ -86,6 +89,10 @@ import WhatsappChatComponent from './WhatsappChatComponent.vue';
 
 .logo {
   height: 70px;
+}
+
+.logo-emer {
+  height: 90px;
 }
 
 a.text-white:hover {
