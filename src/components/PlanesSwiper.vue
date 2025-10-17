@@ -188,11 +188,11 @@ const modules = [Navigation]
   color: #FFD401 !important;
 }
 
-/* Aumenta la zona de clic en pantallas grandes */
+/* Aumenta la zona de clic en pantallas grandes
 @media (max-width: 768px) {
   .swiper-button-prev-custom,
   .swiper-button-next-custom {
     display: none !important;
   }
-}
+} */
 </style>

@@ -142,14 +142,17 @@
 				</h2>
 			</div>
 			<!-- Flechas de navegación -->
+			 <div class="col-12 col-md-7 col-lg-8 col-xl-9 px-5 position-relative">
+      			<div class="swiper-wrapper-container position-relative">
 			<div class="d-flex justify-content-center gap-5 mb-3">
-				<button class="btn swiper-button-prev-custom btn-arrow position-absolute end-100 top-50 translate-middle-y">
+				<button class="btn swiper-button-prev-custom btn-arrow position-absolute start-0 top-50 translate-middle-y z-3">
 				<i class="bi bi-caret-left-fill fs-3"></i>
 				</button>
-				<button class="btn swiper-button-next-custom btn-arrow position-absolute start-100 top-50 translate-middle-y">
+				<button class="btn swiper-button-next-custom btn-arrow position-absolute end-0 top-50 translate-middle-y z-3">
 				<i class="bi bi-caret-right-fill fs-3"></i>
 				</button>
 			</div>
+			
 			<Swiper
 			:modules="modules"
 			:slides-per-view="1"
@@ -160,8 +163,9 @@
 				prevEl: '.swiper-button-prev-custom'
 			}"
 			:breakpoints="{
-				768: { slidesPerView: 2 },
-				1200: { slidesPerView: 3 }
+            768: { slidesPerView: 1 },
+            992: { slidesPerView: 2 },
+            1200: { slidesPerView: 3 }
 			}"
 			class="pt-4 pb-5"
 			>
@@ -211,7 +215,8 @@
 				</div>
 			</SwiperSlide>
 			</Swiper>
-
+				</div>
+			</div>
 		</div>
 	</section>   
 	<!-- <CovaregeMap /> -->
@@ -337,27 +342,24 @@
 }
 
 
-.btn-arrow,
-.swiper-button-prev-custom,
-.swiper-button-next-custom{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.swiper-button-prev-custom {
+  left: -2.5rem !important; /* desplaza hacia la izquierda */
+  border: none !important;
   color: #7AD100 !important;
 }
 
-.btn-arrow:hover,
-.swiper-button-prev-custom:hover,
-.swiper-button-next-custom:hover {
+.swiper-button-next-custom {
+  right: -2.5rem !important; /* desplaza hacia la derecha */
+  border: none !important;
   color: #7AD100 !important;
 }
 
-
+/* 
 @media (max-width: 1070px) {
   .btn-arrow {
     display: none;
   }
-}
+} */
 
 
 
