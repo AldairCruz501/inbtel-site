@@ -145,14 +145,14 @@
 			</div>
   		</div>
 	</section>
-	<section class="container-fluid bg-company p-4">
+	<section class="container-fluid bg-company p-5">
         <div 
             class="text-center mt-5"
             div v-motion-fade-visible 
             :delay="200"
             :duration="1200"
         >
-            <h3 class="display-5 fw-semibold d-none d-md-block pt-4">
+            <h3 class="display-5 fw-semibold d-none d-md-block pt-5">
 				Brindamos a tu empresa una conectividad confiable y de alto desempeño, ideal para optimizar procesos y respaldar el crecimiento
             </h3>
             <h3 class="display-6 subtitle-text fw-semibold text-uppercase d-block d-md-none">
@@ -218,7 +218,7 @@
     background-repeat: no-repeat;
 	background-size: cover;
     background-position: center;
-    min-height: 50vh;
+    min-height: 45vh;
 }
 .jumbotron-pyme-clients {
 	background-image: url('/img/empresarial/fondo-empresarial2.png'); 

@@ -24,6 +24,9 @@ import WhatsappChatComponent from './WhatsappChatComponent.vue';
               <a href="https://x.com/INBTELMX" class="text-white m-1" target="_blank"><i class="bi bi-twitter-x fs-5 title-text"></i></a>
             </div>
           </div>
+          <div class="mb-3 mt-4">
+            <img src="/img/911.jpg" alt="Logo INBTEL" class="logo-emer" />
+          </div>
         </div>
 
         <!-- Enlaces -->
@@ -57,7 +60,7 @@ import WhatsappChatComponent from './WhatsappChatComponent.vue';
           <h6 class="fw-bold mb-3 fs-3">Legal</h6>
           <ul class="list-unstyled">
             <li><a href="/codigo-gestion-trafico" target="_blank" class="text-white text-decoration-none">Código de Política de Gestión de Tráfico</a></li>
-            <li><a href="/lineamientos-de-informacion" target="_blank" class="text-white text-decoration-none">Lineamientos de información</a></li>
+            <li><a href="/lineamientos-de-informacion" class="text-white text-decoration-none">Lineamientos de información</a></li>
             <li><a href="/colaboracion-con-la-justicia" target="_blank" class="text-white text-decoration-none">Colaboración con la justicia</a></li>
             <li><a href="/contrato-dobleplay" target="_blank" class="text-white text-decoration-none">Contrato PROFECO DoblePlay</a></li>
             <li><a href="/contrato-tripleplay" target="_blank" class="text-white text-decoration-none">Contrato PROFECO TriplePlay</a></li>
@@ -86,6 +89,10 @@ import WhatsappChatComponent from './WhatsappChatComponent.vue';
 
 .logo {
   height: 70px;
+}
+
+.logo-emer {
+  height: 90px;
 }
 
 a.text-white:hover {

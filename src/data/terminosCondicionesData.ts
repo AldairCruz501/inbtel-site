@@ -5,23 +5,27 @@ export const terminosCondiciones: Seccion[] = [
   {
     titulo: 'Zona de cobertura',
     contenido: [
-      'Toda contratación deberá estar dentro de la zona de cobertura que puede ser consultada en el portal Inbtel.com, vía telefónica al número 833526000 o bien al correo contacto@inbtel.com.',
-      'Solicitudes que no se encuentren dentro de la zona de cobertura no podrán ser procesadas. En caso de que existan restricciones que impidan la instalación, incluso dentro de la zona de cobertura, el cliente será notificado.',
+      'Toda contratación deberá realizarse dentro de la zona de cobertura de INBTEL, la cual puede consultarse en el portal www.inbtel.com o vía telefónica al 833 526 0000.',
+      'Las solicitudes fuera de la zona de cobertura no podrán ser procesadas.',
+      'En caso de existir restricciones técnicas que impidan la instalación, incluso dentro de la zona de cobertura, el Cliente será notificado oportunamente.'
     ]
   },
   {
-    titulo: 'Contratación',
-    contenido: [
-      'Para llevar a cabo la contratación del servicio, el cliente deberá entregar la siguiente documentación y cumplir con los requisitos:'
-    ],
-    lista: [
-      'Contrato de INBTEL S.A. DE C.V. debidamente llenado y firmado por el cliente.',
-      'Identificación oficial vigente (INE, Pasaporte o Cédula Profesional).',
-      'Comprobante de domicilio reciente (no mayor a 3 meses).',
-      'Pago del costo de instalación y una renta mensual por adelantado en el momento de la instalación.'
-    ],
-    contenido1: [
-      'Se deberá realizar el pago equivalente a la instalación más la primera renta mensual del plan contratado. En caso de haber adquirido una promoción de descuento en la contratación del servicio, este monto se descontará del total a pagar en la'
+    titulo: 'Disponibilidad y Restricciones',
+    listanum: [
+      'La prestación de los servicios de INBTEL está sujeta a la cobertura de red y condiciones técnicas en el domicilio del Cliente.',
+      {
+        texto: 'Las velocidades contratadas corresponden a la máxima ofrecida, pero pueden variar debido a:',
+        sublista: [
+          'Capacidad y estado del equipo del Cliente (módem, router, computadora, dispositivos móviles).',
+          'Número de dispositivos conectados simultáneamente.',
+          'Condiciones de la red interna del domicilio.',
+          'Factores externos como clima, energía eléctrica o casos de fuerza mayor.'
+        ]
+      },
+      'INBTEL no será responsable por interrupciones ocasionadas por causas ajenas a su control, tales como fallas eléctricas, actos de terceros o fenómenos naturales.',
+      'En caso de fallas atribuibles a INBTEL, se aplicarán los tiempos de atención establecidos en el SLA (Acuerdo de Nivel de Servicio) vigente.',
+      'El servicio estará disponible únicamente dentro de la zona de cobertura publicada en www.inbtel.com o validada por nuestros asesores autorizados.'
     ]
   },
 ]
@@ -44,7 +48,7 @@ export const terminosCondiciones1: Seccion[] = [
       'Cualquier otra actividad relacionada entre cliente-proveedor y la responsabilidad del contrato que se esta adquiriendo.',
     ],
     contenido1: [
-      'Su información personal será mantenida en una base de datos propiedad de INBTEL S. A. DE C.V. y solo será utilizada de manera justificada y siempre en cumplimiento con la Ley. Nosotros no realizamos transferencias de sus datos personales a terceros. De conformidad con los artículos 22, 24, 25 y relativos de la Ley usted tiene en derecho a solicitar modificaciones a toda o parte de su información personal y a que dicha información sea retirada total o parcialmente de las bases de datos. Inbtel S. A. DE C.V. no será responsable por la veracidad de la información personal que usted proporcione, ni de su verificación y/o actualización, por lo que si usted no solicita el cambio o modificación de información deberá asumirse que la información es precisa y verdadera con todas las implicaciones que esto conlleve, siendo usted el único responsable por la información personal proporcionada y sus consecuencias.',
+      'Su información personal será mantenida en una base de datos propiedad de INBTEL S. A. DE C.V. y solo será utiliz               ada de manera justificada y siempre en cumplimiento con la Ley. Nosotros no realizamos transferencias de sus datos personales a terceros. De conformidad con los artículos 22, 24, 25 y relativos de la Ley usted tiene en derecho a solicitar modificaciones a toda o parte de su información personal y a que dicha información sea retirada total o parcialmente de las bases de datos. Inbtel S. A. DE C.V. no será responsable por la veracidad de la información personal que usted proporcione, ni de su verificación y/o actualización, por lo que si usted no solicita el cambio o modificación de información deberá asumirse que la información es precisa y verdadera con todas las implicaciones que esto conlleve, siendo usted el único responsable por la información personal proporcionada y sus consecuencias.',
       'En todo momento, usted podrá revocar el consentimiento que nos ha otorgado para el tratamiento de sus datos personales, a fin de que dejemos de hacer uso de los mismos. Para ello, es necesario que presente su petición enviando un correo electrónico a la siguiente dirección contacto@inbtel.com , indicando su solicitud y los datos necesarios como lo son Nombre completo (nombre o nombres y apellido o apellidos), anexando una versión digitalizada de la identificación oficial (escaneo), teléfono y dirección física o electrónica para fines de notificaciones relacionadas al caso o para cualquier duda o aclaración comunicarse al teléfono (52) (55) 1328 4001 con el responsable del Área de Datos Personales, esta información será resguardada bajo la misma Ley.',
       'El plazo para atender su solicitud es de 10 días hábiles y le informaremos sobre la procedencia de la misma a través de los medios que usted nos proporcionó para notificarle.',
       'Nos reservamos el derecho de efectuar en cualquier momento modificaciones o actualizaciones al presente aviso de privacidad, para la atención de novedades legislativas o políticas internas.',

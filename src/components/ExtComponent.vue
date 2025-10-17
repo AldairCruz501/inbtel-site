@@ -23,7 +23,8 @@
 						<div>
 							<h5 class="title-text fw-bold fs-1"><span class="subtitle-text">PORTA TU</span> NÚMERO</h5>
 							<p class="mb-0 fs-5">Conserva el mismo número de tu casa al contratar un plan de internet con nosotros.
-							Realiza el <a href="https://wa.link/w28bec" class="fw-bold text-decoration-none title-text" target="_blank" >trámite de portabilidad.</a></p>
+								Realiza el <a href="https://wa.link/w28bec" class="fw-bold text-decoration-none title-text" target="_blank" >trámite de portabilidad.</a>
+							</p>
 						</div>
 					</div>
 				</div>
@@ -35,7 +36,7 @@
 			<div class="container-fluid contenedor-info">
 				<div class="row g-0 align-items-center">
 					<div class="col-12 d-flex flex-column align-items-center mb-4">
-						<img src="/img/inicio/extensor-nvo.png" alt="Extensor WiFi" class="img-fluid" style="max-width: 200px;">
+						<img src="/img/inicio/extensor-nvo.png" alt="Extensor WiFi" class="img-fluid" style="max-width: 150px;">
 						<div class="text-center">
 							<h5 class="title-text fw-bold fs-2">
 								<span class="subtitle-text">EXTENSOR</span> WiFi
@@ -47,14 +48,13 @@
 						</div>
 					</div>
 					<div class="col-12 d-flex flex-column align-items-center">
-						<img src="/img/inicio/porta-nvo.png" alt="Teléfono" class="img-porta" style="max-width: 250px;">
+						<img src="/img/inicio/porta-nvo.png" alt="Teléfono" class="img-porta" style="max-width: 200px;">
 						<div class="text-center">
 							<h5 class="title-text fw-bold fs-2">
 								<span class="subtitle-text">PORTA TU</span> NÚMERO
 							</h5>
-							<p class="mb-0 fs-6">
-								Mantén el mismo número de tu casa al contratar un plan de internet con nosotros.
-								Realiza la portabilidad marcando al <strong>833 526 0000</strong>
+							<p class="mb-0 fs-6">Conserva el mismo número de tu casa al contratar un plan de internet con nosotros.
+								Realiza el <a href="https://wa.link/w28bec" class="fw-bold text-decoration-none title-text" target="_blank" >trámite de portabilidad.</a>
 							</p>
 						</div>
 					</div>

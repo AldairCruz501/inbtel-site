@@ -3,7 +3,7 @@ import { terminosCondiciones, terminosCondiciones1 } from '../data/terminosCondi
 import HeaderComponent from '../components/HeaderComponent.vue';
 import FooterComponent from '../components/FooterComponent.vue';
 import LoaderComponent from '../components/LoaderComponent.vue';
-import PlanesInternet from '../components/PlanesInternet.vue';
+// import PlanesInternet from '../components/PlanesInternet.vue';
 import InfoAcordeon from '../components/InfoAcordeon.vue';
 </script>
 
@@ -22,6 +22,21 @@ import InfoAcordeon from '../components/InfoAcordeon.vue';
       >
         {{ parrafo }}
       </p>
+      <ol v-if="seccion.listanum" class="ps-3 fs-5">
+        <li v-for="(item, i) in seccion.listanum" :key="`li-${i}`">
+          <template v-if="typeof item === 'string'">
+            {{ item }}
+          </template>
+          <template v-else>
+            {{ item.texto }}
+            <ul v-if="item.sublista" class="list-disc ps-4 fs-5">
+              <li v-for="(sub, j) in item.sublista" :key="`sub-${i}-${j}`">
+                {{ sub }}
+              </li>
+            </ul>
+          </template>
+        </li>
+      </ol>
       <ul v-if="seccion.lista" class="list-unstyled ps-3 fs-5">
         <li v-for="(item, i) in seccion.lista" :key="`li-${i}`">· {{ item }}</li>
       </ul>
@@ -33,7 +48,7 @@ import InfoAcordeon from '../components/InfoAcordeon.vue';
         {{ parrafo }}
       </p>
     </section>
-    <PlanesInternet />
+    <!-- <PlanesInternet /> -->
     <InfoAcordeon />
     <section v-for="(seccion, index) in terminosCondiciones1" :key="index" class="mb-5 mt-5">
       <h3 class="text-primary fs-2 fw-semibold mb-3">{{ seccion.titulo }}</h3>
@@ -57,7 +72,7 @@ import InfoAcordeon from '../components/InfoAcordeon.vue';
     </section>
 
     <div class="text-muted text-end">
-      <small class="fs-6">Última actualización: octubre/2022</small>
+      <small class="fs-6">Última actualización: Septiembre 2025</small>
     </div>
   </div>
   <FooterComponent />
@@ -78,5 +93,8 @@ import InfoAcordeon from '../components/InfoAcordeon.vue';
 }
 .list-lower-alpha {
     list-style-type: lower-alpha;
-  }
+}
+.list-num {
+  list-style-type: decimal;
+}
 </style>
