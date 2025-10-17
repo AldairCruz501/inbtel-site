@@ -142,7 +142,7 @@
 				</h2>
 			</div>
 			<!-- Flechas de navegación -->
-			 <div class="col-12 col-md-7 col-lg-8 col-xl-9 px-5 position-relative">
+			 <div class="col-12  px-5 position-relative">
       			<div class="swiper-wrapper-container position-relative">
 			<div class="d-flex justify-content-center gap-5 mb-3">
 				<button class="btn swiper-button-prev-custom btn-arrow position-absolute start-0 top-50 translate-middle-y z-3">
