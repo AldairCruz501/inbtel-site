@@ -153,8 +153,7 @@
 							</div>
 							<div class="h-100 pt-2">
 								<p class="text-dark fs-5">
-									Atractivas comisiones y pagos <br>
-									semanales.
+									Atractivas comisiones
 								</p>
 							</div>
 						</div>

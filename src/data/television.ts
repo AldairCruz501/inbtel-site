@@ -15,6 +15,8 @@ export const televisonData: TelevisionData = {
         { logo: "/img/television/canales/standard/11.png" },
         { logo: "/img/television/canales/standard/12.png" },
         { logo: "/img/television/canales/standard/13.png" },
+        { logo: "/img/television/canales/standard/canal13.png" },
+        { logo: "/img/television/canales/standard/canal14.png" },
         { logo: "/img/television/canales/standard/14.png" },
         { logo: "/img/television/canales/standard/15.png" },
         { logo: "/img/television/canales/standard/16.png" },
@@ -62,7 +64,14 @@ export const televisonData: TelevisionData = {
         { logo: "/img/television/canales/standard/58.png" },
         { logo: "/img/television/canales/standard/59.png" },
         { logo: "/img/television/canales/standard/60.png" },
-        // { logo: "/img/television/canales/standard/61.png" }                                                                                                         
+        { logo: "/img/television/canales/standard/canal104.png" },
+        { logo: "/img/television/canales/standard/canal114.png" },
+        { logo: "/img/television/canales/standard/canal115.png" },
+        { logo: "/img/television/canales/standard/canal200.png" },
+        { logo: "/img/television/canales/standard/canal209.png" },
+        { logo: "/img/television/canales/standard/canal301.png" },
+        // { logo: "/img/television/canales/standard/61.png" }
+
     ],
     planElite: [
         { logo: "/img/television/canales/elite/1.png" },
@@ -144,7 +153,14 @@ export const televisonData: TelevisionData = {
         { logo: "/img/television/canales/elite/77.png" },
         { logo: "/img/television/canales/elite/78.png" },
         { logo: "/img/television/canales/elite/79.png" },
-        { logo: "/img/television/canales/elite/80.png" }                         
+        { logo: "/img/television/canales/elite/80.png" },
+        { logo: "/img/television/canales/elite/canal202.png" },
+        { logo: "/img/television/canales/elite/canal208.png" },
+        { logo: "/img/television/canales/elite/canal219.png" },
+        { logo: "/img/television/canales/elite/canal220.png" },
+        { logo: "/img/television/canales/elite/canal222.png" },
+        { logo: "/img/television/canales/elite/canal300.png" },
+
     ],
     planPrem: [
         { logo: "/img/television/canales/premium/1.png" },
@@ -236,6 +252,7 @@ export const televisonData: TelevisionData = {
         { logo: "/img/television/canales/premium/87.png" },
         // { logo: "/img/television/canales/premium/88.png" },
         { logo: "/img/television/canales/premium/89.png" },
-        { logo: "/img/television/canales/premium/90.png" }                   
+        { logo: "/img/television/canales/premium/90.png" },                   
+        { logo: "/img/television/canales/premium/canal311.png" },                   
     ]
 }
