@@ -120,7 +120,7 @@ const routes: RouteRecordRaw[] = [
     component: PdfViewer,
     meta: {
       title: 'Contrato PROFECO DoblePlay | INBTEL',
-      pdfFile: '20240416-INBTEL-registro-contrato-de-adhesion-doble-play.pdf',
+      pdfFile: 'InbtelS.A.deC.V.Inbtel177-2026-DOBLE.pdf',
     },
   },
   {
@@ -128,7 +128,7 @@ const routes: RouteRecordRaw[] = [
     component: PdfViewer,
     meta: {
       title: 'Contrato PROFECO TriplePlay | INBTEL',
-      pdfFile: '20240227-INBTEL-registro-contrato-de-adhesion-triple-play.pdf',
+      pdfFile: 'InbtelS.A.deC.V.INBTEL226-2026-TRIPLE.pdf',
     },
   },
   {
