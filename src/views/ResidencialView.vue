@@ -29,7 +29,7 @@
 				:duration="1200"
 			>
 				<div class="col-12 text-uppercase">
-					<h1 class="display-1 fw-bold title-text lh-1">
+					<h1 class="display-2 fw-bold title-text lh-1">
                         <span class="subtitle-text lh-1">Planes</span> <br>
                         Residenciales
                     </h1>
@@ -39,7 +39,7 @@
 	</section>
 	<section class="hero-residencial-responsive d-block d-lg-none">
 		<div class="container-fluid p-0">
-			<img src="/img/residencial/banner-residencial-2.png" alt="Banner Residencial" class="img-fluid w-100 h-auto d-block mx-auto">
+			<img src="/img/residencial/residenciales.jpeg" alt="Banner Residencial" class="img-fluid w-100 h-auto d-block mx-auto">
 		</div>
 	</section>
     <section class="jumbotron-residencial">
@@ -192,7 +192,7 @@ html {
 }
 
 .hero-residencial {
-	background-image: url('/img/residencial/banner-residencial-1.png'); 
+	background-image: url('/img/residencial/residenciales.jpg'); 
 	background-size: cover; 
     background-position: center;
 	min-height: 100vh;
@@ -298,6 +298,12 @@ html {
 	justify-content: center;
 	font-weight: bold;
 	flex-direction: column;
+}
+
+@media (min-width:350px) and (max-width: 600px){
+	.hero-residencial-responsive{
+		padding-top: 50px;
+	}
 }
 
 @media (min-width: 1025px) and (max-width: 1439.98px) {

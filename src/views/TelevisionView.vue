@@ -28,16 +28,16 @@
 			>
 				<div class="col-lg-6 text-uppercase">
 					<span class="display-6 fw-bold lh-1 m-0 television-text">Televisión hd</span>
-					<h2 class="display-4 subtitle-text fw-bold lh-1 m-0 p-0">Disfruta tus</h2>
-					<h1 class="fw-bold title-text text-title lh-1 m-0">Canales</h1>
+					<h2 class="display-6 subtitle-text fw-bold lh-1 m-0 p-0">Disfruta tus</h2>
+					<h1 class=" fw-bold title-text text-title lh-1 m-0">Canales</h1>
 					<span class="title-text text-subtitle fw-bold mt-0 pt-0">Favoritos</span>
 				</div>
 			</div>
   		</div>
 	</section>
-	<section class="hero-residencial-responsive d-block d-lg-none p-0">
-		<div class="container-fluid p-0">
-			<img src="/img/television/banner-tv-2.jpeg" alt="Banner Residencial" class="img-fluid w-100 h-auto d-block mx-auto">
+	<section class="hero-residencial-responsive d-block d-lg-none p-lg-0">
+		<div class="container-fluid p-0 ">
+			<img src="/img/television/banner-2026-resp.jpeg" alt="Banner Residencial" class="img-fluid w-100 h-auto d-block mx-auto">
 		</div>
 	</section>
     <section class="jumbotron-main">
@@ -65,8 +65,9 @@
 
 <style scoped>
 .hero-main {
-	background-image: url('/img/television/banner-tv-1.png'); 
+	background-image: url('/img/television/banner-2026.jpg'); 
 	background-size: cover; 
+	background-position: right;
 	min-height: 100vh;
 }
 .jumbotron-main {
@@ -91,10 +92,10 @@
 	color: #7AD100 !important
 }
 .text-title {
-	font-size: 110px;
+	font-size: 85px;
 }
 .text-subtitle {
-	font-size: 95px;
+	font-size: 80px;
 	margin: 0px !important;
 	line-height: 1 !important;
 	padding: 0px !important;
@@ -210,6 +211,30 @@
 @media (max-width: 575.98px) {
 	.title-ideal {
 		font-size: 4.5rem;
+	}
+	.hero-residencial-responsive{
+		padding-top: 35px;;
+	}
+}
+
+
+
+@media (min-width: 1024px) and (max-width: 1200px){
+	.hero-main{
+		background-position: 33% center;
+		
+	}
+}
+
+@media (min-width: 1280px) and (max-width: 1366px){
+	.hero-main{
+		background-position: 85% center;
+	}
+}
+
+@media (min-width: 1440px){
+	.hero-main{
+		background-position: 67% center;
 	}
 }
 </style>

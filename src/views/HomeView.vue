@@ -256,16 +256,17 @@
 
 <style scoped>
 .hero-main {
-	background-image: url('/img/inicio/banner-inicio-1.png'); 
+	background-image: url('/img/inicio/inicio-correcto.jpg'); 
 	background-size: cover; 
+	background-position: center;
 	min-height: 100vh;
 }
 .hero-main-responsive {
-  background-image: url('/img/inicio/banner-inicio-2.png');
-  background-size: cover;
+  background-image: url('/img/inicio/inicio-correcto-resp.jpg');
+  background-size: cover ;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 110vh;
+  min-height: 100vh;
   color: #fff;
   position: relative;
   z-index: 1;
