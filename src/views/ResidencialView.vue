@@ -31,7 +31,7 @@
 				<div class="col-12 text-uppercase">
 					<h1 class="display-2 fw-bold title-text lh-1">
                         <span class="subtitle-text lh-1">Planes</span> <br>
-                        Residenciales
+                        Internet + Telefonía
                     </h1>
 				</div>
 			</div>
@@ -119,7 +119,7 @@
 				:delay="200"
 				:duration="1200"
 			>
-                <h4 class="display-6 resalt-text fw-semibold">Planes Residenciales</h4>
+                <h4 class="display-6 resalt-text fw-semibold">Planes Internet + Telefonía</h4>
 				<h2 class="text-uppercase display-1 fw-bold subtitle-text">
 					INTERNET POR FIBRA ÓPTICA
 				</h2>
@@ -127,7 +127,7 @@
 			<div class="row p-0 p-lg-4 g-3 g-lg-5 m-0">
 				<div v-for="plan in residencialData.plansInt" class="col-12 col-md-6 col-xl-4">
 					<div class="card text-center border-color-card h-100 d-flex shadow">
-						<div class="card-header fs-3 fw-bold">
+						<div class="card-header fs-4 fw-bold py-lg-3">
 							Plan {{ plan.nombre }}
 						</div>
 						<div class="card-body">

@@ -24,9 +24,9 @@ const routes: RouteRecordRaw[] = [
     meta: { title: 'INBTEL | Inicio' },
   },
   {
-    path: '/residencial',
+    path: '/internet+telefonia',
     component: ResidencialView,
-    meta: { title: 'Internet Residencial | INBTEL' },
+    meta: { title: 'Internet + Telefonía | INBTEL' },
   },
   {
     path: '/gamer',
@@ -38,11 +38,11 @@ const routes: RouteRecordRaw[] = [
     component: TelevisionView,
     meta: { title: 'Televisión | INBTEL' },
   },
-  {
-    path: '/negocios',
-    component: NegociosView,
-    meta: {title: 'Internet para Negocios | INBTEL'}
-  }, 
+  // {
+  //   path: '/negocios',
+  //   component: NegociosView,
+  //   meta: {title: 'Internet para Negocios | INBTEL'}
+  // }, 
   {
     path: '/pymes',
     component: PymesView,

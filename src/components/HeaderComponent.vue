@@ -123,7 +123,7 @@ onUnmounted(() => {
         </button>
         <div class="collapse navbar-collapse justify-content-start ms-2" id="navbarNav">
           <ul class="navbar-nav align-items-center fw-bold">
-            <li class="nav-item mx-xl-1"><router-link class="nav-link" :class="linkClass" to="/residencial">Residencial</router-link></li>
+            <li class="nav-item mx-xl-1"><router-link class="nav-link" :class="linkClass" to="/internet+telefonia">Internet + Telefonía</router-link></li>
             <li class="nav-item mx-xl-1"><router-link class="nav-link" :class="linkClass" to="/gamer">Gamer</router-link></li>
             <li class="nav-item mx-xl-1"><router-link class="nav-link" :class="linkClass" to="/television">Televisión</router-link></li>
             <li class="nav-item mx-xl-1"><router-link class="nav-link" :class="linkClass" to="/negocios">Negocios</router-link></li>
@@ -148,7 +148,7 @@ onUnmounted(() => {
     </nav>
 
     <!-- Mobile navbar -->
-    <nav :class="['navbar navbar-expand-lg py-2 fixed-top d-block d-xl-none', navClass, scrollBackgroundClass, { show: isMenuOpen }]">
+    <nav :class="['navbar navbar-expand-lg py-2 fixed-top d-block d-xl-none bg-white', navClass, scrollBackgroundClass, { show: isMenuOpen }]">
       <div class="container-fluid container-xxl">
         <router-link class="navbar-brand" to="/">
           <img :src="logoSrc" alt="logo" height="50" />
@@ -159,7 +159,7 @@ onUnmounted(() => {
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav align-items-center fw-bold">
-            <li class="nav-item mx-xl-2"><router-link class="nav-link" :class="linkClass" to="/residencial">Residencial</router-link></li>
+            <li class="nav-item mx-xl-2"><router-link class="nav-link" :class="linkClass" to="/internet+telefonia">Internet + Telefonía</router-link></li>
             <li class="nav-item mx-xl-2"><router-link class="nav-link" :class="linkClass" to="/gamer">Gamer</router-link></li>
             <li class="nav-item mx-xl-2"><router-link class="nav-link" :class="linkClass" to="/television">Televisión</router-link></li>
             <li class="nav-item mx-xl-2"><router-link class="nav-link" :class="linkClass" to="/negocios">Negocios</router-link></li>
@@ -346,6 +346,18 @@ nav {
   .navbar-nav,
   nav {
     padding: 1rem;
+  }
+}
+
+@media(min-width: 1024px) and (max-width: 1350px){
+  .navbar-nav{
+    font-size: 13.8px;
+  }
+}
+
+@media (min-width: 1400px){
+  .navbar-nav{
+    font-size: 15.4px;
   }
 }
 </style>

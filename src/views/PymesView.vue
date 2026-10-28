@@ -5,7 +5,7 @@
 	import LoaderComponent from '../components/LoaderComponent.vue';
 	// import CountCircleMBPS from '../components/CountCircleMBPS.vue';
 	import InbtelAppComponent from '../components/InbtelAppComponent.vue';
-	// import { pymeData } from '../data/pymes';
+	import { pymeData } from '../data/pymes';
 
 	const loading = ref(true)
 	onMounted(() => {
@@ -171,7 +171,7 @@
 			</div>
 		</div>
 	</section>
-	<!-- <section class="bg-plans-gamer py-5">
+	<section class="bg-plans-gamer py-5">
 		<div class="container pt-lg-3 mt-lg-2">
 			<div 
 				class="text-center"
@@ -267,7 +267,7 @@
 				</div>
 			</div>
 		</div>
-	</section>    -->
+	</section>   
     <section class="jumbotron-pyme-clients d-none d-lg-block">
 		<div class="container py-2" 
 			v-motion-fade-visible

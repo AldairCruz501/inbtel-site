@@ -160,7 +160,7 @@
 			<div class="row p-lg-4 g-3 g-lg-5">
 				<div v-for="plan in homeData.plansInt" class="col-12 col-md-6 col-xl-4">
 					<div class="card text-center border-color-card h-100 d-flex shadow">
-						<div class="card-header fs-3 fw-bold">
+						<div class="card-header fs-4 fw-bold py-lg-3">
 							Plan {{ plan.nombre }}
 						</div>
 						<div class="card-body">
