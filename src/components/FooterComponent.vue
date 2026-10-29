@@ -33,7 +33,7 @@ import WhatsappChatComponent from './WhatsappChatComponent.vue';
         <div class="col-lg-3 mb-4 mt-4">
           <h6 class="fw-bold mb-3 fs-3">Enlaces</h6>
           <ul class="list-unstyled">
-            <li><router-link to="/residencial" class="text-white text-decoration-none">Planes Residenciales</router-link></li>
+            <li><router-link to="/internet+telefonia" class="text-white text-decoration-none">Planes Internet + Telefonía</router-link></li>
             <li><router-link to="/gamer" class="text-white text-decoration-none">Planes gamer</router-link></li>
             <li><router-link to="/cobertura" class="text-white text-decoration-none">Cobertura</router-link></li>
             <li><router-link to="/empresarial" class="text-white text-decoration-none">Servicios Voz IP</router-link></li>
