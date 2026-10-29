@@ -15,7 +15,7 @@ const activeTab = ref<PlanType>('Standard')
 const planPrices: Record<PlanType, number> = {
   Standard: 149,
   Elite: 249,
-  Premium: 299,
+  Premium: 349,
 }
 
 // Computed: canales según plan

@@ -15,6 +15,7 @@ export interface PlanInternet {
     folioIFT: string,
     simetrico?: string,
     repetidor?: string,
+    pago: string,
 }
 
 export interface PlanTV {

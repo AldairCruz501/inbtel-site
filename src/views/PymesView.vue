@@ -1,20 +1,20 @@
 <script setup lang="ts">
-	import { ref, onMounted } from 'vue'
-	import FooterComponent from '../components/FooterComponent.vue';
-	import HeaderComponent from '../components/HeaderComponent.vue';
-	import LoaderComponent from '../components/LoaderComponent.vue';
-	// import CountCircleMBPS from '../components/CountCircleMBPS.vue';
-	import InbtelAppComponent from '../components/InbtelAppComponent.vue';
-	import { pymeData } from '../data/pymes';
+import { ref, onMounted } from 'vue'
+import FooterComponent from '../components/FooterComponent.vue';
+import HeaderComponent from '../components/HeaderComponent.vue';
+import LoaderComponent from '../components/LoaderComponent.vue';
+import CountCircleMBPS from '../components/CountCircleMBPS.vue';
+import InbtelAppComponent from '../components/InbtelAppComponent.vue';
+import { pymeData } from '../data/pymes';
 
-	const loading = ref(true)
-	onMounted(() => {
-		document.body.style.overflow = 'hidden'
-		setTimeout(() => {
-			loading.value = false
-			document.body.style.overflow = ''
-		}, 3000)
-	})
+const loading = ref(true)
+onMounted(() => {
+	document.body.style.overflow = 'hidden'
+	setTimeout(() => {
+		loading.value = false
+		document.body.style.overflow = ''
+	}, 3000)
+})
 
 
 </script>
@@ -22,45 +22,33 @@
 <template>
 	<LoaderComponent />
 	<HeaderComponent />
-    <section class="hero-pymes d-none d-lg-flex align-items-center pt-5" v-if="!loading">
-        <div class="container-fluid width-text">
-            <div class="row pt-5"
-                v-motion-slide-visible-left
-                :delay="200"
-                :duration="1200"
-            >
-                <div class="col-lg-6 text-uppercase">
-                    <img src="/img/pymes/logo-pyme.png" alt="img" class="img-fluid">
-                </div>
-            </div>
-        </div>
+	<section class="hero-pymes d-none d-lg-flex align-items-center pt-5" v-if="!loading">
+		<div class="container-fluid width-text">
+			<div class="row pt-5" v-motion-slide-visible-left :delay="200" :duration="1200">
+				<div class="col-lg-6 text-uppercase">
+					<img src="/img/pymes/logo-pyme.png" alt="img" class="img-fluid">
+				</div>
+			</div>
+		</div>
 	</section>
-    <section class="hero-residencial-responsive d-block d-lg-none p-0">
+	<section class="hero-residencial-responsive d-block d-lg-none p-0">
 		<div class="container-fluid p-0">
-			<img src="/img/pymes/banner-pyme-2.png" alt="Banner Residencial" class="img-fluid w-100 h-auto d-block mx-auto">
+			<img src="/img/pymes/banner-pyme-2.png" alt="Banner Residencial"
+				class="img-fluid w-100 h-auto d-block mx-auto">
 		</div>
 	</section>
 	<section class="container-fluid bg-badge-info p-4">
-        <div 
-            class="text-center"
-            div v-motion-fade-visible 
-            :delay="200"
-            :duration="1200"
-        >
-            <h1 class="display-4 text-white text-uppercase d-none d-md-block">
-                Lleva tu negocio a otro nivel con los <span class="fw-bold fst-italic">Planes Pyme</span>
-            </h1>
-            <h1 class="display-5 text-white text-uppercase d-block d-md-none">
-                Lleva tu negocio a otro nivel con los <span class="fw-bold fst-italic">Planes Pyme</span>
-            </h1>
-        </div>
-    </section>
-    <section class="jumbotron-pyme">
-		<div class="container py-2" 
-			v-motion-fade-visible
-			:delay="200"
-			:duration="1200"
-		>
+		<div class="text-center" div v-motion-fade-visible :delay="200" :duration="1200">
+			<h1 class="display-4 text-white text-uppercase d-none d-md-block">
+				Lleva tu negocio a otro nivel con los <span class="fw-bold fst-italic">Planes Pyme</span>
+			</h1>
+			<h1 class="display-5 text-white text-uppercase d-block d-md-none">
+				Lleva tu negocio a otro nivel con los <span class="fw-bold fst-italic">Planes Pyme</span>
+			</h1>
+		</div>
+	</section>
+	<section class="jumbotron-pyme">
+		<div class="container py-2" v-motion-fade-visible :delay="200" :duration="1200">
 			<div class="pt-5 pb-5 text-center">
 				<h2 class="display-2 fw-semibold text-white mt-3">Ventajas Pyme</h2>
 			</div>
@@ -138,29 +126,27 @@
 					</div>
 				</div>
 			</div>
-  		</div>
+		</div>
 	</section>
 	<section class="m-0">
 		<div class="row g-0 container-fluid">
 			<div class="col-12 col-xl-6 bg-info-pyme text-white pt-5">
-				<div class="p-5 mt-5 h-100"
-					v-motion-slide-visible-left
-					:delay="200"
-					:duration="1200"
-				>
+				<div class="p-5 mt-5 h-100" v-motion-slide-visible-left :delay="200" :duration="1200">
 					<h3 class="fw-semibold display-4 text-white pb-2">
 						¿Quieres llevar tu Pyme al siguiente nivel?
 					</h3>
 					<div class="fs-4 text-white pb-1">
 						<p class="m-0">
-							Descubre las soluciones diseñadas especialmente para tu pyme.  
+							Descubre las soluciones diseñadas especialmente para tu pyme.
 						</p>
 						<p>
-							Haz clic en el botón de abajo y conoce todos nuestros planes pensados para impulsar tu crecimiento.
+							Haz clic en el botón de abajo y conoce todos nuestros planes pensados para impulsar tu
+							crecimiento.
 						</p>
 					</div>
 					<div class="pt-2 pb-5">
-						<a href="https://wa.link/w28bec" target="_blank" class="btn btn-info-pyme btn-lg rounded-pill px-4 fw-semibold">
+						<a href="https://wa.link/w28bec" target="_blank"
+							class="btn btn-info-pyme btn-lg rounded-pill px-4 fw-semibold">
 							Saber Más
 						</a>
 					</div>
@@ -173,19 +159,63 @@
 	</section>
 	<section class="bg-plans-gamer py-5">
 		<div class="container pt-lg-3 mt-lg-2">
-			<div 
-				class="text-center"
-				v-motion-slide-visible-top
-				:delay="200"
-				:duration="1200"
-			>
-                <h4 class="display-6 resalt-text fw-semibold text-uppercase">Paquetes Pymes</h4>
-				<h2 class="display-1 fw-bold subtitle-text">
-					Paquetes de Internet Pymes
+			<div class="text-center" v-motion-slide-visible-top :delay="200" :duration="1200">
+				<h4 class="display-6 resalt-text fw-semibold ">Planes PYME</h4>
+				<h2 class="display-2 fw-bold subtitle-text text-uppercase">
+					Paquetes de Internet Pyme
 				</h2>
 			</div>
-			<div class="row justify-content-xl-center p-0 p-md-5 p-lg-4 g-5 m-0">
-				<div v-for="plan in pymeData.plansInt.slice(0,2)" class="col-12 col-lg-6 col-xl-4">
+			<div class="row  p-0 p-md-5 p-lg-4 g-5 m-0">
+				<div v-for="plan in pymeData.plansInt.slice(0, 4)" class="col-12 col-lg-6 col-xl-4">
+					<div class="card text-center border-color-card h-100 d-flex shadow">
+						<div class="card-header fs-3 fw-bold">
+							Plan {{ plan.nombre }}
+						</div>
+						<div class="card-body">
+							<CountCircleMBPS :value="plan.mbps" color="#1978A4" class="title-text" />
+							<!-- <div class="d-flex gap-2 justify-content-center mb-4 mb-lg-3 mt-3">
+								<div class="border icon-circle p-3 shadow">
+									<img src="/img/pymes/pyme-internet.png" alt="" class="mx-auto" width="25">
+								</div>
+								<div class="border icon-circle p-3 shadow">
+									<img src="/img/pymes/pyme-tel.png" alt="" class="mx-auto" width="25">
+								</div>
+								<div v-if="plan.simetrico" class="border icon-circle p-3 shadow">
+									<img :src="plan.simetrico" alt="" class="mx-auto" width="25">
+								</div>
+								<div v-if="plan.repetidor" class="border icon-circle p-3 shadow">
+									<img :src="plan.repetidor" alt="" class="mx-auto" width="25">
+								</div>
+							</div> -->
+							<p class="fs-5 mt-4">Internet + Telefonía</p>
+							<h5 class="card-title title-text display-3 fw-semibold">
+								${{ plan.precio }}<small class="small fs-5">/Mensual</small>
+							</h5>
+							<div class="border-bottom border-black border-1 p-1 w-100 mb-3"></div>
+							<!-- <p v-if="plan.wifi" class="card-text fs-4 m-0">{{plan.wifi}}</p> -->
+							<!-- <p v-if="plan.repwifi" class="card-text fs-4 m-0">{{plan.repwifi}}</p> -->
+							<!-- <p class="card-text fs-4">{{ plan.sub1 }} <span class="title-text fw-semibold">{{ plan.sub2
+									}}</span></p> -->
+							<p class="card-text fs-4 m-0">Llamadas ilimitadas</p>
+							<p class="card-text fs-6 text-uppercase mb-0">USA|MEX|Canada</p>
+							<p class="card-text fs-6 text-uppercase">SLA 24-48 HRS</p>
+							<div class="border-bottom border-black border-1 p-1 w-100 mb-3"></div>
+							<p class="card-text fs-4 m-0">Pronto Pago</p>
+							<h6 class="card-title subtitle-text display-4 fw-semibold">
+								${{ plan.pago }}<small class="small fs-5">MXN/Mensual</small>
+							</h6>
+							<div class="border-bottom border-black border-1 p-1 w-100 mb-3"></div>
+							<a href="https://wa.link/w28bec" target="_blank"
+								class="btn btn-primary fw-bold pe-4 ps-4 mb-3">¡Lo quiero!</a>
+						</div>
+						<!-- <div class="card-footer text-secondary bg-transparent border-0 text-uppercase">
+							Folio ift: {{ plan.folioIFT }}
+						</div> -->
+					</div>
+				</div>
+			</div>
+			<!-- <div class="row justify-content-xl-center p-0 p-md-5 p-lg-4 g-5 m-0">
+				<div v-for="plan in pymeData.plansInt.slice(3,4)" class="col-12 col-lg-6 col-xl-4">
 					<div class="card text-center border-color-card h-100 d-flex shadow">
 						<div class="card-header fs-3 fw-bold">
 							Plan {{ plan.nombre }}
@@ -224,60 +254,15 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row justify-content-xl-center p-0 p-md-5 p-lg-4 g-5 m-0">
-				<div v-for="plan in pymeData.plansInt.slice(2,4)" class="col-12 col-lg-6 col-xl-4">
-					<div class="card text-center border-color-card h-100 d-flex shadow">
-						<div class="card-header fs-3 fw-bold">
-							Plan {{ plan.nombre }}
-						</div>
-						<div class="card-body">
-							<CountCircleMBPS :value="plan.mbps" color="#64B7D9" class="title-text" />
-							<div class="d-flex gap-2 justify-content-center mb-4 mb-lg-3 mt-3">
-								<div class="border icon-circle p-3 shadow">
-									<img src="/img/pymes/pyme-internet.png" alt="" class="mx-auto" width="25">
-								</div>
-								<div class="border icon-circle p-3 shadow">
-									<img src="/img/pymes/pyme-tel.png" alt="" class="mx-auto" width="25">
-								</div>
-								<div v-if="plan.simetrico" class="border icon-circle p-3 shadow">
-									<img :src="plan.simetrico" alt="" class="mx-auto" width="25">
-								</div>
-								<div v-if="plan.repetidor" class="border icon-circle p-3 shadow">
-									<img :src="plan.repetidor" alt="" class="mx-auto" width="25">
-								</div>
-							</div>
-							<p class="fs-5">Internet + Telefonía</p>
-							<h5 class="card-title title-text display-3 fw-semibold">
-								${{ plan.precio }}<small class="small fs-5">/Mensual</small>
-							</h5>
-							<div class="border-bottom border-black border-1 p-1 w-100 mb-3"></div>
-							<p v-if="plan.wifi" class="card-text fs-4 m-0">{{plan.wifi}}</p>
-							<p v-if="plan.repwifi" class="card-text fs-4 m-0">{{plan.repwifi}}</p>
-							<p class="card-text fs-4">{{ plan.sub1 }} <span class="title-text fw-semibold">{{ plan.sub2 }}</span></p>
-							<p class="card-text fs-4 m-0">Llamadas ilimitadas</p>
-							<p class="card-text fs-6 text-uppercase">USA|MEX|Canada</p>
-							<div class="border-bottom border-black border-1 p-1 w-100 mb-3"></div>
-							<a href="https://wa.link/w28bec" target="_blank" class="btn btn-primary fw-bold pe-4 ps-4">¡Lo quiero!</a>
-						</div>
-						<div class="card-footer text-secondary bg-transparent border-0 text-uppercase">
-							Folio ift: {{ plan.folioIFT }}
-						</div>
-					</div>
-				</div>
-			</div>
+			</div> -->
 		</div>
-	</section>   
-    <section class="jumbotron-pyme-clients d-none d-lg-block">
-		<div class="container py-2" 
-			v-motion-fade-visible
-			:delay="200"
-			:duration="1200"
-		>
+	</section>
+	<section class="jumbotron-pyme-clients d-none d-lg-block">
+		<div class="container py-2" v-motion-fade-visible :delay="200" :duration="1200">
 			<div class="pt-5 mt-5 text-center text-uppercase">
 				<span class="display-6 fw-semibold lh-1" style="color: #023768;">Marcas que confían</span>
 				<h2 class="display-1 fw-bold lh-1" style="color: #0061aa">
-					 En Nosotros
+					En Nosotros
 				</h2>
 			</div>
 			<div class="row g-4 pb-5">
@@ -285,11 +270,12 @@
 					<img src="/img/pymes/clientes_pymes.png" alt="" class="img-fluid">
 				</div>
 			</div>
-  		</div>
+		</div>
 	</section>
 	<section class="hero-residencial-responsive d-block d-lg-none p-0">
 		<div class="container-fluid p-0">
-			<img src="/img/pymes/clientes-pyme-2.png" alt="Banner Residencial" class="img-fluid w-100 h-auto d-block mx-auto">
+			<img src="/img/pymes/clientes-pyme-2.png" alt="Banner Residencial"
+				class="img-fluid w-100 h-auto d-block mx-auto">
 		</div>
 	</section>
 	<!-- <CovaregeMap /> -->
@@ -299,75 +285,86 @@
 
 <style scoped>
 .hero-pymes {
-	background-image: url('/img/pymes/banner-pyme-1.png'); 
-	background-size: cover; 
-    background-position: center;
+	background-image: url('/img/pymes/banner-pyme-1.png');
+	background-size: cover;
+	background-position: center;
 	min-height: 100vh;
 }
+
 .jumbotron-pyme {
-	background-image: url('/img/pymes/fondo_pymes1.png'); 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 50vh; /* valor base para XS */
-}
-.bg-plans-gamer {
-  background-image: url('/img/pymes/fondo_pymes2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  	min-height: 100vh; /* valor base para XS */
-}
-.jumbotron-pyme-clients {
-	background-image: url('/img/pymes/fondo_pymes3.png'); 
-    background-repeat: no-repeat;
+	background-image: url('/img/pymes/fondo_pymes1.png');
+	background-repeat: no-repeat;
 	background-size: cover;
-    background-position: center;
-    min-height: 80vh; /* valor base para XS */
+	background-position: center;
+	min-height: 50vh;
+	/* valor base para XS */
 }
+
+.bg-plans-gamer {
+	background-image: url('/img/pymes/fondo_pymes2.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 100vh;
+	/* valor base para XS */
+}
+
+.jumbotron-pyme-clients {
+	background-image: url('/img/pymes/fondo_pymes3.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 80vh;
+	/* valor base para XS */
+}
+
 .bg-badge-info,
 .bg-info-pyme {
 	background-color: #1978A4;
 }
+
 .width-text {
 	width: 90%;
 }
+
 .subtitle-text {
-	color: #00A0B0 !important;
+	color: #1978A4 !important;
 }
+
 .title-text {
-	color: #64B7D9 !important
+	color: #1978A4 !important
 }
+
 .resalt-text {
-    color: #14DE00!important
+	color: #00A0B0 !important
 }
+
 .logo-ideal {
 	height: 60px;
 }
+
 .title-ideal {
 	font-size: 8.5rem;
 }
 
 .btn-info-pyme {
 	background-color: #64B7D9 !important;
-	border-color: 1px solid	#64B7D9  !important;
+	border-color: 1px solid #64B7D9 !important;
 	color: #ffffff !important;
 }
 
 .btn-info-pyme:hover {
 	background-color: #ffffff !important;
-	border-color: 1px solid	#64B7D9  !important;
+	border-color: 1px solid #64B7D9 !important;
 	color: #64B7D9 !important;
 }
 
 .border-color {
 	border: 2px solid #FFFFFF !important;
-	  background: 
-    linear-gradient(
-      rgba(151, 151, 151, 0.3), 
-      rgba(151, 151, 151, 0.3)
-    );
-  color: white;
+	background:
+		linear-gradient(rgba(151, 151, 151, 0.3),
+			rgba(151, 151, 151, 0.3));
+	color: white;
 }
 
 .border-bottom-color {
@@ -376,24 +373,24 @@
 }
 
 .border-color-card {
-	border: 1px solid #64B7D9;
+	border: 1px solid #1978A4;
 }
 
 .btn-primary {
-	background-color: #64B7D9 !important;
+	background-color: #1978A4 !important;
 	color: #FFFFFF;
-	border: 1px solid	#64B7D9 !important;
+	border: 1px solid #1978A4 !important;
 }
 
 .btn-primary:hover {
 	background-color: #ffffff !important;
-	border: 1px solid	#64B7D9 !important;
+	border: 1px solid #1978A4 !important;
 	color: #64B7D9
 }
 
 .btn-light {
 	background-color: #ffffff;
-	border: 1px solid	#396E4B !important;
+	border: 1px solid #396E4B !important;
 	color: #396E4B;
 }
 
@@ -404,7 +401,7 @@
 }
 
 .card-header {
-	background-color: #64B7D9;
+	background-color: #1978A4;
 	color: #ffffff;
 }
 
@@ -430,5 +427,4 @@
 	font-weight: bold;
 	flex-direction: column;
 }
-
 </style>

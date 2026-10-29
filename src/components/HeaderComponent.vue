@@ -126,7 +126,7 @@ onUnmounted(() => {
             <li class="nav-item mx-xl-1"><router-link class="nav-link" :class="linkClass" to="/internet+telefonia">Internet + Telefonía</router-link></li>
             <li class="nav-item mx-xl-1"><router-link class="nav-link" :class="linkClass" to="/gamer">Gamer</router-link></li>
             <li class="nav-item mx-xl-1"><router-link class="nav-link" :class="linkClass" to="/television">Televisión</router-link></li>
-            <li class="nav-item mx-xl-1"><router-link class="nav-link" :class="linkClass" to="/negocios">Negocios</router-link></li>
+            <!-- <li class="nav-item mx-xl-1"><router-link class="nav-link" :class="linkClass" to="/negocios">Negocios</router-link></li> -->
             <li class="nav-item mx-xl-1"><router-link class="nav-link" :class="linkClass" to="/pymes">Pymes</router-link></li>
             <li class="nav-item mx-xl-1"><router-link class="nav-link" :class="linkClass" to="/empresarial">Empresarial</router-link></li>
             <li class="nav-item dropdown mx-xl-1">
@@ -351,13 +351,13 @@ nav {
 
 @media(min-width: 1024px) and (max-width: 1350px){
   .navbar-nav{
-    font-size: 13.8px;
+    /* font-size: 13.8px; */
   }
 }
 
 @media (min-width: 1400px){
   .navbar-nav{
-    font-size: 15.4px;
+    /* font-size: 15.4px; */
   }
 }
 </style>
