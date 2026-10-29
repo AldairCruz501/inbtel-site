@@ -126,7 +126,6 @@ onUnmounted(() => {
             <li class="nav-item mx-xl-1"><router-link class="nav-link" :class="linkClass" to="/internet+telefonia">Internet + Telefonía</router-link></li>
             <li class="nav-item mx-xl-1"><router-link class="nav-link" :class="linkClass" to="/gamer">Gamer</router-link></li>
             <li class="nav-item mx-xl-1"><router-link class="nav-link" :class="linkClass" to="/television">Televisión</router-link></li>
-            <!-- <li class="nav-item mx-xl-1"><router-link class="nav-link" :class="linkClass" to="/negocios">Negocios</router-link></li> -->
             <li class="nav-item mx-xl-1"><router-link class="nav-link" :class="linkClass" to="/pymes">Pymes</router-link></li>
             <li class="nav-item mx-xl-1"><router-link class="nav-link" :class="linkClass" to="/empresarial">Empresarial</router-link></li>
             <li class="nav-item dropdown mx-xl-1">

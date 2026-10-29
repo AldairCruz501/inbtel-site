@@ -3,7 +3,6 @@ import HomeView from '../views/HomeView.vue'
 import ResidencialView from '../views/ResidencialView.vue'
 import GamerView from '../views/GamerView.vue'
 import TelevisionView from '../views/TelevisionView.vue'
-// import NegociosView from '../views/NegociosView.vue'
 import PymesView from '../views/PymesView.vue'
 import EmpresarialView from '../views/EmpresarialView.vue'
 import DistribuidorView from '../views/DistribuidorView.vue'
@@ -38,11 +37,6 @@ const routes: RouteRecordRaw[] = [
     component: TelevisionView,
     meta: { title: 'Televisión | INBTEL' },
   },
-  // {
-  //   path: '/negocios',
-  //   component: NegociosView,
-  //   meta: {title: 'Internet para Negocios | INBTEL'}
-  // }, 
   {
     path: '/pymes',
     component: PymesView,
